@@ -1,0 +1,108 @@
+'use client';
+
+import Image from "next/image";
+import Link from "next/link";
+
+import { useState, useRef } from 'react';
+
+export default function Header() {
+
+  const [showMenu, setShowMenu] = useState(false);
+
+  return (
+    <div>
+      <div className="fixed pattern-bg  bg-[#200073] text-white flex justify-center w-full z-[100] top-0 py-3 lg:pt-4 lg:p-3 px-10 ">
+        <div className="flex flex-row justify-between w-full max-w-[1040px]">
+          <div className="flex  flex-row w-full justify-between lg:items-center">
+
+            <div className="flex lg:hidden flex-row gap-4 mt-2 mb-2">
+              <Link href="/" className="flex  flex-row gap-3 pr-3 items-center">
+                <Image src="/logo.svg" className="" alt="Top Logo" width={50} height={40}></Image>
+              </Link>
+            </div>
+            <div className="hidden lg:flex flex-row gap-6 mt-2 mb-2 items-center text-lg">
+              <Link href="/" className="flex flex-row gap-3 pr-3 items-center">
+                <Image src="/logo.svg" className="transition-all duration-500 ease-in-out hover:scale-[1.10]" alt="Top Logo" width={50} height={40}></Image>
+              </Link>
+              <div>
+                <Link href="/about">About</Link>
+              </div>
+              <div>
+                <Link href="/dances">Dances</Link>
+              </div>
+              <div>
+                <Link href="/events">Events</Link>
+              </div>
+              <div>
+                <Link href="/faqs">FAQs</Link>
+              </div>
+              <div>
+                <Link href="/contact">Contact</Link>
+              </div>
+            </div>
+            <div className="hidden lg:flex flex-row lg:items-center gap-2 text-lg">
+              <Link href="/donate">
+                <div className="bg-[#5E489A] shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
+                  Donate
+                </div>
+              </Link>
+              <Link href="/getinvolved">
+                <div className="bg-[#F28904] shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
+                  Get Involved
+                </div>
+              </Link>
+            </div>
+            <div className="cursor-pointer lg:hidden pt-6 pr-0" onClick={() => { setShowMenu(!showMenu) }}>
+              {
+                showMenu ?
+                  <Image src="/cross_icon.svg" alt="Cross" className="fill-[#FFFFFF]" width={23} height={23}></Image>
+                  :
+                  <Image src="/hamburger_icon.svg" className="fill-[#FFFFFF]" alt="Hamburger Icon" width={30} height={30}></Image>
+              }
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+      {
+        showMenu &&
+        <div className="pattern-bg fixed lg:hidden pt-[100px] z-[50] w-full px-10 pb-5 shadow-xl bg-white">
+          <div className="flex flex-col text-white w-full gap-5 text-left text-lg">
+            <div className="border-b-2 pb-4 border-[#F28904]">
+              <Link href="/about/mission">About</Link>
+            </div>
+            <div className="border-b-2 pb-4 border-[#F28904]">
+              <Link href="/dances">Dances</Link>
+            </div>
+            <div className="border-b-2 pb-4 border-[#F28904]">
+              <Link href="/events">Events</Link>
+            </div>
+            <div className="border-b-2 pb-4 border-[#F28904]">
+              <Link href="/faqs">FAQs</Link>
+            </div>
+            <div className="">
+              <Link href="/contact">Contact</Link>
+            </div>
+          </div>
+          <div>
+            <Link href="/donate" className="flex mt-5">
+              <div className="bg-[#5E489A] shadow-xl text-lg rounded-2xl w-full text-center text-white py-2 px-8 ml-1">
+                Donate
+              </div>
+            </Link>
+            <Link href="/getinvolved" className="flex mt-3">
+              <div className="bg-[#F28904] shadow-xl text-lg rounded-2xl w-full text-center text-white py-2 px-8 ml-1">
+                Get Involved
+              </div>
+            </Link>
+          </div>
+        </div>
+      }
+    </div>
+
+
+  );
+}

@@ -1,113 +1,244 @@
 import Image from "next/image";
+import Header from "./Header"
+import Footer from "./Footer"
+import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <main>
+      <Header></Header>
+
+
+      <div className="bg-white">
+        <div className="animate-[fade-me-in_.5s_ease-in-out] bg-white">
+          {/* <div className="flex justify-center w-full pt- pt-0 px-10">
+            <div className="flex flex-col w-full max-w-[1040px] overflow-hidden mt-[130px]">
+              <div className="text-sm uppercase w-full text-center font-bold mb-4 text-[#333333] tracking-wider">
+                Oakland Khmer Angkor Dance Troupe
+
+              </div>
+              <hr />
+              <Image src="/cover_01.png" alt="Group Photo" className="rounded-xl h-[300px] shadow-xl lg:h-full w-full index-0 object-cover bg-cover bg-no-repeat" priority width={1200} height={500}></Image>
+            </div>
+          </div> */}
+
+          <div className="flex flex-col w-full pt-[130px]">
+            <div className="text-center">
+              <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">
+                Oakland Khmer Angkor Dance Troupe
+              </div>
+              <div className="text-3xl font-bold tracking-wide">
+                Preserving and Practicing Khmer Traditional Dance
+              </div>
+            </div>
+          </div>
+
+
+          <div className="flex justify-center w-full p-5 px-10 mt-3 my-5">
+            <div className="flex flex-col w-full max-w-[1040px]">
+              {/* <h1>Upcoming Events</h1>
+              <br /> */}
+              <div className="w-full rounded-2xl overflow-hidden min-h-[350px] grid grid-cols-1 lg:grid-cols-8 shadow-xl">
+                <div className="col-span-5 bg-slate-300 min-h-[350px] bg-cover bg-no-repeat bg-center" style={{ backgroundImage: "url('/events/cny_cover_01.pngx')" }}>
+                </div>
+                <div className="col-span-3 p-5 text-lg">
+                  <span className="text-bold font-bold text-lg">
+                    Cambodian New Year 2025
+                  </span>
+                  <br /><br />
+                  Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance.
+                  <br /><br />
+                  Let the rhythms of our heritage inspire and uplift your spirit!<br />
+                  {/* <div className="text-sm  mt-5">
+                    Learn more...
+                  </div> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center w-full pt-0 p-5 px-10 pb-10 mb-10">
+            <div className="flex flex-col w-full text-center max-w-[1040px]">
+              <h1>Our Dances</h1>
+              <hr className="mt-4" />
+              <br />
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <div className="group relative h-0 w-[100%] pb-[100%] hover:cursor-pointer overflow-hidden rounded-2xl">
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
+                  </div>
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest text-white flex text-xl justify-center items-center">
+                    APSARA
+                  </div>
+                  <div className="">
+                    <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                  </div>
+                </div>
+
+                <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
+                  </div>
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest text-white flex text-xl justify-center items-center">
+                    COCONUT
+                  </div>
+                  <div className="">
+                    <Image src="/thumbs/coconut.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                  </div>
+                </div>
+                <Link href="/dances">
+                  <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
+                    <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
+                    </div>
+                    <div className="absolute h-full font-bold w-full z-10 tracking-widest text-white flex text-xl justify-center items-center">
+                      LOVE MOON
+                    </div>
+                    <div className="">
+                      <Image src="/thumbs/lovemoon.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                    </div>
+                  </div>
+                </Link>
+                <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
+                  </div>
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest text-white flex text-xl justify-center items-center">
+                    KANE
+                  </div>
+                  <div className="">
+                    <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                  </div>
+                </div>
+                <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
+                  </div>
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest text-white flex text-xl justify-center items-center">
+                    FLOWER
+                  </div>
+                  <div className="">
+                    <Image src="/thumbs/flower.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                  </div>
+                </div>
+                <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
+                  </div>
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest text-white flex text-xl justify-center items-center">
+                    BLESSING
+                  </div>
+                  <div className="">
+                    <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                  </div>
+                </div>
+                <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
+                  </div>
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest text-white flex text-xl justify-center items-center">
+                    STICK
+                  </div>
+                  <div className="">
+                    <Image src="/thumbs/stick.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                  </div>
+                </div>
+                <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
+                  </div>
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest text-white flex text-xl justify-center items-center">
+                    CHOUN POR
+                  </div>
+                  <div className="">
+                    <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                  </div>
+                </div>
+                <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
+                  </div>
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest text-white flex text-xl justify-center items-center">
+                    MON MEKHALA
+                  </div>
+                  <div className="">
+                    <Image src="/thumbs/other_01.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center w-full py-10 px-10 text-center bg-[#f6f6f6]">
+            <div className="flex flex-col w-full max-w-[1040px] text-[#200073] my-20 py-10 bg-[#f6f6f6]">
+              <div className="font-medium text-3xl italic font-serif">
+                “Dance is the hidden language of the soul, of the body.”
+              </div>
+              <div className="mt-5 text-2xl">
+                របាំគឺជាភាសាលាក់កំបាំងនៃព្រលឹង រូបកាយ។
+              </div>
+              <br />
+              – Khmer Proverb
+            </div>
+          </div>
+
+          <div className="flex justify-center w-full p-5 px-10 mt-10 py-10">
+            <div className="flex flex-col w-full max-w-[1040px]">
+              <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
+                Our Sponsors
+              </div>
+              <div className="grid grid-cols-2 lg:grid-cols-5 justify-end items-end gap-10">
+                <div className="m-auto">
+                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
+                  </div>
+                </div>
+                <div className="m-auto">
+                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
+                  </div>
+                </div>
+                <div className="m-auto">
+                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
+                  </div>
+                </div>
+                <div className="m-auto">
+                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
+                  </div>
+                </div>
+                <div className="m-auto">
+                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
+                  </div>
+                </div>
+              </div>
+
+              <br /><br /><br />
+              <br />
+
+              <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
+                Our Partners
+              </div>
+              <div className="flex flex-row justify-center gap-8 lg:gap-[90px]">
+                {/* <div className="m-auto"> */}
+                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  KYOM
+                </div>
+                {/* </div> */}
+                {/* <div className="m-auto"> */}
+                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  MKPA
+                </div>
+                {/* </div> */}
+                {/* <div className="m-auto"> */}
+                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  UKCP
+                </div>
+                {/* </div> */}
+                {/* <div className="m-auto">
+                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
+                  </div>
+                </div>
+                <div className="m-auto">
+                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
+                  </div>
+                </div> */}
+              </div>
+              <br /><br />
+            </div>
+          </div>
+
+        </div >
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <Footer></Footer>
+    </main >
   );
 }
