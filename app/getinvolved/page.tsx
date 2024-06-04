@@ -68,7 +68,7 @@ export default function Home() {
     <main>
       <Header></Header>
       <div className="bg-white">
-        <div className="flex justify-center w-full p-5 pt-0 mb-10 px-10 animate-[fade-me-in_.5s_ease-in-out] bg-white">
+        <div className="flex justify-center w-full p-5 pt-0 mb-10 px-5 lg:px-10 animate-[fade-me-in_.5s_ease-in-out] bg-white">
           <div className="flex flex-col w-full max-w-[1040px] mt-[130px] mb-5">
             <div className="text-center">
               <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">

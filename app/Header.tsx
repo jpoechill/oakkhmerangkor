@@ -71,21 +71,31 @@ export default function Header() {
         showMenu &&
         <div className="pattern-bg fixed lg:hidden pt-[100px] z-[50] w-full px-10 pb-5 shadow-xl bg-white">
           <div className="flex flex-col text-white w-full gap-5 text-left text-lg">
-            <div className="border-b-2 pb-4 border-[#F28904]">
-              <Link href="/about/mission">About</Link>
-            </div>
-            <div className="border-b-2 pb-4 border-[#F28904]">
-              <Link href="/dances">Dances</Link>
-            </div>
-            <div className="border-b-2 pb-4 border-[#F28904]">
-              <Link href="/events">Events</Link>
-            </div>
-            <div className="border-b-2 pb-4 border-[#F28904]">
-              <Link href="/faqs">FAQs</Link>
-            </div>
-            <div className="">
-              <Link href="/contact">Contact</Link>
-            </div>
+            <Link href="/about/mission">
+              <div className="border-b-2 pb-4 border-[#F28904]">
+                About
+              </div>
+            </Link>
+            <Link href="/dances">
+              <div className="border-b-2 pb-4 border-[#F28904]">
+                Dances
+              </div>
+            </Link>
+            <Link href="/events">
+              <div className="border-b-2 pb-4 border-[#F28904]">
+                Events
+              </div>
+            </Link>
+            <Link href="/faqs">
+              <div className="border-b-2 pb-4 border-[#F28904]">
+                FAQs
+              </div>
+            </Link>
+            <Link href="/contact">
+              <div className="">
+                Contact
+              </div>
+            </Link>
           </div>
           <div>
             <Link href="/donate" className="flex mt-5">

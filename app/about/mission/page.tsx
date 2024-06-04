@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="animate-[fade-me-in_.5s_ease-in-out]">
       <div>
-        <Image src="/cover_02.jpg" alt="Cover Image"></Image>
+        {/* <Image src="/cover_02.jpg" alt="Cover Image"></Image> */}
       </div>
 
       The Oakland Khmer Angkor Dance Troupe is dedicated to preserving and promoting the rich cultural heritage of Cambodian traditional dance. Through education, performance, and community engagement, we aim to inspire and empower youth, foster cross-cultural understanding, and celebrate the beauty of Khmer arts. For over 25 years, we have been committed to nurturing the next generation of dancers and enriching the cultural tapestry of Oakland, CA.
