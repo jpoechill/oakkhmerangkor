@@ -36,12 +36,12 @@ export default function Footer() {
         <div className="pt-5 lg:pt-0 lg:text-right">
           <div className="flex flex-row pt-10 lg:pt-0 lg:flex-col w-full items-end gap-5 justify-start lg:justify-end">
             <Link href="/donate">
-              <div className="bg-[#5E489A] w-min shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
+              <div className="bg-[#5E489A] hover:bg-[#9E91C2] w-min shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
                 Donate
               </div>
             </Link>
             <Link href="/getinvolved">
-              <div className="bg-[#F28904] w-min whitespace-nowrap shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
+              <div className="bg-[#F28904] hover:bg-[#FFC67F] w-min whitespace-nowrap shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
                 Get Involved
               </div>
             </Link>

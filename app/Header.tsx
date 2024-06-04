@@ -42,12 +42,12 @@ export default function Header() {
             </div>
             <div className="hidden lg:flex flex-row lg:items-center gap-2 text-lg">
               <Link href="/donate">
-                <div className="bg-[#5E489A] shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
+                <div className="bg-[#5E489A] hover:bg-[#9E91C2] shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
                   Donate
                 </div>
               </Link>
               <Link href="/getinvolved">
-                <div className="bg-[#F28904] shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
+                <div className="bg-[#F28904] hover:bg-[#FFC67F] shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
                   Get Involved
                 </div>
               </Link>
