@@ -10,7 +10,7 @@ export default function Home() {
 
       <div className="bg-white">
         <div className=" animate-[fade-me-in_.5s_ease-in-out]">
-          <div className="flex justify-center w-full p-5 pt-0 px-10">
+          <div className="flex justify-center w-full p-5 pt-0 px-5 lg:px-10">
             <div className="flex flex-col w-full max-w-[1040px] mt-[130px]">
               <div className="text-center">
                 <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">
@@ -23,7 +23,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-center w-full pt-0 p-5 px-10 my-5">
+          <div className="flex justify-center w-full pt-0 p-5 px-5 lg:px-10 my-5">
             <div className="flex flex-col w-full max-w-[1040px]">
               <div className="w-full rounded-2xl overflow-hidden min-h-[350px] grid grid-cols-1 lg:grid-cols-8 shadow-xl">
                 <div className="col-span-5 bg-black min-h-[350px] bg-cover bg-no-repeat bg-center" style={{ backgroundImage: "url('/events/cny_cover_01.png')" }}>
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
 
 
-          <div className="flex justify-center w-full pt-0 p-5 px-10 my-5">
+          <div className="flex justify-center w-full pt-0 p-5 px-5 lg:px-10 my-5">
             <div className="flex flex-col w-full max-w-[1040px]">
               <div className="text-center pb-4">
                 Other Upcoming Events
@@ -101,7 +101,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center w-full pt-0 p-5 px-10 my-5">
+          <div className="flex justify-center w-full pt-0 p-5 px-5 lg:px-10 my-5">
             <div className="flex flex-col w-full max-w-[1040px]">
               <div className="text-center pb-4">
                 Past Events

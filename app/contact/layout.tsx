@@ -18,7 +18,7 @@ export default function DashboardLayout({
       <Header></Header>
 
       <div className="bg-white">
-        <div className="flex justify-center w-full p-5 pt-0 px-10 animate-[fade-me-in_.5s_ease-in-out] bg-white">
+        <div className="flex justify-center w-full p-5 pt-0 px-5 lg:px-10 animate-[fade-me-in_.5s_ease-in-out] bg-white">
           <div className="flex flex-col w-full max-w-[1040px] mt-[130px]">
             <div className="text-center animate-[fade-me-in_s_ease-in-out]">
               <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">Contact</div>
