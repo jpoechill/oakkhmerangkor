@@ -27,7 +27,7 @@ export default function DashboardLayout({
               </div>
             </div><br />
 
-            <div className="text-lg relative grid grid-cols-8 w-full gap-10">
+            <div className="text-lg relative grid grid-cols-1 lg:grid-cols-8 w-full gap-10">
               {/* <div className="flex flex-col w-full overflow-hidden">
                 <Image src="/cover_01.png" alt="Group Photo" className="rounded-xl h-[300px] shadow-xl lg:h-full w-full index-0 object-cover bg-cover bg-no-repeat" priority width={1200} height={500}></Image>
               </div> */}
