@@ -16,11 +16,11 @@
   }
 }
 
-html, body {
+/* html, body {
   background-color: #200073;
-}
+} */
 
-.pattern-bg {
+html, body, .pattern-bg {
   --s: 152px; /* control the size*/
   --c1: #101251;
   --c2: #0c0b4c;
