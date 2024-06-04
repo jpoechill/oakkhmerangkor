@@ -28,15 +28,8 @@ export default function DashboardLayout({
             </div><br />
 
             <div className="text-lg relative grid grid-cols-1 lg:grid-cols-8 w-full gap-10">
-              {/* <div className="flex flex-col w-full overflow-hidden">
-                <Image src="/cover_01.png" alt="Group Photo" className="rounded-xl h-[300px] shadow-xl lg:h-full w-full index-0 object-cover bg-cover bg-no-repeat" priority width={1200} height={500}></Image>
-              </div> */}
-              <div className="col-span-4 group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden">
-                <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-10 transition-all duration-500 flex text-xl justify-center items-center">
-                </div>
-                <div className="">
-                  <Image src="/getintouch.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1]" fill></Image>
-                </div>
+              <div className="col-span-4 group relative h-full w-full pb-[100%] hover:cursor-pointer rounded-2xl overflow-hidden">
+                <Image src="/getintouch.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
               </div>
               <div className="col-span-4">
                 We&apos;re always ready to connect with you!
