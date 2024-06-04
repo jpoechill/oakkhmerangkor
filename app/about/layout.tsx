@@ -6,12 +6,18 @@ import Footer from "../Footer"
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 
+import { useEffect } from "react";
+
 export default function DashboardLayout({
   children, // will be a page or nested layout
 }: {
   children: React.ReactNode
 }) {
   const pathname = usePathname()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main>

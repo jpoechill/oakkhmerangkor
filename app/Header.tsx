@@ -99,12 +99,12 @@ export default function Header() {
           </div>
           <div>
             <Link href="/donate" className="flex mt-5">
-              <div className="bg-[#5E489A] shadow-xl text-lg rounded-2xl w-full text-center text-white py-2 px-8 ml-1">
+              <div className="bg-[#5E489A] hover:bg-[#9E91C2] shadow-xl text-lg rounded-2xl w-full text-center text-white py-2 px-8 ml-1">
                 Donate
               </div>
             </Link>
             <Link href="/getinvolved" className="flex mt-3">
-              <div className="bg-[#F28904] shadow-xl text-lg rounded-2xl w-full text-center text-white py-2 px-8 ml-1">
+              <div className="bg-[#F28904] hover:bg-[#FFC67F] shadow-xl text-lg rounded-2xl w-full text-center text-white py-2 px-8 ml-1">
                 Get Involved
               </div>
             </Link>
