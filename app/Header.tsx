@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
 import { useState, useRef } from 'react';
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
-
+  const pathname = usePathname()
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -25,19 +25,19 @@ export default function Header() {
                 <Image src="/logo.svg" className="transition-all duration-500 ease-in-out hover:scale-[1.10]" alt="Top Logo" width={50} height={40}></Image>
               </Link>
               <div>
-                <Link href="/about">About</Link>
+                <Link href="/about" className={pathname.split('/')[1] == 'about' ? 'text-[#F28904]' : ''}>About</Link>
               </div>
               <div>
-                <Link href="/dances">Dances</Link>
+                <Link href="/dances" className={pathname.split('/')[1] == 'dances' ? 'text-[#F28904]' : ''}>Dances</Link>
               </div>
               <div>
-                <Link href="/events">Events</Link>
+                <Link href="/events" className={pathname.split('/')[1] == 'events' ? 'text-[#F28904]' : ''}>Events</Link>
               </div>
               <div>
-                <Link href="/faqs">FAQs</Link>
+                <Link href="/faqs" className={pathname.split('/')[1] == 'faqs' ? 'text-[#F28904]' : ''}>FAQs</Link>
               </div>
               <div>
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact" className={pathname.split('/')[1] == 'contact' ? 'text-[#F28904]' : ''}>Contact</Link>
               </div>
             </div>
             <div className="hidden lg:flex flex-row lg:items-center gap-2 text-lg">

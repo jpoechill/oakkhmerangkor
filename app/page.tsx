@@ -39,7 +39,8 @@ export default function Home() {
               {/* <h1>Upcoming Events</h1>
               <br /> */}
               <div className="w-full rounded-2xl overflow-hidden min-h-[350px] grid grid-cols-1 lg:grid-cols-8 shadow-xl">
-                <div className="col-span-5 bg-slate-300 min-h-[350px] bg-cover bg-no-repeat bg-center" style={{ backgroundImage: "url('/events/cny_cover_01.pngx')" }}>
+                <div className="col-span-5 group relative h-full w-full hover:cursor-pointer overflow-hidden">
+                  <Image src="/events/cny_cover_01.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                 </div>
                 <div className="col-span-3 p-5 text-lg">
                   <span className="text-bold font-bold text-lg">
