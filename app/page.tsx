@@ -178,7 +178,7 @@ export default function Home() {
 
           <div className="flex justify-center w-full p-5 px-10 mt-10 py-10">
             <div className="flex flex-col w-full max-w-[1040px]">
-              <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
+              {/* <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
                 Our Sponsors
               </div>
               <div className="grid grid-cols-2 lg:grid-cols-5 justify-end items-end gap-10">
@@ -205,7 +205,7 @@ export default function Home() {
               </div>
 
               <br /><br /><br />
-              <br />
+              <br /> */}
 
               <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
                 Our Partners
