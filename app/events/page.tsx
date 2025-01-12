@@ -25,8 +25,8 @@ export default function Home() {
 
           <div className="flex justify-center w-full pt-0 p-5 px-5 lg:px-10 my-5">
             <div className="flex flex-col w-full max-w-[1040px]">
-              <div className="w-full rounded-2xl overflow-hidden min-h-[350px] grid grid-cols-1 lg:grid-cols-8 shadow-xl">
-                <div className="col-span-5 group relative h-full w-full hover:cursor-pointer overflow-hidden">
+              <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
+                <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
                   <Image src="/events/cny_cover_01.png" alt="thumb" className="object-cover transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                 </div>
                 <div className="col-span-3 p-5 font-light text-md">
@@ -61,8 +61,8 @@ export default function Home() {
               <hr />
               <br />
 
-              <div className="w-full rounded-2xl overflow-hidden min-h-[350px] grid grid-cols-1 lg:grid-cols-8 shadow-xl">
-                <div className="col-span-5 group relative h-full w-full hover:cursor-pointer overflow-hidden">
+              <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
+                <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
                   <Image src="/thumb_mid_01.png" alt="thumb" className="object-cover transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                 </div>
                 <div className="col-span-3 font-light text-md p-5 text-md">
@@ -77,8 +77,8 @@ export default function Home() {
                 </div>
               </div>
               <br /><br />
-              <div className="w-full rounded-2xl overflow-hidden min-h-[350px] grid grid-cols-1 lg:grid-cols-8 shadow-xl">
-                <div className="col-span-5 group relative h-full w-full hover:cursor-pointer overflow-hidden">
+              <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
+                <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
                   <Link href="https://www.sabaideefest.com/" target="_blank">
                     <Image src="/events/sabaideefest_24.png" alt="thumb" className="object-cover transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                   </Link>
@@ -98,8 +98,8 @@ export default function Home() {
                 </div>
               </div>
               <br /><br />
-              <div className="w-full rounded-2xl overflow-hidden min-h-[350px] grid grid-cols-1 lg:grid-cols-8 shadow-xl">
-                <div className="col-span-5 group relative h-full w-full hover:cursor-pointer overflow-hidden">
+              <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
+                <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
                   <Link href="https://www.cambodiaday.com/" target="_blank">
                     <Image src="/events/cambodiaday_24.jpg" alt="thumb" className="object-cover transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                   </Link>
