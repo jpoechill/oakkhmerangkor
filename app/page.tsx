@@ -50,7 +50,7 @@ export default function Home() {
                   Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance.
                   <br /><br />
                   {/* Tickets: Coming Soon... <br /><br /> */}
-                  4770 Lincoln Ave Oakland, CA 94602
+                  📍 4770 Lincoln Ave Oakland, CA 94602
                   {/* Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance. */}
                   <br /><br />
 
@@ -219,36 +219,19 @@ export default function Home() {
               <br /><br /><br />
               <br /> */}
 
-              <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
+              {/* <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
                 Our Sponsors
               </div>
               <div className="flex flex-row justify-center gap-8 lg:gap-[90px]">
-                {/* <div className="m-auto"> */}
                 <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  {/* KYOM */}
                 </div>
-                {/* </div> */}
-                {/* <div className="m-auto"> */}
                 <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  {/* MKPA */}
                 </div>
-                {/* </div> */}
-                {/* <div className="m-auto"> */}
                 <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  {/* UKCP */}
                 </div>
-                {/* </div> */}
-                {/* <div className="m-auto">
-                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
-                  </div>
-                </div>
-                <div className="m-auto">
-                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
-                  </div>
-                </div> */}
-              </div>
+              </div> */}
 
-              <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider pt-20">
+              <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
                 Our Partners
               </div>
               <div className="flex flex-row justify-center gap-8 lg:gap-[90px]">
