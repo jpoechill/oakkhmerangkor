@@ -8,27 +8,27 @@ export default function Home() {
       <div className="grid grid-cols-2 lg:grid-cols-5 justify-end items-end gap-10">
         <div className="m-auto">
           <div className="bg-slate-200 rounded-full h-[125px] w-[125px] overflow-hidden">
-            <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
+            <Image src="/avatars/teacher-01.png" alt="Placeholder Image" width={125} height={125}></Image>
           </div>
         </div>
         <div className="m-auto">
           <div className="bg-slate-200 rounded-full h-[125px] w-[125px] overflow-hidden">
-            <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
+            <Image src="/avatars/teacher-02.png" alt="Placeholder Image" width={125} height={125}></Image>
           </div>
         </div>
         <div className="m-auto">
           <div className="bg-slate-200 rounded-full h-[125px] w-[125px] overflow-hidden">
-            <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
+            <Image src="/avatars/teacher-03.png" alt="Placeholder Image" width={125} height={125}></Image>
           </div>
         </div>
         <div className="m-auto">
           <div className="bg-slate-200 rounded-full h-[125px] w-[125px] overflow-hidden">
-            <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
+            <Image src="/avatars/teacher-04.png" alt="Placeholder Image" width={125} height={125}></Image>
           </div>
         </div>
         <div className="m-auto">
           <div className="bg-slate-200 rounded-full h-[125px] w-[125px] overflow-hidden">
-            <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
+            <Image src="/avatars/teacher-05.png" alt="Placeholder Image" width={125} height={125}></Image>
           </div>
         </div>
         <br />
