@@ -49,7 +49,7 @@ export default function DashboardLayout({
               </div> */}
             </div>
 
-            <div className="flex flex-row mt-10 justify-center gap-x-[40px] mb-4 text-lg">
+            <div className="flex flex-row mt-4 justify-center gap-x-[40px] mb-4 text-lg">
               <div>
                 <Link href="/about" className={pathname === '/about' ? 'text-[#F28904]' : ''}>Mission</Link>
               </div>

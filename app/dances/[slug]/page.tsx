@@ -54,7 +54,7 @@ class BlogPostRepository {
       id: "5",
       slug: "flower",
       title: "Flower",
-      contentFirst: "The Flower dance is a symbolic expression of beauty, purity, and the natural world. The movements of the dancers often mimic the growth of flowers, from the budding of a blossom to the full bloom, capturing the delicate and graceful nature of flowers. Performers use gentle, flowing hand gestures to represent the opening petals of a flower and synchronized steps to evoke the rhythm of nature. This dance highlights the deep connection between the people of Cambodia and the natural world, as well as the cultural reverence for growth, beauty, and renewal.",
+      contentFirst: "The Flower dance symbolizes beauty, purity, and the natural world, with dancers mimicking the growth of flowers from bud to bloom. Their gentle hand gestures represent opening petals, and synchronized steps evoke nature’s rhythm. This dance reflects Cambodia’s deep connection with nature and its cultural reverence for growth, beauty, and renewal.",
       contentSecond: "The Flower dance celebrates the cycle of life, from growth to blooming and eventual fading, mirroring the natural processes that shape the world around us. Dancers often wear floral-inspired costumes, adding to the visual effect of the performance. The dance can also symbolize the beauty and fragility of life, inviting the audience to appreciate the delicate and fleeting moments of existence. It is a peaceful, meditative performance that connects viewers with the natural beauty and cycles of life, often performed in cultural or spiritual contexts.",
       thumbnail: "/thumbs/flower.png"
     },
