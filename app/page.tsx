@@ -278,7 +278,7 @@ export default function Home() {
                 </div>
                 {/* </div> */}
                 {/* <div className="m-auto"> */}
-                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                <div className="bg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
                   UKCP
                 </div>
                 {/* </div> */}
@@ -290,6 +290,11 @@ export default function Home() {
                   <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
                   </div>
                 </div> */}
+              </div>
+              <div className="flex flex-row justify-center gap-8 lg:gap-[90px] pt-8 md:hidden">
+                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  UKCP
+                </div>
               </div>
               <br /><br />
             </div>
