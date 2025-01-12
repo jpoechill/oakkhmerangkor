@@ -38,9 +38,9 @@ export default function Home() {
             <div className="flex flex-col w-full max-w-[1040px]">
               {/* <h1>Upcoming Events</h1>
               <br /> */}
-              <div className="w-full rounded-2xl overflow-hidden min-h-[350px] grid grid-cols-1 lg:grid-cols-8 shadow-xl">
-                <div className="col-span-5 group relative h-full w-full hover:cursor-pointer overflow-hidden">
-                  <Image src="/events/cny_cover_01.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+              <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
+                <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
+                  <Image src="/events/cny_cover_01.png" alt="thumb" className="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                 </div>
                 <div className="col-span-3 font-light p-5 text-md">
                   <span className="font-bold text-lg">
