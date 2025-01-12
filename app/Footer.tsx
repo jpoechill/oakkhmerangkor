@@ -47,8 +47,12 @@ export default function Footer() {
             </Link>
           </div>
           <br /><br />
-          <Image src="/social-facebook.svg" className="inline mr-7" alt="Facebook Logo" width={40} height={30}></Image>
-          <Image src="/social-instagram.svg" className="inline" alt="Instagram Logo" width={40} height={30}></Image>
+          <Link href="https://www.facebook.com/profile.php?id=61571557875106" target="_new">
+            <Image src="/social-facebook.svg" className="inline mr-7" alt="Facebook Logo" width={40} height={30}></Image>
+          </Link>
+          <Link href="https://www.instagram.com/oakkhmerangkor/" target="_new">
+            <Image src="/social-instagram.svg" className="inline" alt="Instagram Logo" width={40} height={30}></Image>
+          </Link>
           <br /><br />
           <div className="hidden lg:block">Oakland Khmer Angkor Dance Troupe © 2024</div>
         </div>

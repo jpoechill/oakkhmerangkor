@@ -33,6 +33,22 @@ export default function DashboardLayout({
               </div>
             </div>
 
+
+            <div className="flex flex-col justify-center w-full p-0 px-0 my-5">
+              <Image src="/events/group_cover_2019.jpg" alt="thumb" className="w-full h-full transition-all duration-500 ease-in-out" width="800" height="800"></Image>
+              <div className="w-full text-right text-xs italic text-gray-700 pt-2 pr-2 ">
+                Youth Dancers, Cambodian New Year 2019
+              </div>
+              {/* <div className="flex flex-col w-full max-w-[1040px]">
+                <div className="w-full rounded-2xl overflow-hidden min-h-[500px] shadow-xl">
+                  <div className="relative h-full w-full hover:cursor-pointer overflow-hidden">
+                    <Image src="/events/group_cover_2019.jpg" alt="thumb" className="transition-all duration-500 ease-in-out" fill></Image>
+
+                  </div>
+                </div>
+              </div> */}
+            </div>
+
             <div className="flex flex-row mt-10 justify-center gap-x-[40px] mb-4 text-lg">
               <div>
                 <Link href="/about" className={pathname === '/about' ? 'text-[#F28904]' : ''}>Mission</Link>

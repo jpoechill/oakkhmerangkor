@@ -25,9 +25,9 @@ export default function DashboardLayout({
               <div className="text-3xl font-bold tracking-wide">
                 Get in Touch with Us
               </div>
-            </div><br />
+            </div><br /><br />
 
-            <div className="text-lg relative grid grid-cols-1 lg:grid-cols-8 w-full gap-10">
+            <div className="font-light text-lg relative grid grid-cols-1 lg:grid-cols-8 w-full gap-10">
               <div className="col-span-4 group relative h-full w-full pb-[100%] hover:cursor-pointer rounded-2xl overflow-hidden">
                 <Image src="/getintouch.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
               </div>
@@ -43,7 +43,7 @@ export default function DashboardLayout({
                     <div className="font-bold mb-2">
                       Email
                     </div>
-                    robamkhmer@gmail.com <br /><br />
+                    oakkhmerangkor@gmail.com <br /><br />
                   </div>
                   <div>
                     <div className="font-bold mb-2">
@@ -56,9 +56,12 @@ export default function DashboardLayout({
                     <div className="font-bold mb-4">
                       Follow Us
                     </div>
-                    <Image src="/social-facebook_blk.svg" className="inline mr-7 f-[#111]" alt="Facebook Logo" width={40} height={30}></Image>
-                    <Image src="/social-instagram_blk.svg" className="inline" alt="Instagram Logo" width={40} height={30}></Image>
-
+                    <Link href="https://www.facebook.com/profile.php?id=61571557875106" target="_new">
+                      <Image src="/social-facebook_blk.svg" className="inline mr-7" alt="Facebook Logo" width={40} height={30}></Image>
+                    </Link>
+                    <Link href="https://www.instagram.com/oakkhmerangkor/" target="_new">
+                      <Image src="/social-instagram_blk.svg" className="inline" alt="Instagram Logo" width={40} height={30}></Image>
+                    </Link>
                   </div>
                 </div>
               </div>

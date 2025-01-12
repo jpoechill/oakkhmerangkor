@@ -9,6 +9,8 @@ export default function RootLayout() {
       <br /><br />
       Our work is grounded in the mission to preserve the rich traditions of Khmer dance for future generations. We maintain a comprehensive archive of dance forms, costumes, music, and historical materials, ensuring that this invaluable cultural heritage remains vibrant and accessible.
       <br /><br />
+
+
     </main >
   );
 }
