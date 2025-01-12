@@ -59,7 +59,7 @@ export default function Footer() {
 
       </div>
       {/* <br /><br /> */}
-      <div className="pt-0 lg:hidden text-sm">Oakland Khmer Angkor Dance Troupe © 2024</div>
+      <div className="pt-0 lg:hidden text-sm">Oakland Khmer Angkor Dance Troupe © 2025</div>
 
     </div>
   );
