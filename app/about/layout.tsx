@@ -66,7 +66,7 @@ export default function DashboardLayout({
             <hr />
 
             <br />
-            <div className="text-lg">
+            <div className="text-md">
 
               {children}
             </div>

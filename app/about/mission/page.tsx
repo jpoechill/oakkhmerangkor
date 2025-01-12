@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="font-light animate-[fade-me-in_.5s_ease-in-out]">
+    <main className="font-light text-md animate-[fade-me-in_.5s_ease-in-out]">
       <div>
         {/* <Image src="/cover_02.jpg" alt="Cover Image"></Image> */}
       </div>
