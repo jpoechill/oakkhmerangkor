@@ -60,7 +60,7 @@ export default function Home() {
                 </div>
                 <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                   KANE
-                  <div className="text-2xl font-light">(ខេន)</div>
+                  <div className="text-2xl font-light">(កេន)</div>
                 </div>
                 <div className="">
                   <Image src="/thumbs/kane.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>

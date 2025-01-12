@@ -79,7 +79,7 @@ export default function Home() {
               </div>
             </div><br /><br />
 
-            <div>
+            <div className="font-light text-md">
               Whether you have questions, feedback, or would like to get involved with our group, please don&apos;t hesitate to reach out.
             </div>
             <br />
@@ -87,11 +87,11 @@ export default function Home() {
               <div className="text-md font-bold text-left bg-[#FFF] border shadow-lg py-8 rounded-2xl">
                 <div ref={ref1} className="font-normal text-md overflow-hidden px-6 transition-all ease-in-out delay-0 duration-500" style={{ "height": !showGeneral ? 0 : heightRef1 }}>
                   <div className="flex flex-col md:flex-row gap-5 ">
-                    <div className="w-full">
+                    <div className="w-full font-light text-sm">
                       Name<span className="text-[#C41C94]">*</span> <br />
                       <input type="text" name="user_name" className="border px-4 py-3 font-light rounded-full mt-2 w-full" placeholder="Jane Smith" />
                     </div>
-                    <div className="w-full">
+                    <div className="w-full  font-light text-sm">
                       Email/Phone<span className="text-[#C41C94]">*</span> <br />
                       <input type="text" name="user_phone" className="border px-5 py-3 font-light rounded-full mt-2 w-full" placeholder="email@gmail.com" /> <br /><br />
                     </div>
@@ -99,11 +99,11 @@ export default function Home() {
 
 
                   <div className="flex flex-col md:flex-row gap-5 mb-5">
-                    <div className="w-full">
+                    <div className="w-full font-light text-sm">
                       What is your location?
                       <input type="text" name="user_name" className="border px-4 py-3 font-light rounded-full mt-2 w-full" placeholder="Oakland, CA" />
                     </div>
-                    <div className="w-full">
+                    <div className="w-full font-light text-sm">
                       What are your interests?
                       <div className="border mt-2 rounded-full">
                         <select name="discovery" id="" className="p-3 w-full rounded-full border-r-[15px] border-transparent font-normal px-3">
@@ -121,7 +121,7 @@ export default function Home() {
 
 
                   <div className="flex flex-col md:flex-row gap-5 ">
-                    <div className="w-full">
+                    <div className="w-full font-light text-sm">
                       Please provide a message or description with additional details.<span className="text-[#C41C94]">*</span> <br />
                       <textarea name="user_name" rows={10} className="border px-4 py-3 font-light rounded-xl mt-2 w-full" placeholder="Tell us your story!" />
                     </div>

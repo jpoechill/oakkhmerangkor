@@ -41,13 +41,13 @@ export default function Home() {
               <div className="text-lg">
                 <div className="text-2xl font-medium pt-4 tracking-wide">
                   {/* <br /> */}
-                  APSARA
+                  COCONUT DANCE
                 </div>
                 <br />
-                <div className="font-light text-md">
-                  The Apsara dance is a traditional Cambodian dance form that originated in the Khmer Empire. Apsara, which means &quot;celestial maiden&quot; or &quot;angel&quot; in Sanskrit, refers to the divine female figures depicted in Hindu and Buddhist mythology. The dance is characterized by graceful, fluid movements, intricate hand gestures, and elaborate costumes.
+                <div className="text-md font-light">
+                  The Coconut Dance (Robam Trov or Robam Koung) is a traditional Cambodian folk dance that originated in rural villages, inspired by agricultural life and harvest celebrations. Performed with coconut shells to create rhythmic sounds through synchronized clapping, the dance features graceful movements and colorful costumes.
                   <br /><br />
-                  It often depicts stories from Hindu mythology, such as the Reamker, which is the Khmer version of the Indian epic Ramayana. The Apsara dance is considered a cultural treasure of Cambodia and is often performed at classical Khmer dance performances and traditional ceremonies.
+                  Traditionally, it symbolizes themes of harmony, courtship, and festivity, bringing people together during festivals, weddings, and community gatherings. Over time, it has become a cherished expression of Cambodia&apos;s rich cultural heritage and joyful spirit.
                 </div>
               </div>
             </div>

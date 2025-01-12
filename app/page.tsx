@@ -42,17 +42,24 @@ export default function Home() {
                 <div className="col-span-5 group relative h-full w-full hover:cursor-pointer overflow-hidden">
                   <Image src="/events/cny_cover_01.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                 </div>
-                <div className="col-span-3 p-5 text-lg">
-                  <span className="text-bold font-bold text-lg">
+                <div className="col-span-3 font-light p-5 text-md">
+                  <span className="font-bold text-lg">
                     Cambodian New Year 2025
                   </span>
                   <br /><br />
                   Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance.
                   <br /><br />
-                  Let the rhythms of our heritage inspire and uplift your spirit!<br />
-                  {/* <div className="text-sm  mt-5">
-                    Learn more...
-                  </div> */}
+                  {/* Tickets: Coming Soon... <br /><br /> */}
+                  4770 Lincoln Ave Oakland, CA 94602
+                  {/* Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance. */}
+                  <br /><br />
+
+                  March 29th, 2025 <br />
+                  5:30pm - 9:00pm
+                  {/* Let the rhythms of our heritage inspire and uplift your spirit! */}
+
+                  <br /><br />
+                  {/* Learn more... */}
                 </div>
               </div>
             </div>
@@ -103,7 +110,7 @@ export default function Home() {
                   </div>
                   <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                     KANE
-                    <div className="text-2xl font-light">(ខេន)</div>
+                    <div className="text-2xl font-light">(កេន)</div>
                   </div>
                   <div className="">
                     <Image src="/thumbs/kane.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
@@ -125,7 +132,7 @@ export default function Home() {
                   </div>
                   <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                     BLESSING
-                    <div className="text-2xl font-light">(ពរជ័យ)</div>
+                    <div className="text-2xl font-light">(ជូនពរ)</div>
                   </div>
                   <div className="">
                     <Image src="/thumbs/blessing.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
@@ -213,6 +220,35 @@ export default function Home() {
               <br /> */}
 
               <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
+                Our Sponsors
+              </div>
+              <div className="flex flex-row justify-center gap-8 lg:gap-[90px]">
+                {/* <div className="m-auto"> */}
+                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  {/* KYOM */}
+                </div>
+                {/* </div> */}
+                {/* <div className="m-auto"> */}
+                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  {/* MKPA */}
+                </div>
+                {/* </div> */}
+                {/* <div className="m-auto"> */}
+                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  {/* UKCP */}
+                </div>
+                {/* </div> */}
+                {/* <div className="m-auto">
+                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
+                  </div>
+                </div>
+                <div className="m-auto">
+                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
+                  </div>
+                </div> */}
+              </div>
+
+              <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider pt-20">
                 Our Partners
               </div>
               <div className="flex flex-row justify-center gap-8 lg:gap-[90px]">
