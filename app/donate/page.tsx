@@ -2,10 +2,13 @@ import Image from "next/image";
 import Header from "../Header"
 import Footer from "../Footer"
 import Link from "next/link";
+import Script from 'next/script';
 
 export default function Home() {
   return (
     <main>
+      <Script src="https://widgets.givebutter.com/latest.umd.cjs?acct=R855gzojCk3J1AEH&p=other" strategy="beforeInteractive" />
+
       <Header></Header>
 
       <div className="font-light bg-white">
@@ -14,6 +17,10 @@ export default function Home() {
             <div className="text-center">
               <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">
                 Donate
+
+                <givebutter-widget id="pzyX6g"></givebutter-widget>
+                <givebutter-widget id="paAanp"></givebutter-widget>
+
               </div>
               <div className="text-3xl font-bold tracking-wide">
                 {/* Support Our Mission */}
