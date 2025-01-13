@@ -18,7 +18,7 @@ export default function Home() {
               <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">
                 Donate
 
-                <givebutter-widget id="pzyX6g"></givebutter-widget>
+                {/* <givebutter-widget id="pzyX6g"></givebutter-widget> */}
                 <givebutter-widget id="paAanp"></givebutter-widget>
 
               </div>
