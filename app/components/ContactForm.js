@@ -69,18 +69,11 @@ const ContactForm = () => {
                       <textarea name="message" rows={10} className="border px-4 py-3 font-light rounded-xl mt-2 w-full" placeholder="Tell us your story!" />
                     </div>
                   </div>
-
-
                 </div>
-
-
-
-                {/* } */}
-                {/* <hr /> */}
               </div>
 
-              {/* <br /> */}
-              {/* <div className="text-sm font-normal  text-center w-full">
+              {/* <br />
+              <div className="text-sm font-normal  text-center w-full">
                 The information sent through this online form is NOT secure.
                 If you would like to discuss any related matter in private, please contact us directly.
               </div> */}
