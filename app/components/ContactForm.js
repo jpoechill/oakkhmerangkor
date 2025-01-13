@@ -26,8 +26,8 @@ const ContactForm = () => {
 
   return (
     <div>
-      {messageSent && <p>Message sent successfully!</p>}
-
+      {messageSent && <p className='w-full text-center p-4'>Message sent successfully!</p>}
+      
       <form ref={form} onSubmit={sendEmail}>
               <div className="text-md font-bold text-left bg-[#FFF] border shadow-lg py-8 rounded-2xl">
                 <div className="font-normal text-md overflow-hidden px-6 transition-all ease-in-out delay-0 duration-500">
