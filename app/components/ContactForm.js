@@ -78,7 +78,7 @@ const ContactForm = () => {
                 If you would like to discuss any related matter in private, please contact us directly.
               </div> */}
 
-              <button  type="submit" className="mt-6 py-3 font-medium text-lg transition-all ease-in-out duration-500 shadow-3xl hover:shadow-xl css-selector bg-[#F28904] hover:bg-[#0062CC] w-full text-white rounded-full p-2 px-6">
+              <button  type="submit" className="mt-6 py-3 font-medium text-lg transition-all ease-in-out duration-500 shadow-3xl hover:shadow-xl css-selector bg-[#F28904] hover:bg-[#FFC67F] w-full text-white rounded-full p-2 px-6">
                 Submit Form
               </button>
             </form>
