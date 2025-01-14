@@ -50,7 +50,7 @@ export default function Home() {
 
                 {/* Thank you for your support and for helping us create a positive impact! */}
               </div>
-              <div className="col-span-8 lg:col-span-3 mb-0 lg:mb-4 group bg-cover bg-black relative h-0 w-full pb-[100%] hover:cursor-pointer rounded-2xl overflow-hidden">
+              <div className="col-span-8 lg:col-span-3 mb-0 lg:mb-4 group bg-cover relative h-0 w-full pb-[100%] hover:cursor-pointer rounded-2xl overflow-hidden">
                 <Image src="/getintouch_02.png" alt="thumb" className="bg-contain transition-all duration-500 h-full w-full ease-in-out" fill></Image>
               </div>
             </div>
