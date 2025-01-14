@@ -77,6 +77,11 @@ export default function Home() {
                 </div>
               </div>
               <br /><br />
+              <div className="text-center pb-4">
+                Other Past Events
+              </div>
+              <hr />
+              <br />
               <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
                 <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
                   <Link href="https://www.sabaideefest.com/" target="_blank">
