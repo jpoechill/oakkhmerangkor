@@ -70,8 +70,8 @@ class BlogPostRepository {
       id: "7",
       slug: "stick",
       title: "Stick",
-      contentFirst: "The Cambodian Pestle dance, also known as the 'Lkhon Khruang',  is a traditional performance that mimics the rhythmic motions of pounding rice with a pestle. It is typically performed by women, who use wooden pestles in their hands while executing coordinated and graceful movements. The dance is accompanied by lively music and often tells a story related to agricultural life, emphasizing the hard work and resilience of farmers. The rhythmic sound of the pestles striking the ground adds to the dance&quot;s energetic and vibrant atmosphere.",
-      contentSecond: "The Pestle dance holds cultural significance, symbolizing the essential role of agriculture in Cambodian society. It is commonly performed during festivals or harvest celebrations, highlighting the connection between the people and the land. The dance not only reflects the daily tasks of rural life but also reinforces values of cooperation, unity, and the importance of community effort in sustaining life.",
+      contentFirst: "The Pestle Dance (Robam Kurs Ang-re or Robam Angre) is a traditional Cambodian folk dance from Kompong Thom province, performed during the full moon at the end of the harvest. Featuring two performers using pestles and mortars, the dance mimics the rhythmic process of rice processing through synchronized, choreographed movements that celebrate agricultural traditions.",
+      contentSecond: "More than an artistic display, the dance is a cultural ritual of gratitude, symbolizing the bond between Cambodian farmers and their heritage. It expresses thanks for a successful harvest, with joyful music and clapping reflecting communal relief and happiness. The intricate gestures and rhythms preserve Khmer cultural identity, highlighting the significance of agriculture in rural Cambodian life.",
       thumbnail: "/thumbs/stick.png"
     },
     {
