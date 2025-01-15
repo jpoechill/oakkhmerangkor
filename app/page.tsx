@@ -271,15 +271,44 @@ export default function Home() {
                 <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
                   KYOM
                 </div>
-                {/* </div> */}
-                {/* <div className="m-auto"> */}
-                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  MKPA
+                <div className="xbg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  <div className="xgroup xhover:cursor-pointer border-2 relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
+                    <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
+                    </div>
+                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex justify-center items-center">
+                      {/* LDS */}
+                    </div>
+                    <div className="">
+                      <Image src="/mkpa_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                    </div>
+                  </div>
+                  {/* <Image src="/lds_logo.jpg" className="bg-cover h-full w-full" alt="LDS Logo" fill></Image> */}
                 </div>
-                {/* </div> */}
-                {/* <div className="m-auto"> */}
-                <div className="bg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  UKCP
+                <div className="xbg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  <div className="xgroup xhover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
+                    <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
+                    </div>
+                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex justify-center items-center">
+                      {/* LDS */}
+                    </div>
+                    <div className="">
+                      <Image src="/ukpc_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                    </div>
+                  </div>
+                  {/* <Image src="/lds_logo.jpg" className="bg-cover h-full w-full" alt="LDS Logo" fill></Image> */}
+                </div>
+                <div className="xbg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  <div className="xgroup xhover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
+                    <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
+                    </div>
+                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex justify-center items-center">
+                      LDS
+                    </div>
+                    <div className="">
+                      <Image src="/lds_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                    </div>
+                  </div>
+                  {/* <Image src="/lds_logo.jpg" className="bg-cover h-full w-full" alt="LDS Logo" fill></Image> */}
                 </div>
                 {/* </div> */}
                 {/* <div className="m-auto">
