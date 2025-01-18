@@ -34,6 +34,9 @@ export default function Header() {
                 <Link href="/events" className={pathname.split('/')[1] == 'events' ? 'text-[#F28904]' : ''}>Events</Link>
               </div>
               <div>
+                <Link href="/funding" className={pathname.split('/')[1] == 'funding' ? 'text-[#F28904]' : ''}>Funding</Link>
+              </div>
+              <div>
                 <Link href="/faqs" className={pathname.split('/')[1] == 'faqs' ? 'text-[#F28904]' : ''}>FAQs</Link>
               </div>
               <div>

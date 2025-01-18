@@ -31,7 +31,10 @@ export default function Home() {
             The Oakland Khmer Angkor Dance Troupe is dedicated to preserving the rich heritage of traditional Cambodian dance and passing it on to future generations. Our troupe serves as a cultural bridge, sharing the beauty of classical and folk Khmer dances with the community and beyond.
             <br />
             <br />
-
+            Every donation, big or small, makes a difference. By giving, you become a part of a legacy that transcends generations, connecting us to our roots and sharing Khmer culture with the world.
+            {/* Support our cause by making a donation through our secure Stripe payment system. Your generous contribution helps us continue our important work and make a difference in the community. */}
+            <br />
+            <br />
             <div className="font-light text-md relative grid grid-cols-1 lg:grid-cols-8 w-full gap-6 lg:gap-10">
 
               <div className="col-span-8 lg:col-span-5">
@@ -54,11 +57,6 @@ export default function Home() {
                 <Image src="/getintouch_02.png" alt="thumb" className="bg-contain transition-all duration-500 h-full w-full ease-in-out" fill></Image>
               </div>
             </div>
-            <br />
-            Every donation, big or small, makes a difference. By giving, you become a part of a legacy that transcends generations, connecting us to our roots and sharing Khmer culture with the world.
-            {/* Support our cause by making a donation through our secure Stripe payment system. Your generous contribution helps us continue our important work and make a difference in the community. */}
-            <br />
-            <br />
             <br />
             {/* <br /><br /> */}
             <div className="grid grid-cols-2 gap-4">

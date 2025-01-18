@@ -78,7 +78,7 @@ export default function Home() {
               </div>
               <br /><br />
               <div className="text-center pb-4">
-                Other Past Events
+                Other Past Events (Not Directly Affiliated)
               </div>
               <hr />
               <br />

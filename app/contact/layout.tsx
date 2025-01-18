@@ -29,7 +29,7 @@ export default function DashboardLayout({
 
             <div className="font-light text-md relative grid grid-cols-1 lg:grid-cols-8 w-full gap-10">
               <div className="col-span-4 group relative h-full w-full pb-[100%] hover:cursor-pointer rounded-2xl overflow-hidden">
-                <Image src="/getintouch.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                <Image src="/play.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
               </div>
               <div className="col-span-4">
                 We&apos;re always ready to connect with you!
