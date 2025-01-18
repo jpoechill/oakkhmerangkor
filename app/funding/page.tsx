@@ -122,7 +122,48 @@ export default function Home() {
                   Our Cambodian cultural dance troupe has been a pillar of our community for over 20 years. Throughout this time, our leaders, families, and local organizations have been the backbone of our funding, often contributing out of pocket to ensure the group could thrive. This remarkable dedication has allowed us to carry forward our traditions and bring the joy of Cambodian dance to thousands, even in the face of financial constraints.
                   <br /><br />
                   While we are incredibly proud of what we’ve accomplished through grassroots efforts, we recognize the need for additional resources to expand our reach and sustain our programs. By securing grant funding, we aim to host more community workshops, bring our performances to larger audiences, and offer scholarships to young dancers. These opportunities would allow us to deepen our impact and ensure that Cambodian cultural dance continues to inspire and connect people for generations to come.
+                  <br /><br /><br />
+                  <hr />
                   <br /><br />
+
+                  <div className="text-center">
+                    Make a contribution today through our <Link href="/donate" className="underline hover:cursor-pointer">Donate</Link> page, or contact a representative directly for more information.
+                    <br /><br />
+                    <div className="grid grid-cols-2 w-full lg:grid-cols-6 justify-end items-end gap-10">
+                      <div className="col-start-3 m-auto text-sm text-center">
+                        <div className="bg-slate-200 rounded-full h-[100px] w-[100px] overflow-hidden">
+                          <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
+                        </div>
+                        <br />
+                        <span className="font-bold">Macy (Fundraising)</span>
+                        <br />
+                        macy@gmail.com
+                      </div>
+                      <div className="m-auto text-sm text-center">
+                        <div className="bg-slate-200 mx-auto rounded-full h-[100px] w-[100px] overflow-hidden">
+                          <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
+                        </div>
+                        <br />
+                        <span className="font-bold">Sineth (Treasurer)</span>
+                        <br />
+                        sineth@gmail.com
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <div className="text-center">
+                    Make a contribution today through our 'Donate' page, or contact a representative directly for more information.
+                    <br />
+                    <br />
+                    Macy (macy@gmail.com) <br />
+                    Fundraising
+                    <br /><br />
+
+
+                    <span className="font-bold">Sineth (sineth@gmail.com) </span>
+                    <br />
+                    Treasurer
+                  </div> */}
                   {/* <br /><br /><br />
                   <hr />
                   <br /><br />

@@ -138,12 +138,11 @@ export default function DashboardLayout({
                     <br />
                     Teacher @ OUSD
                   </div>
-                  <br />
                 </div>
               </div>
             </div>
 
-
+            <br />
             <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
               <div className="">
                 <div id="question1" className="text-center border-b-2 mb-8 border-[#F28904] pb-6 font-serif text-2xl font-bold">
