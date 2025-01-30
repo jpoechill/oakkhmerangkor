@@ -63,7 +63,19 @@ export default function DashboardLayout({
                   We support the artistic growth of our members by providing opportunities for creative expression and collaboration. Through our programs, dancers can explore their artistic potential, develop new choreography, and participate in innovative projects that blend traditional and contemporary elements.
                   <br /><br />
                   Our work is grounded in the mission to preserve the rich traditions of Khmer dance for future generations. We maintain a comprehensive archive of dance forms, costumes, music, and historical materials, ensuring that this invaluable cultural heritage remains vibrant and accessible.
-                  <br /><br /></div>
+                  <br /><br />
+                </div>
+                <div className="grid grid-cols-3 gap-8">
+                  <div>
+                    <Image src="/umbrella_group.jpg" alt="Grantors and dancers at a partnership event" className="w-full rounded-lg shadow-md" width="500" height="300" />
+                  </div>
+                  <div>
+                    <Image src="/flower_group.jpg" alt="Grantors and dancers at a partnership event" className="w-full rounded-lg shadow-md" width="500" height="300" />
+                  </div>
+                  <div>
+                    <Image src="/general_group.jpg" alt="Grantors and dancers at a partnership event" className="w-full rounded-lg shadow-md" width="500" height="300" />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -83,13 +95,12 @@ export default function DashboardLayout({
               </div>
             </div>
 
-
             <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
               <div className="w-full">
                 <div id="question1" className="text-center border-b-2 mb-8 border-[#F28904] pb-6 font-serif text-2xl font-bold">
                   Our Leadership
                 </div>
-                <div className="grid grid-cols-2 w-full lg:grid-cols-5 justify-end items-end gap-10">
+                <div className="grid grid-cols-2 w-full lg:grid-cols-6 justify-end items-end gap-10">
                   <div className="m-auto text-sm text-center">
                     <div className="bg-slate-200 rounded-full h-[100px] w-[100px] overflow-hidden">
                       <Image src="/avatars/teacher-01.png" alt="Placeholder Image" width={125} height={125}></Image>
@@ -101,14 +112,32 @@ export default function DashboardLayout({
                   </div>
                   <div className="m-auto text-sm text-center">
                     <div className="bg-slate-200 mx-auto rounded-full h-[100px] w-[100px] overflow-hidden">
+                      <Image src="/avatars/sinath.jpg" alt="Placeholder Image" width={125} height={125}></Image>
+                    </div>
+                    <br />
+                    <span className="font-bold">Sinath Thi</span>
+                    <br />
+                    Real Estate Broker
+                  </div>
+
+                  <div className="m-auto text-sm text-center">
+                    <div className="bg-slate-200 mx-auto rounded-full h-[100px] w-[100px] overflow-hidden">
                       <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
                     </div>
                     <br />
-                    <span className="font-bold">Sineth</span>
+                    <span className="font-bold">Macy Lieu</span>
                     <br />
-                    Real Estate Agent
+                    Registered Nurse
                   </div>
-
+                  <div className="m-auto text-sm text-center">
+                    <div className="bg-slate-200 rounded-full h-[100px] w-[100px] overflow-hidden">
+                      <Image src="/avatars/teacher-04.png" alt="Placeholder Image" width={125} height={125}></Image>
+                    </div>
+                    <br />
+                    <span className="font-bold">Po Rith</span>
+                    <br />
+                    Graphic Designer
+                  </div>
                   <div className="m-auto text-sm text-center">
                     <div className="bg-slate-200 rounded-full h-[100px] w-[100px] overflow-hidden">
                       <Image src="/avatars/teacher-03.png" alt="Placeholder Image" width={125} height={125}></Image>
@@ -118,17 +147,6 @@ export default function DashboardLayout({
                     <br />
                     Salon Owner
                   </div>
-
-                  <div className="m-auto text-sm text-center">
-                    <div className="bg-slate-200 rounded-full h-[100px] w-[100px] overflow-hidden">
-                      <Image src="/avatars/teacher-04.png" alt="Placeholder Image" width={125} height={125}></Image>
-                    </div>
-                    <br />
-                    <span className="font-bold">Paul Lang</span>
-                    <br />
-                    Entreprenuer
-                  </div>
-
                   <div className="m-auto text-sm text-center">
                     <div className="bg-slate-200 mx-auto rounded-full h-[100px] w-[100px] overflow-hidden">
                       <Image src="/avatars/teacher-05.png" alt="Placeholder Image" width={125} height={125}></Image>

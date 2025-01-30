@@ -61,18 +61,20 @@ export default function Home() {
             {/* <br /><br /> */}
             <div className="grid grid-cols-2 gap-4">
 
-              <Link href="https://donate.stripe.com/test_cN29Bo6Eh2fS0Ny5kk" target="_blank" rel="noopener noreferrer">
+              {/* <Link href="https://donate.stripe.com/test_cN29Bo6Eh2fS0Ny5kk" target="_blank" rel="noopener noreferrer">
                 <div className="bg-[#F28904] hover:bg-[#FFC67F] text-center shadow-xl text-lg font-medium rounded text-white py-2 px-6 ml-1">
                   ❤️ Donate with Stripe
                 </div>
-              </Link>
+              </Link> */}
 
-              <Link href="https://donate.stripe.com/test_cN29Bo6Eh2fS0Ny5kk" target="_blank" rel="noopener noreferrer">
+              <Link href="https://givebutter.com/CyPzgh" target="_blank" rel="noopener noreferrer">
                 <div className="bg-[#F28904] hover:bg-[#FFC67F] text-center shadow-xl text-lg font-medium rounded text-white py-2 px-6 ml-1">
                   ❤️ Donate with Givebutter
                 </div>
               </Link>
+              {/* <givebutter-widget id="pzyX6g"></givebutter-widget> */}
 
+              {/* 
               <Link href="https://donate.stripe.com/test_cN29Bo6Eh2fS0Ny5kk" target="_blank" rel="noopener noreferrer">
                 <div className="bg-[#F28904] hover:bg-[#FFC67F] text-center shadow-xl text-lg font-medium rounded text-white py-2 px-6 ml-1">
                   ❤️ Donate with Zeffy
@@ -84,7 +86,7 @@ export default function Home() {
                 <div className="bg-[#F28904] hover:bg-[#FFC67F] text-center shadow-xl text-lg font-medium rounded text-white py-2 px-6 ml-1">
                   ❤️ Donate with Donorbox
                 </div>
-              </Link>
+              </Link> */}
             </div>
 
             <div className="mb-[50px]"></div>

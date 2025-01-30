@@ -85,7 +85,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <img src="/funding/umbrella_02.jpg" alt="Handcrafted Cambodian dance costumes" className="w-full rounded-lg shadow-md mb-4" />
+                  <Image src="/funding/umbrella_02.jpg" alt="Handcrafted Cambodian dance costumes" className="w-full rounded-lg shadow-md mb-4" width="300" height="300" />
                   {/* <img src="/image-placeholder-4.jpg" alt="A vibrant performance on stage" className="w-full rounded-lg shadow-md" /> */}
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function Home() {
 
             <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
               <div className="lg:w-1/3 mt-6 lg:mt-0">
-                <img src="/funding/neary.jpg" alt="Grantors and dancers at a partnership event" className="w-full rounded-lg shadow-md" />
+                <Image src="/funding/neary.jpg" alt="Grantors and dancers at a partnership event" className="w-full rounded-lg shadow-md" width="300" height="300" />
               </div>
               <div className="lg:w-2/3 pl-8">
                 <div id="question5" className="pb-6 font-serif text-2xl font-bold">
@@ -129,24 +129,24 @@ export default function Home() {
                   <div className="text-center">
                     Make a contribution today through our <Link href="/donate" className="underline hover:cursor-pointer">Donate</Link> page, or contact a representative directly for more information.
                     <br /><br />
-                    <div className="grid grid-cols-2 w-full lg:grid-cols-6 justify-end items-end gap-10">
-                      <div className="col-start-3 m-auto text-sm text-center">
-                        <div className="bg-slate-200 rounded-full h-[100px] w-[100px] overflow-hidden">
+                    <div className="grid grid-cols-2 w-full lg:grid-cols-7 justify-end items-end gap-10">
+                      <div className="col-start-3 m-auto r-10 text-sm text-center">
+                        <div className="bg-slate-200 m-auto rounded-full h-[100px] w-[100px] overflow-hidden">
+                          <Image src="/avatars/sinath.jpg" alt="Placeholder Image" width={125} height={125}></Image>
+                        </div>
+                        <br />
+                        <span className="font-bold">Sinath (Treasurer)</span>
+                        <br />
+                        oakkhmerangkor@gmail.com
+                      </div>
+                      <div className="col-start-5 m-auto text-sm text-center">
+                        <div className="bg-slate-200 mx-auto rounded-full h-[100px] w-[100px] overflow-hidden">
                           <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
                         </div>
                         <br />
                         <span className="font-bold">Macy (Fundraising)</span>
                         <br />
-                        macy@gmail.com
-                      </div>
-                      <div className="m-auto text-sm text-center">
-                        <div className="bg-slate-200 mx-auto rounded-full h-[100px] w-[100px] overflow-hidden">
-                          <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
-                        </div>
-                        <br />
-                        <span className="font-bold">Sineth (Treasurer)</span>
-                        <br />
-                        sineth@gmail.com
+                        oakkhmerangkor@gmail.com
                       </div>
                     </div>
                   </div>
