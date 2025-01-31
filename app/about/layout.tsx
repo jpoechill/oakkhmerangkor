@@ -166,8 +166,16 @@ export default function DashboardLayout({
                 <div id="question1" className="text-center border-b-2 mb-8 border-[#F28904] pb-6 font-serif text-2xl font-bold">
                   Art
                 </div>
-                <div id="answer1" className="font-light text-md">
-                  Khmer art, a treasure of Southeast Asia, embodies the rich cultural and historical heritage of Cambodia, dating back to the Angkor era and earlier. Renowned for its intricate stone carvings, serene sandstone sculptures, and detailed bas-reliefs, Khmer art portrays a sophisticated understanding of aesthetics and spirituality. The art forms range from majestic temple architectures, like the world-famous Angkor Wat, to delicate silk weavings and vibrant paintings that depict scenes from mythology and daily Cambodian life. This art not only serves as a cornerstone of national pride but also continues to inspire and influence contemporary artists and craftspeople around the world, keeping the spirit and traditions of Cambodia alive and vibrant.
+                <div className="grid grid-cols-5 gap-8">
+                  <div className="col-span-1">
+                    <div>
+                      <Image src="/angkor_ill.jpg" alt="thumb" className="top-0 object-contain w-full h-full transition-all duration-500 ease-in-out" width="200" height="400"></Image>
+                    </div>
+                  </div>
+                  <div id="answer1" className="col-span-4 font-light text-md">
+
+                    Khmer art, a treasure of Southeast Asia, reflects Cambodia’s rich history and culture. Dating back to the Angkor era, it is known for intricate stone carvings, serene sculptures, and detailed bas-reliefs. From grand temples like Angkor Wat to delicate silk weavings and vibrant paintings, Khmer art captures both mythology and daily life.
+                    It remains a source of national pride and continues to inspire artists worldwide, preserving Cambodia&apos;s traditions and spirit.</div>
                 </div>
               </div>
             </div>

@@ -57,7 +57,9 @@ export default function Footer() {
             <Image src="/social-instagram.svg" className="inline" alt="Instagram Logo" width={40} height={30}></Image>
           </Link>
           <br /><br />
-          <div className="hidden lg:block">Oakland Khmer Angkor Dance Troupe © 2025</div>
+          <div className="hidden lg:block">
+            <span className="text-3xl">🇰🇭 🇺🇸</span><br />
+            Oakland Khmer Angkor Dance Troupe © 2025</div>
         </div>
 
       </div>

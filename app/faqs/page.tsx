@@ -17,9 +17,18 @@ export default function Home() {
               <div className="text-3xl font-bold tracking-wide">
                 Get Your Answers Here
               </div>
-            </div><br /><br />
+            </div>
             <div id="testimonials" className="text-center flex px-5 md:px-20 pb-5 justify-center">
               <div id="testimonials-mobile" className="max-w-[500px] lg:max-w-[1200px]">
+
+                {/* <div className="flex flex-col justify-center w-full p-0 px-0 my-5">
+                  <Image src="/coconut_archive.jpg" alt="thumb" className="w-full h-full transition-all duration-500 ease-in-out" width="800" height="800"></Image>
+                  <div className="w-full text-right text-xs italic text-gray-700 pt-2 pr-2 ">
+                    Youth Dancers, Cambodian New Year 2019
+                  </div>
+                </div> */}
+
+                <br />
 
                 <div className="text-left w-full max-w-[900px]">
                   <div className="border-b-2 border-[#F28904] pt-3 py-[50px]">
