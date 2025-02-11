@@ -50,6 +50,9 @@ export default function Footer() {
             </Link>
           </div>
           <br /><br />
+          <Link href="https://www.gofundme.com/f/oakkhmerangkor" target="_new">
+            <Image src="/gofundme_logo.svg" className="inline mr-7" alt="GofundMe Logo" width={160} height={30}></Image>
+          </Link>
           <Link href="https://www.facebook.com/profile.php?id=61571557875106" target="_new">
             <Image src="/social-facebook.svg" className="inline mr-7" alt="Facebook Logo" width={40} height={30}></Image>
           </Link>
