@@ -154,7 +154,7 @@ export default function DashboardLayout({
                     <br />
                     <span className="font-bold">Neary Neou</span>
                     <br />
-                    Teacher @ OUSD
+                    Teacher
                   </div>
                 </div>
               </div>
