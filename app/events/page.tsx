@@ -37,12 +37,12 @@ export default function Home() {
                   Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance.
                   <br /><br />
                   {/* Tickets: Coming Soon... <br /><br /> */}
-                  4770 Lincoln Ave Oakland, CA 94602
+                  📍 4770 Lincoln Ave Oakland, CA 94602
                   {/* Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance. */}
                   <br /><br />
 
                   March 29th, 2025 <br />
-                  5:30pm - 9:00pm
+                  4pm - 9:00pm
                   {/* Let the rhythms of our heritage inspire and uplift your spirit! */}
 
                   <br /><br />

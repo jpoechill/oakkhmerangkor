@@ -48,6 +48,16 @@ export default function Home() {
                   <li className="pt-2">Support our talented dancers and instructors, ensuring the continuation of this art form.</li>
                   <li className="pt-2">Partner with local and international cultural organizations to promote the exchange of knowledge and performances.</li>
                 </ul>
+
+                <br />
+                <div className="mx-auto align-middle justify-center block">
+
+                  <Link href="https://www.gofundme.com/f/oakkhmerangkor" target="_blank" className="mx-auto" rel="noopener noreferrer">
+                    <div className="bg-[#5E489A] hover:bg-[#9E91C2] inline-block md:inline w-full font-medium mx-auto shadow-xl text-lg rounded-full text-center text-white py-3 px-6">
+                      ❤️ Donate with GoFundMe
+                    </div>
+                  </Link>
+                </div>
                 {/* <br /> */}
                 {/* Every donation, big or small, makes a difference. By giving, you become a part of a legacy that transcends generations, connecting us to our roots and sharing Khmer culture with the world. */}
 
@@ -59,22 +69,26 @@ export default function Home() {
             </div>
             <br />
             {/* <br /><br /> */}
-            <div className="grid grid-cols-2 gap-4">
+            {/* <div className="grid grid-cols-2 gap-4"> */}
 
-              {/* <Link href="https://donate.stripe.com/test_cN29Bo6Eh2fS0Ny5kk" target="_blank" rel="noopener noreferrer">
+            {/* <Link href="https://donate.stripe.com/test_cN29Bo6Eh2fS0Ny5kk" target="_blank" rel="noopener noreferrer">
                 <div className="bg-[#F28904] hover:bg-[#FFC67F] text-center shadow-xl text-lg font-medium rounded text-white py-2 px-6 ml-1">
                   ❤️ Donate with Stripe
                 </div>
               </Link> */}
 
-              <Link href="https://givebutter.com/CyPzgh" target="_blank" rel="noopener noreferrer">
-                <div className="bg-[#F28904] hover:bg-[#FFC67F] text-center shadow-xl text-lg font-medium rounded text-white py-2 px-6 ml-1">
-                  ❤️ Donate with Givebutter
+            {/* <Link href="https://www.gofundme.com/f/oakkhmerangkor" target="_blank" rel="noopener noreferrer">
+                <div className="bg-[#F28904] hover:bg-[#FFC67F] text-center shadow-xl text-lg font-medium rounded-full text-white py-2 px-6 ml-1">
+                  ❤️ Donate with GoFundMe
                 </div>
-              </Link>
-              {/* <givebutter-widget id="pzyX6g"></givebutter-widget> */}
 
-              {/* 
+                <div className="bg-[#5E489A] hover:bg-[#9E91C2] font-medium shadow-xl text-lg rounded-2xl w-full text-center text-white py-2 px-8 ml-1">
+                  ❤️ Donate with GoFundMe
+                </div>
+              </Link> */}
+            {/* <givebutter-widget id="pzyX6g"></givebutter-widget> */}
+
+            {/* 
               <Link href="https://donate.stripe.com/test_cN29Bo6Eh2fS0Ny5kk" target="_blank" rel="noopener noreferrer">
                 <div className="bg-[#F28904] hover:bg-[#FFC67F] text-center shadow-xl text-lg font-medium rounded text-white py-2 px-6 ml-1">
                   ❤️ Donate with Zeffy
@@ -87,9 +101,9 @@ export default function Home() {
                   ❤️ Donate with Donorbox
                 </div>
               </Link> */}
-            </div>
+            {/* </div> */}
 
-            <div className="mb-[50px]"></div>
+            {/* <div className="mb-[50px]"></div> */}
           </div>
         </div>
       </div>

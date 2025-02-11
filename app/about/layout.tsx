@@ -160,7 +160,7 @@ export default function DashboardLayout({
               </div>
             </div>
 
-            <br />
+            {/* <br />
             <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
               <div className="">
                 <div id="question1" className="text-center border-b-2 mb-8 border-[#F28904] pb-6 font-serif text-2xl font-bold">
@@ -178,7 +178,7 @@ export default function DashboardLayout({
                     It remains a source of national pride and continues to inspire artists worldwide, preserving Cambodia&apos;s traditions and spirit.</div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* <div className="flex flex-row mt-4 justify-center gap-x-[40px] mb-4 text-lg">
               <div>
@@ -205,7 +205,7 @@ export default function DashboardLayout({
         </div>
 
 
-        <div className="pb-[20px]"></div>
+        {/* <div className="pb-[5px]"></div> */}
       </div>
       <Footer></Footer>
     </main>

@@ -55,7 +55,7 @@ export default function Home() {
                   <br /><br />
 
                   March 29th, 2025 <br />
-                  5:30pm - 9:00pm
+                  4pm - 9:00pm
                   {/* Let the rhythms of our heritage inspire and uplift your spirit! */}
 
                   <br /><br />
@@ -174,31 +174,30 @@ export default function Home() {
                   </div>
                 </Link>
 
-                <Link href="/dances/choun-por">
+                <Link href="/dances/plet">
                   <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
                     <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
                     </div>
                     <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                      CHOUN POR
-                      <div className="text-2xl font-light">(ជូនពរ)</div>
+                      PLET
+                      <div className="text-2xl font-light">(ភ្លែត)</div>
                     </div>
                     <div className="">
-                      <Image src="/thumbs/choun.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                      <Image src="/thumbs/plet.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                     </div>
                   </div>
                 </Link>
 
-
-                <Link href="/dances/mon-mekhala">
+                <Link href="/dances/phloy-suoy">
                   <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
                     <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
                     </div>
                     <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                      MON MEKHALA
-                      <div className="text-2xl font-light">(ម៉ន មេកាឡា)</div>
+                      PHLOY SUOY
+                      <div className="text-2xl font-light">(ផ្លយ ស៊ូយ)</div>
                     </div>
                     <div className="">
-                      <Image src="/thumbs/other_01.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                      <Image src="/thumbs/phloy.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                     </div>
                   </div>
                 </Link>
@@ -268,47 +267,45 @@ export default function Home() {
               </div>
               <div className="flex flex-row justify-center gap-8 lg:gap-[90px]">
                 {/* <div className="m-auto"> */}
+                <div className="bg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  KYOM
+                </div>
+                {/* <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  KYOM
+                </div>
                 <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
                   KYOM
                 </div>
+                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  KYOM
+                </div> */}
                 <div className="xbg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
                   <div className="xgroup xhover:cursor-pointer border-2 relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
                     <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex justify-center items-center">
-                      {/* LDS */}
                     </div>
                     <div className="">
                       <Image src="/mkpa_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                     </div>
                   </div>
-                  {/* <Image src="/lds_logo.jpg" className="bg-cover h-full w-full" alt="LDS Logo" fill></Image> */}
                 </div>
                 <div className="xbg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
                   <div className="xgroup xhover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
                     <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex justify-center items-center">
-                      {/* LDS */}
                     </div>
                     <div className="">
                       <Image src="/ukpc_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                     </div>
                   </div>
-                  {/* <Image src="/lds_logo.jpg" className="bg-cover h-full w-full" alt="LDS Logo" fill></Image> */}
                 </div>
-                <div className="xbg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                <div className="bg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
                   <div className="xgroup xhover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
                     <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex justify-center items-center">
-                      LDS
+                      SJCCD
                     </div>
                     <div className="">
-                      <Image src="/lds_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                      {/* <Image src="/lds_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image> */}
                     </div>
                   </div>
-                  {/* <Image src="/lds_logo.jpg" className="bg-cover h-full w-full" alt="LDS Logo" fill></Image> */}
                 </div>
                 {/* </div> */}
                 {/* <div className="m-auto">
@@ -321,8 +318,31 @@ export default function Home() {
                 </div> */}
               </div>
               <div className="flex flex-row justify-center gap-8 lg:gap-[90px] pt-8 md:hidden">
+                <div className="xbg-slate-200 flex md:hidden items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  <div className="xgroup xhover:cursor-pointer border-2 relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
+                    <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
+                    </div>
+                    <div className="">
+                      <Image src="/mkpa_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                    </div>
+                  </div>
+                </div>
+                <div className="xbg-slate-200 md:hidden items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  <div className="xgroup xhover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
+                    <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
+                    </div>
+                    <div className="">
+                      <Image src="/ukpc_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-row justify-center gap-8 lg:gap-[90px] pt-8 md:hidden">
                 <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  UKCP
+                  KYOM
+                </div>
+                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                  SJCCD
                 </div>
               </div>
               <br /><br />
