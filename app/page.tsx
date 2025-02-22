@@ -40,7 +40,7 @@ export default function Home() {
               <br /> */}
               <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
                 <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
-                  <Image src="/events/cny_cover_01.png" alt="thumb" className="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                  <Image src="/cover_03.png" alt="thumb" className="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                 </div>
                 <div className="col-span-3 font-light p-5 text-md">
                   <span className="font-bold text-lg">
@@ -92,7 +92,7 @@ export default function Home() {
                     </div>
                     <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                       COCONUT
-                      <div className="text-2xl font-light">(ដូង)</div>
+                      <div className="text-2xl font-light">(របាំគោះត្រឡោក)</div>
                     </div>
                     <div className="">
                       <Image src="/thumbs/coconut.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
@@ -107,7 +107,7 @@ export default function Home() {
                     </div>
                     <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                       LOVE MOON
-                      <div className="text-2xl font-light">(ស្រឡាញ់ព្រះច័ន្ទ)</div>
+                      <div className="text-2xl font-light">(របាំដួងច័ន្ទ្រា)</div>
                     </div>
                     <div className="">
                       <Image src="/thumbs/lovemoon.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
@@ -122,7 +122,7 @@ export default function Home() {
                     </div>
                     <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                       KANE
-                      <div className="text-2xl font-light">(កេន)</div>
+                      <div className="text-2xl font-light">(របាំគែន)</div>
                     </div>
                     <div className="">
                       <Image src="/thumbs/kane.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
@@ -137,7 +137,7 @@ export default function Home() {
                     </div>
                     <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                       FLOWER
-                      <div className="text-2xl font-light">(ផ្កា)</div>
+                      <div className="text-2xl font-light">(របាំបុប្ផាលោកីយ៏)</div>
                     </div>
                     <div className="">
                       <Image src="/thumbs/flower.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
@@ -166,7 +166,7 @@ export default function Home() {
                     </div>
                     <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                       STICK
-                      <div className="text-2xl font-light">(ដំបង)</div>
+                      <div className="text-2xl font-light">(របាំឱផ្ទៃស្រុកខ្មែរ​ ឬរបាំគោះអង្រែ)</div>
                     </div>
                     <div className="">
                       <Image src="/thumbs/stick.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
@@ -266,47 +266,45 @@ export default function Home() {
                 Our Partners
               </div>
               <div className="flex flex-row justify-center gap-8 lg:gap-[90px]">
-                {/* <div className="m-auto"> */}
-                <div className="bg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  KYOM
-                </div>
-                {/* <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  KYOM
-                </div>
-                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  KYOM
-                </div>
-                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  KYOM
-                </div> */}
-                <div className="xbg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  <div className="xgroup xhover:cursor-pointer border-2 relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
-                    </div>
-                    <div className="">
-                      <Image src="/mkpa_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                <Link href="https://www.instagram.com/khmeryouthofmodesto/" target="_blank">
+                  <div className="bg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                    KYOM
+                  </div>
+                </Link>
+                <Link href="https://www.facebook.com/morodokkhmerperformingarts/" target="_blank">
+                  <div className="xbg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                    <div className="xgroup xhover:cursor-pointer border-2 relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
+                      <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
+                      </div>
+                      <div className="">
+                        <Image src="/mkpa_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="xbg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  <div className="xgroup xhover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
-                    </div>
-                    <div className="">
-                      <Image src="/ukpc_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                  <div className="xgroup xhover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
-                      SJCCD
-                    </div>
-                    <div className="">
-                      {/* <Image src="/lds_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image> */}
+                </Link>
+                <Link href="https://www.instagram.com/ukcpdancetroupe/" target="_blank">
+                  <div className="xbg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                    <div className="xgroup xhover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
+                      <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
+                      </div>
+                      <div className="">
+                        <Image src="/ukpc_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
+                <Link href="https://www.facebook.com/cambodianculturaldancetroupe/" target="_blank">
+                  <div className="bg-slate-200 hidden md:flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
+                    <div className="xgroup xhover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-full">
+                      <div className="absolute h-full font-bold w-full z-10 tracking-widest xbg-black xopacity-25 group-hover:opacity-0 transition-all duration-500 flex justify-center items-center">
+                        SJCCD
+                      </div>
+                      <div className="">
+                        {/* <Image src="/lds_logo.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image> */}
+                      </div>
+                    </div>
+                  </div>
+                </Link>
                 {/* </div> */}
                 {/* <div className="m-auto">
                   <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">

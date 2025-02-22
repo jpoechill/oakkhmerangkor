@@ -27,7 +27,7 @@ export default function Home() {
             <div className="flex flex-col w-full max-w-[1040px]">
               <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
                 <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
-                  <Image src="/events/cny_cover_01.png" alt="thumb" className="object-cover transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                  <Image src="/cover_03.png" alt="thumb" className="object-cover transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                 </div>
                 <div className="col-span-3 p-5 font-light text-md">
                   <span className="font-bold text-lg">

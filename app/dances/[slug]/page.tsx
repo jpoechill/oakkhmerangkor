@@ -208,7 +208,7 @@ export default function BlogPostPage({
                 </div>
               </div>
               <div className="text-md">
-                <div className="text-2xl font-medium pt-4 tracking-wide">
+                <div className="text-2xl font-serif font-bold pt-4 tracking-wide">
                   {/* <br /> */}
                   {post.title}
                 </div>
@@ -233,6 +233,7 @@ export default function BlogPostPage({
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
               <Link href="/dances/apsara">
                 <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
                   <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
@@ -253,7 +254,7 @@ export default function BlogPostPage({
                   </div>
                   <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                     COCONUT
-                    <div className="text-2xl font-light">(ដូង)</div>
+                    <div className="text-2xl font-light">(របាំគោះត្រឡោក)</div>
                   </div>
                   <div className="">
                     <Image src="/thumbs/coconut.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
@@ -268,7 +269,7 @@ export default function BlogPostPage({
                   </div>
                   <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                     LOVE MOON
-                    <div className="text-2xl font-light">(ស្រឡាញ់ព្រះច័ន្ទ)</div>
+                    <div className="text-2xl font-light">(របាំដួងច័ន្ទ្រា)</div>
                   </div>
                   <div className="">
                     <Image src="/thumbs/lovemoon.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
@@ -283,7 +284,7 @@ export default function BlogPostPage({
                   </div>
                   <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                     KANE
-                    <div className="text-2xl font-light">(កេន)</div>
+                    <div className="text-2xl font-light">(របាំគែន)</div>
                   </div>
                   <div className="">
                     <Image src="/thumbs/kane.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
@@ -298,7 +299,7 @@ export default function BlogPostPage({
                   </div>
                   <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                     FLOWER
-                    <div className="text-2xl font-light">(ផ្កា)</div>
+                    <div className="text-2xl font-light">(របាំបុប្ផាលោកីយ៏)</div>
                   </div>
                   <div className="">
                     <Image src="/thumbs/flower.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
