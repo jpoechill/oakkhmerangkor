@@ -21,6 +21,7 @@ export default function Home() {
             </div><br /><br />
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
+
               <Link href="/dances/apsara">
                 <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
                   <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
@@ -30,21 +31,34 @@ export default function Home() {
                     <div className="text-2xl font-light">(អប្សរា)</div>
                   </div>
                   <div className="">
-                    <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+
+                    <Image src="/thumbs/apsara_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
+                      width={500}
+                      height={500}
+                    ></Image>
+                    <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
+
                   </div>
                 </div>
               </Link>
 
               <Link href="/dances/coconut">
                 <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
-                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-[.1] transition-all duration-500 flex text-xl justify-center items-center">
                   </div>
                   <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                     COCONUT
                     <div className="text-2xl font-light">(របាំគោះត្រឡោក)</div>
                   </div>
                   <div className="">
-                    <Image src="/thumbs/coconut.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+
+                    <Image src="/thumbs/coconut_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
+                      width={500}
+                      height={500}
+                    ></Image>
+                    <Image src="/thumbs/coconut.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
+
+                    {/* <Image src="/thumbs/coconut.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image> */}
                   </div>
                 </div>
               </Link>
@@ -52,14 +66,19 @@ export default function Home() {
 
               <Link href="/dances/love-moon">
                 <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
-                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
+                  <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-[.25] group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
                   </div>
                   <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                     LOVE MOON
                     <div className="text-2xl font-light">(របាំដួងច័ន្ទ្រា)</div>
                   </div>
                   <div className="">
-                    <Image src="/thumbs/lovemoon.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+
+                    <Image src="/thumbs/lovemoon_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
+                      width={500}
+                      height={500}
+                    ></Image>
+                    <Image src="/thumbs/lovemoon.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
                   </div>
                 </div>
               </Link>
@@ -89,7 +108,14 @@ export default function Home() {
                     <div className="text-2xl font-light">(របាំបុប្ផាលោកីយ៏)</div>
                   </div>
                   <div className="">
-                    <Image src="/thumbs/flower.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+
+                    <Image src="/thumbs/flower_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
+                      width={500}
+                      height={500}
+                    ></Image>
+                    <Image src="/thumbs/flower.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
+
+
                   </div>
                 </div>
               </Link>
@@ -104,7 +130,11 @@ export default function Home() {
                     <div className="text-2xl font-light">(ជូនពរ)</div>
                   </div>
                   <div className="">
-                    <Image src="/thumbs/blessing.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                    <Image src="/thumbs/blessing_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
+                      width={500}
+                      height={500}
+                    ></Image>
+                    <Image src="/thumbs/blessing.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
                   </div>
                 </div>
               </Link>
@@ -118,7 +148,12 @@ export default function Home() {
                     <div className="text-2xl font-light">(របាំឱផ្ទៃស្រុកខ្មែរ​ ឬរបាំគោះអង្រែ)</div>
                   </div>
                   <div className="">
-                    <Image src="/thumbs/stick.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+
+                    <Image src="/thumbs/stick_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
+                      width={500}
+                      height={500}
+                    ></Image>
+                    <Image src="/thumbs/stick.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
                   </div>
                 </div>
               </Link>
@@ -150,6 +185,7 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+
 
             </div>
           </div>
