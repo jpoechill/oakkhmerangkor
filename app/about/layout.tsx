@@ -112,7 +112,7 @@ export default function DashboardLayout({
                   </div>
                   <div className="m-auto text-sm text-center">
                     <div className="bg-slate-200 mx-auto rounded-full h-[100px] w-[100px] overflow-hidden">
-                      <Image src="/avatars/sinath.jpg" alt="Placeholder Image" width={125} height={125}></Image>
+                      <Image src="/avatars/sinath_02.png" alt="Placeholder Image" width={125} height={125}></Image>
                     </div>
                     <br />
                     <span className="font-bold">Sinath Thi</span>
@@ -122,12 +122,12 @@ export default function DashboardLayout({
 
                   <div className="m-auto text-sm text-center">
                     <div className="bg-slate-200 mx-auto rounded-full h-[100px] w-[100px] overflow-hidden">
-                      <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
+                      <Image src="/avatars/macy.png" alt="Placeholder Image" width={125} height={125}></Image>
                     </div>
                     <br />
                     <span className="font-bold">Macy Lieu</span>
                     <br />
-                    Registered Nurse
+                    Nurse Practitioner
                   </div>
                   <div className="m-auto text-sm text-center">
                     <div className="bg-slate-200 rounded-full h-[100px] w-[100px] overflow-hidden">
