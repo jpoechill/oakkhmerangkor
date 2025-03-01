@@ -2,7 +2,6 @@ import Image from "next/image";
 import Header from "./Header"
 import Footer from "./Footer"
 import Link from "next/link"
-import ImageChangeOnHover from './Components/DanceGallery';
 
 export default function Home() {
 
