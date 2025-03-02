@@ -72,7 +72,7 @@ export default function ClientModalWithScroll({ section, sections, isFirstButton
                 }}
                 className='py-2'
               >
-                <img src={'/images/originals/' + sec.name} className='w-full' />
+                <img src={'/images/originals/' + sec.name} className='cursor-zoom-out w-full' />
                 {/* <h2 className="text-2xl font-bold">{sec.name}</h2>
                 <p>Content for {sec.name}. This section is long enough to make the modal scrollable.</p> */}
               </div>
