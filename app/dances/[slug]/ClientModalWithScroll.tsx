@@ -67,7 +67,9 @@ export default function ClientModalWithScroll({ section, sections, isFirstButton
             {sections.map((sec) => (
               <div
                 key={sec.id}
-                ref={(el) => (sectionRefs.current[sec.id] = el)}
+                ref={(el) => {
+                  sectionRefs.current[sec.id] = el;
+                }}
                 className='py-2'
               >
                 <img src={'/images/originals/' + sec.name} className='w-full' />
