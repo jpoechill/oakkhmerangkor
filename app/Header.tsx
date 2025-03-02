@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <div>
-      <div className="fixed pattern-bg  bg-[#200073] text-white flex justify-center w-full z-[100] top-0 py-3 lg:pt-4 lg:p-3 px-10 ">
+      <div className="fixed pattern-bg  bg-[#200073] text-white flex justify-center w-full z-[99] top-0 py-3 lg:pt-4 lg:p-3 px-10 ">
         <div className="flex flex-row justify-between w-full max-w-[1040px]">
           <div className="flex  flex-row w-full justify-between lg:items-center">
 
