@@ -5,15 +5,6 @@ import Image from "next/image";
 import Header from "../../Header"
 import Footer from "../../Footer"
 import Link from "next/link"
-import dynamic from 'next/dynamic';
-
-const LockPositionOnScroll = dynamic(() => import('./LockPositionOnScroll'), {
-  ssr: false, // Ensure it's only rendered on the client-side
-});
-
-// import { useState, useEffect } from 'react'
-import ModalButton from '../../components/ModalButton'
-
 import ClientModalWithScroll from './ClientModalWithScroll';
 
 interface Section {
