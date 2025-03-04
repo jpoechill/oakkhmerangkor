@@ -268,7 +268,7 @@ export default function BlogPostPage({
                     <br /><br />
                     {post.labels.map(function (label, idx) {
                       return (
-                        <button className="bg-[#D42E5E] hover:bg-[#D45A7D] border-none text-white mr-3 opacity-[1] py-1 px-4 cursor-pointer text-sm rounded-2xl">
+                        <button key={idx} className="bg-[#D42E5E] hover:bg-[#D45A7D] border-none text-white mr-3 opacity-[1] py-1 px-4 cursor-pointer text-sm rounded-2xl">
                           {label}
                         </button>
                       )
