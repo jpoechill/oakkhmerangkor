@@ -5,6 +5,12 @@ import Image from "next/image";
 import Header from "../../Header"
 import Footer from "../../Footer"
 import Link from "next/link"
+import dynamic from 'next/dynamic';
+
+const LockPositionOnScroll = dynamic(() => import('./LockPositionOnScroll'), {
+  ssr: false, // Ensure it's only rendered on the client-side
+});
+
 // import { useState, useEffect } from 'react'
 import ModalButton from '../../components/ModalButton'
 
@@ -24,6 +30,7 @@ interface BlogPost {
   contentSecond: string
   thumbnail: string
   thumbnails: string[]
+  labels: string[]
 }
 
 // Type-safe blog post repository
@@ -37,15 +44,17 @@ class BlogPostRepository {
       contentSecond: "The Apsara dance has deep spiritual and cultural significance in Cambodia, often seen as a connection between the human and divine realms. The dancers convey complex emotions and stories through intricate hand gestures and delicate poses, bringing to life the celestial beings they represent. The Apsara dance is considered a symbol of grace and beauty, often performed during royal events, national celebrations, and religious ceremonies. It has become an iconic part of Cambodian culture and heritage, showcasing the country's rich artistic history.",
       thumbnail: "/thumbs/apsara.png",
       thumbnails: ["apsara.jpg"],
+      labels: ["elegance", "heritage", "mythology", "spirituality"]
     },
     {
       id: "2",
       slug: "coconut",
-      title: "Coconut",
+      title: "Coconut Dance",
       contentFirst: "The Coconut dance is a lively and joyful performance often seen during festivals and celebrations in Cambodia. It involves dancers using coconuts as props, tapping them together in rhythmic patterns while performing lively, upbeat choreography. The dance is meant to create a fun, festive atmosphere and is often performed in a group, reflecting the spirit of community and togetherness. It may also symbolize the agricultural lifestyle of the Cambodian people, with coconuts being a common natural resource in their environment.",
       contentSecond: "The Coconut dance is typically performed during traditional holidays, weddings, and other community celebrations. The use of coconuts as props enhances the rhythm of the performance, adding an element of fun and playfulness to the dance. It is a lively expression of joy, symbolizing the prosperity and abundance that coconuts represent in Cambodian culture. The dance reinforces the importance of community bonds and the connection to nature, making it a popular and cherished tradition in the country.",
       thumbnail: "/thumbs/coconut.png",
-      thumbnails: ["coconut.jpg"],
+      thumbnails: ["coconut.jpg", "coconut_02.jpg"],
+      labels: ["joy", "community", "prosperity", "tradition"]
     },
     {
       id: "3",
@@ -55,6 +64,7 @@ class BlogPostRepository {
       contentSecond: "In Cambodian culture, the moon has long been associated with beauty and the ideals of love and longing. The Love Moon dance expresses these feelings through carefully crafted choreography, where the dancers embody the mood of a romantic evening. The performance creates a sense of dreaminess and elegance, using the moon as a metaphor for love’s subtle, enduring power. This dance is often performed during celebrations or events focused on love, romance, and the beauty of nature.",
       thumbnail: "/thumbs/lovemoon.png",
       thumbnails: ["lovemoon.jpg"],
+      labels: ["romance", "elegance", "expression", "tradition"]
     },
     {
       id: "4",
@@ -64,6 +74,7 @@ class BlogPostRepository {
       contentSecond: "The performance is characterized by the use of the Ken, a unique wind instrument, and dancers wearing traditional krama scarves. As a cultural expression, Robam Ken represents the rich musical and social traditions of northern Cambodia, showcasing the artistic heritage of the Khmer people through its choreography and musical accompaniment.",
       thumbnail: "/thumbs/kane.png",
       thumbnails: ["kane.jpg"],
+      labels: ["romance", "courtship", "expression", "tradition"]
     },
     {
       id: "5",
@@ -73,6 +84,7 @@ class BlogPostRepository {
       contentSecond: "The Flower dance celebrates the cycle of life, from growth to blooming and eventual fading, mirroring the natural processes that shape the world around us. Dancers often wear floral-inspired costumes, adding to the visual effect of the performance. The dance can also symbolize the beauty and fragility of life, inviting the audience to appreciate the delicate and fleeting moments of existence. It is a peaceful, meditative performance that connects viewers with the natural beauty and cycles of life, often performed in cultural or spiritual contexts.",
       thumbnail: "/thumbs/flower.png",
       thumbnails: ["flower.jpg"],
+      labels: ["beauty", "nature", "life cycle", "fragility"]
     },
     {
       id: "6",
@@ -82,6 +94,7 @@ class BlogPostRepository {
       contentSecond: "Performed with grace and solemnity, the Blessing dance offers thanks, seeks guidance, and invokes divine favor. An integral part of Cambodian spiritual and cultural traditions, it connects with ancestors and deities. The choreography creates a peaceful ambiance, encouraging reflection on life's blessings. Often performed at significant events, it reinforces values of community, respect, and gratitude.",
       thumbnail: "/thumbs/blessing.png",
       thumbnails: ["blessing.jpg"],
+      labels: ["spirituality", "gratitude", "blessings", "community"]
     },
     {
       id: "7",
@@ -91,6 +104,7 @@ class BlogPostRepository {
       contentSecond: "More than an artistic display, the dance is a cultural ritual of gratitude, symbolizing the bond between Cambodian farmers and their heritage. It expresses thanks for a successful harvest, with joyful music and clapping reflecting communal relief and happiness. The intricate gestures and rhythms preserve Khmer cultural identity, highlighting the significance of agriculture in rural Cambodian life.",
       thumbnail: "/thumbs/stick.png",
       thumbnails: ["stick.jpg", "stick_02.jpg", "stick_03.jpg"],
+      labels: ["agriculture", "gratitude", "heritage", "community"]
     },
     {
       id: "8",
@@ -100,6 +114,7 @@ class BlogPostRepository {
       contentSecond: "Choun Por is often performed during festivals, weddings, and national holidays, with the entire community joining in. The rhythmic patterns and synchronized movements foster a sense of connection between dancers and the audience, emphasizing unity, cooperation, and shared joy. This dance celebrates Cambodian culture and the importance of togetherness.",
       thumbnail: "/thumbs/choun.png",
       thumbnails: ["/thumbs/choun.png"],
+      labels: [""]
     },
     {
       id: "9",
@@ -109,6 +124,7 @@ class BlogPostRepository {
       contentSecond: "Mon Mekhala is a revered figure in Cambodian mythology, embodying the qualities of femininity, fertility, and divine protection. The dance represents the power of nature and the connection between humans and the natural world. Dancers performing the Mon Mekhala often wear elaborate costumes and perform with fluid movements that evoke the natural elements, symbolizing the goddess's power over rain, storms, and growth. This performance is a tribute to nature's life-giving forces and a reminder of the interconnectedness of all living things.",
       thumbnail: "/thumbs/other_1.png",
       thumbnails: ["/thumbs/other_1.png"],
+      labels: [""]
     },
     {
       id: "10",
@@ -118,6 +134,7 @@ class BlogPostRepository {
       contentSecond: "Plet is often performed at religious festivals or ceremonies where respect and gratitude are expressed toward the gods or ancestors. The dance creates a peaceful, meditative ambiance, inviting viewers to reflect on their spiritual lives and the importance of honoring their heritage. Through its graceful movements and symbolic gestures, Plet underscores the values of devotion, respect, and community connection, making it a meaningful part of Cambodian cultural and spiritual life.",
       thumbnail: "/thumbs/plet.png",
       thumbnails: ["phlet.jpg"],
+      labels: ["devotion", "respect", "spirituality", "heritage"]
     },
     {
       id: "11",
@@ -127,6 +144,7 @@ class BlogPostRepository {
       contentSecond: "Phloy Suoy is particularly popular during festive occasions, such as village fairs or community celebrations, where it is performed to entertain and bring people together. The lively choreography and rhythmic music create a sense of excitement and enthusiasm, embodying the spirit of Cambodian social life. The dance emphasizes the importance of togetherness and the joy found in collective experiences, making it a cherished part of Cambodian folk traditions.",
       thumbnail: "/thumbs/phloy.png",
       thumbnails: ["phloy.jpg"],
+      labels: ["joy", "community", "energy", "celebration"]
     },
     {
       id: "12",
@@ -136,6 +154,7 @@ class BlogPostRepository {
       contentSecond: "The Nesat dance is commonly performed during important cultural ceremonies, festivals, or at royal events. It is a celebration of the Cambodian people's deep connection with nature, emphasizing themes of balance, growth, and renewal. The dance’s slow movements and delicate gestures create an atmosphere of serenity, inviting viewers to appreciate the beauty of life’s cycles. The performance is often accompanied by traditional music that enhances the graceful and reflective quality of the dance.",
       thumbnail: "/thumbs/nesat.png",
       thumbnails: ["/thumbs/nesat.png"],
+      labels: [""]
     }
   ]
 
@@ -231,26 +250,42 @@ export default function BlogPostPage({
                 <div className="pt-5"></div>
 
                 {/* Other Buttons in Grid Layout */}
-                <div className="grid grid-cols-3 gap-5">
+                <div className="grid grid-cols-2 gap-5">
                   {sections.slice(1).map((section) => (
                     <ClientModalWithScroll key={section.id} section={section} sections={sections} isFirstButton={false} />
                   ))}
                 </div>
               </div>
               <div className="text-md">
-                <div className="text-2xl font-serif font-bold pt-4 tracking-wide">
-                  {/* <br /> */}
-                  {post.title}
+                <div style={{
+                  position: 'sticky',
+                  top: '94px',
+                }}
+                // className='mt-[100px]'
+                >
+
+                  <div className="text-2xl  font-serif font-bold pt-4 tracking-wide">
+                    {/* <br /> */}
+                    {post.title}
+                  </div>
+                  <br />
+                  <div className="font-light text-md">
+                    {post.contentFirst}
+                    <br /><br />
+                    {post.contentSecond}
+
+                    <br /><br />
+                    {post.labels.map(function (label, idx) {
+                      return (
+                        <button className="bg-[#D42E5E] hover:bg-[#D45A7D] border-none text-white mr-3 opacity-[1] py-1 px-4 cursor-pointer text-sm rounded-2xl">
+                          {label}
+                        </button>
+                      )
+                    })}
+
+                  </div>
                 </div>
-                <br />
-                <div className="font-light text-md">
-                  {post.contentFirst}
-                  <br /><br />
-                  {post.contentSecond}
-                  {/* The Apsara dance is a traditional Cambodian dance form that originated in the Khmer Empire. Apsara, which means &quot;celestial maiden&quot; or &quot;angel&quot; in Sanskrit, refers to the divine female figures depicted in Hindu and Buddhist mythology. The dance is characterized by graceful, fluid movements, intricate hand gestures, and elaborate costumes.
-                  <br /><br />
-                  It often depicts stories from Hindu mythology, such as the Reamker, which is the Khmer version of the Indian epic Ramayana. The Apsara dance is considered a cultural treasure of Cambodia and is often performed at classical Khmer dance performances and traditional ceremonies. */}
-                </div>
+
               </div>
             </div>
 

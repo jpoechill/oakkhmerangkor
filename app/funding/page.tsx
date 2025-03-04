@@ -121,7 +121,7 @@ export default function Home() {
                     <div className="grid grid-cols-2 w-full lg:grid-cols-7 justify-end items-end gap-10">
                       <div className="col-start-3 m-auto r-10 text-sm text-center">
                         <div className="bg-slate-200 m-auto rounded-full h-[100px] w-[100px] overflow-hidden">
-                          <Image src="/avatars/sinath.jpg" alt="Placeholder Image" width={125} height={125}></Image>
+                          <Image src="/avatars/sinath_02.png" alt="Placeholder Image" width={125} height={125}></Image>
                         </div>
                         <br />
                         <span className="font-bold">Sinath (Treasurer)</span>
@@ -130,7 +130,7 @@ export default function Home() {
                       </div>
                       <div className="col-start-5 m-auto text-sm text-center">
                         <div className="bg-slate-200 mx-auto rounded-full h-[100px] w-[100px] overflow-hidden">
-                          <Image src="/avatar_placeholder.svg" alt="Placeholder Image" width={125} height={125}></Image>
+                          <Image src="/avatars/macy.png" alt="Placeholder Image" width={125} height={125}></Image>
                         </div>
                         <br />
                         <span className="font-bold">Macy (Fundraising)</span>

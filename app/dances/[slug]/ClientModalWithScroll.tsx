@@ -44,12 +44,12 @@ export default function ClientModalWithScroll({ section, sections, isFirstButton
             src={'/images/thumbnails/' + section.name}
             alt={`Open Modal for ${section.name}`}
             onClick={openModalAndShowSection}
-            className="w-full h-auto rounded-2xl shadow-md"
+            className="w-full h-auto rounded-2xl shadow-md" asd
           />
         </div>
       ) : (
 
-        <div onClick={openModalAndShowSection} className="cursor-zoom-in w-full bg-slate-200">
+        <div onClick={openModalAndShowSection} className="cursor-zoom-in w-full rounded-2xl bg-slate-200">
           <img
             src={'/images/thumbnails/' + section.name}
             alt={`Open Modal for ${section.name}`}

@@ -50,3 +50,17 @@ a:hover {
     text-wrap: balance;
   }
 }
+
+.sticky-element {
+  position: relative; /* Default position */
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
