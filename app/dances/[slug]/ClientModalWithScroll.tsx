@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react';
+import Image from "next/image";
 
 interface Section {
   id: number;
@@ -40,11 +41,13 @@ export default function ClientModalWithScroll({ section, sections, isFirstButton
       {/* First button as an image */}
       {isFirstButton ? (
         <div className="cursor-zoom-in z-1 w-full rounded-2xl">
-          <img
+          <Image
             src={'/images/thumbnails/' + section.name}
             alt={`Open Modal for ${section.name}`}
             onClick={openModalAndShowSection}
-            className="w-full h-auto rounded-2xl shadow-md" asd
+            className="w-full h-auto rounded-2xl shadow-md"
+            width={300}
+            height={300}
           />
         </div>
       ) : (
