@@ -131,7 +131,7 @@ export default function DashboardLayout({
                   </div>
                   <div className="m-auto text-sm text-center">
                     <div className="bg-slate-200 rounded-full h-[100px] w-[100px] overflow-hidden">
-                      <Image src="/avatars/teacher-04.png" alt="Placeholder Image" width={125} height={125}></Image>
+                      <Image src="/avatars/pom.png" alt="Placeholder Image" width={125} height={125}></Image>
                     </div>
                     <br />
                     <span className="font-bold">Po Rith</span>
