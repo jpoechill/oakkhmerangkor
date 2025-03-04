@@ -134,7 +134,7 @@ export default function DashboardLayout({
                       <Image src="/avatars/pom.png" alt="Placeholder Image" width={125} height={125}></Image>
                     </div>
                     <br />
-                    <span className="font-bold">Po Rith</span>
+                    <span className="font-bold">Pom Rith</span>
                     <br />
                     Graphic Designer
                   </div>
