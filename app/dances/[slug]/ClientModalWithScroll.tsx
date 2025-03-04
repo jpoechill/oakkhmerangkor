@@ -53,11 +53,13 @@ export default function ClientModalWithScroll({ section, sections, isFirstButton
       ) : (
 
         <div onClick={openModalAndShowSection} className="cursor-zoom-in w-full rounded-2xl bg-slate-200">
-          <img
+          <Image
             src={'/images/thumbnails/' + section.name}
             alt={`Open Modal for ${section.name}`}
             onClick={openModalAndShowSection}
             className="w-full h-auto rounded-2xl shadow-md"
+            width={300}
+            height={300}
           />
         </div>
       )}
@@ -75,9 +77,7 @@ export default function ClientModalWithScroll({ section, sections, isFirstButton
                 }}
                 className='py-2'
               >
-                <img src={'/images/originals/' + sec.name} className='cursor-zoom-out w-full' />
-                {/* <h2 className="text-2xl font-bold">{sec.name}</h2>
-                <p>Content for {sec.name}. This section is long enough to make the modal scrollable.</p> */}
+                <Image src={'/images/originals/' + sec.name} alt="Original-sized Dance Image" className='cursor-zoom-out w-full' width={800} height={800} />
               </div>
             ))}
           </div>

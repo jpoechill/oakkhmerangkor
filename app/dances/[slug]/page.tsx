@@ -44,7 +44,7 @@ class BlogPostRepository {
       contentFirst: "The Coconut dance is a lively and joyful performance often seen during festivals and celebrations in Cambodia. It involves dancers using coconuts as props, tapping them together in rhythmic patterns while performing lively, upbeat choreography. The dance is meant to create a fun, festive atmosphere and is often performed in a group, reflecting the spirit of community and togetherness. It may also symbolize the agricultural lifestyle of the Cambodian people, with coconuts being a common natural resource in their environment.",
       contentSecond: "The Coconut dance is typically performed during traditional holidays, weddings, and other community celebrations. The use of coconuts as props enhances the rhythm of the performance, adding an element of fun and playfulness to the dance. It is a lively expression of joy, symbolizing the prosperity and abundance that coconuts represent in Cambodian culture. The dance reinforces the importance of community bonds and the connection to nature, making it a popular and cherished tradition in the country.",
       thumbnail: "/thumbs/coconut.png",
-      thumbnails: ["coconut.jpg", "coconut_02.jpg"],
+      thumbnails: ["coconut.jpg", "coconut_02.jpg", "coconut_03.jpg"],
       labels: ["joy", "community", "prosperity", "tradition"]
     },
     {
