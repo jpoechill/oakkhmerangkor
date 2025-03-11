@@ -374,10 +374,14 @@ export default function Home() {
             </div>
             <div className="flex flex-row justify-center items-center  gap-8 lg:gap-[90px]">
               <div className="">
-                <Image src="/sponsors/khmerbuddhist_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300}></Image>
+                <Link href="https://www.akhmerbuddhistfoundation.org/" target="_blank">
+                  <Image src="/sponsors/khmerbuddhist_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300}></Image>
+                </Link>
               </div>
               <div className="">
-                <Image src="/sponsors/lds_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={260} height={300}></Image>
+                <Link href="https://www.churchofjesuschrist.org/" target="_blank">
+                  <Image src="/sponsors/lds_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={260} height={300}></Image>
+                </Link>
               </div>
             </div>
           </div>
