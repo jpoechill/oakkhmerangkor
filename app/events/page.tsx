@@ -56,6 +56,88 @@ export default function Home() {
           <div className="flex justify-center w-full pt-0 p-5 px-5 lg:px-10 my-5">
             <div className="flex flex-col w-full max-w-[1040px]">
               <div className="text-center pb-4">
+                Other Cultural Events This Year
+              </div>
+              <hr />
+              <br />
+
+              <div className="grid gap-3 grid-cols-2 w-full">
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3622.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_1925.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_2641.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_2806.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_2945.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3088.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3090.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3091.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3092.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3093.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3096.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3590.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3593.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3616.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3619.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3620.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                </div>
+
+                {/* <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3627.JPG" alt="thumb" className="w-full h-full" width={500} height={500}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3638.JPG" alt="thumb" className="w-full h-full" width={500} height={500}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2025/IMG_3698.JPG" alt="thumb" className="w-full h-full" width={500} height={500}></Image>
+                </div> */}
+
+              </div>
+
+              {/* 
+              <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 gap-5 lg:grid-cols-3 shadow-xl">
+                <div className="relative h-full min-h-[250px] w-full hover:cursor-pointer roundedmoverflow-hidden">
+                  <Image src="/thumb_mid_01.png" alt="thumb" className="object-cover transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                </div>
+                <div className="relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
+                  <Image src="/thumb_mid_01.png" alt="thumb" className="object-cover transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                </div><div className="relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
+                  <Image src="/thumb_mid_01.png" alt="thumb" className="object-cover transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                </div>
+
+              </div> */}
+              {/* <br /><br /> */}
+
+              {/* <div className="text-center pb-4">
                 Past Events
               </div>
               <hr />
@@ -73,7 +155,6 @@ export default function Home() {
                   Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance.
                   <br /><br />
                   Let the rhythms of our heritage inspire and uplift your spirit!<br /><br />
-                  {/* Learn more... */}
                 </div>
               </div>
               <br /><br />
@@ -121,11 +202,8 @@ export default function Home() {
                   September 28th, 2024 <br />
                   10am-8:30pm
                   <br /><br />
-                  {/* <Link href="https://www.cambodiaday.com/" target="_blank">
-                    Learn More...
-                  </Link> */}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
