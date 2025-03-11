@@ -62,6 +62,14 @@ export default function Home() {
                   {/* Learn more... */}
                 </div>
               </div>
+
+              <div className="text-center mt-5">
+                <Link target="_blank" href="https://templehill.org/event/29th-annual-cambodian-new-year-celebration/">
+                  <div className="bg-[#F28904] hover:bg-[#FFC67F] shadow-xl text-lg rounded-full text-white py-2 px-6 ml-1">
+                    Reserve Your Free Ticket
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -284,19 +292,8 @@ export default function Home() {
               <br /><br /><br />
               <br /> */}
 
-              {/* <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
-                Our Sponsors
-              </div>
-              <div className="flex flex-row justify-center gap-8 lg:gap-[90px]">
-                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                </div>
-                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                </div>
-                <div className="bg-slate-200 flex items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
-                </div>
-              </div> */}
 
-              <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
+              <div className="text-sm uppercase w-full text-center font-bold mt-[0px] mb-8 text-[#F28904] tracking-wider">
                 Our Partners
               </div>
               <div className="flex flex-row justify-center gap-8 lg:gap-[90px]">
@@ -339,15 +336,6 @@ export default function Home() {
                     </div>
                   </div>
                 </Link>
-                {/* </div> */}
-                {/* <div className="m-auto">
-                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
-                  </div>
-                </div>
-                <div className="m-auto">
-                  <div className="bg-slate-200 rounded-full h-[125px] w-[125px]">
-                  </div>
-                </div> */}
               </div>
               <div className="flex flex-row justify-center gap-8 lg:gap-[90px] pt-8 md:hidden">
                 <div className="xbg-slate-200 flex md:hidden items-center justify-center font-bold tracking-widest pt-1 rounded-full h-[125px] w-[125px]">
@@ -377,11 +365,25 @@ export default function Home() {
                   SJCCD
                 </div>
               </div>
-              <br /><br />
             </div>
           </div>
 
+          <div className="m-[60px]">
+            <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
+              Our Sponsors
+            </div>
+            <div className="flex flex-row justify-center items-center  gap-8 lg:gap-[90px]">
+              <div className="">
+                <Image src="/sponsors/khmerbuddhist_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300}></Image>
+              </div>
+              <div className="">
+                <Image src="/sponsors/lds_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={260} height={300}></Image>
+              </div>
+            </div>
+          </div>
         </div >
+
+        <br />
       </div>
       <Footer></Footer>
     </main >
