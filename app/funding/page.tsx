@@ -37,7 +37,7 @@ export default function Home() {
               </div>
               <div className="lg:w-1/2 lg:pl-8 mt-6 lg:mt-0">
                 <br /><br />
-                <Image src="/funding/youth_group_01.jpg" alt="Grantors and dancers at a partnership event" className="w-full rounded-lg shadow-md" />
+                <Image src="/funding/youth_group_01.jpg" alt="Grantors and dancers at a partnership event" className="w-full rounded-lg shadow-md" width={300} height={300} />
               </div>
             </div>
 
