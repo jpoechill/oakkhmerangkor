@@ -61,7 +61,12 @@ export default function Footer() {
           </Link>
           <br /><br />
           <div className="hidden lg:block">
-            <span className="text-3xl">🇰🇭 🇺🇸</span><br />
+            <div className="flex justify-end w-[400px] gap-5 text-right">
+              <Image src="/flags/krom.png" width={40} height={50} alt="Khmer Krom"></Image>
+              <Image src="/flags/cam.png" width={40} height={50} alt="Khmer Krom"></Image>
+              <Image src="/flags/usa.png" width={40} height={50} alt="Khmer Krom"></Image>
+            </div>
+            <br />
             Oakland Khmer Angkor Dance Troupe © 2025</div>
         </div>
 
