@@ -56,7 +56,7 @@ export default function Home() {
           <div className="flex justify-center w-full pt-0 p-5 px-5 lg:px-10 my-5">
             <div className="flex flex-col w-full max-w-[1040px]">
               <div className="text-center pb-4">
-                Other Cultural Events This Year
+                Other Events
               </div>
               <hr />
               <br />
