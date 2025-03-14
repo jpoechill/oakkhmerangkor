@@ -48,7 +48,7 @@ const HoverVideo = () => {
     >
       <video
         ref={videoRef}
-        src="/video/b-roll2.mp4" // Replace with actual path
+        src="/video/b-roll.mp4" // Replace with actual path
         className="w-full h-full object-cover scale-[1.01]"
         loop
         muted={isMuted}

@@ -114,6 +114,7 @@ export default function Home() {
                   title="KANE"
                   subtitle="(របាំគែន)"
                   link="/dances/kane"
+                  videoSrc="/video/kane.mp4"
                   imageSrc="/thumbs/kane.png"
                 />
 
@@ -121,6 +122,7 @@ export default function Home() {
                   title="FLOWER"
                   subtitle="(របាំបុប្ផាលោកីយ៏)"
                   link="/dances/flower"
+                  videoSrc="/video/flower.mp4"
                   imageSrc="/thumbs/flower.png"
                 />
 
