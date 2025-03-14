@@ -2,6 +2,8 @@ import Image from "next/image";
 import Header from "./Header"
 import Footer from "./Footer"
 import Link from "next/link"
+import HoverVideo from "./HoverVideo";
+import HoverVideoThumbnail from "./HoverVideoThumbnail"
 
 export default function Home() {
 
@@ -33,14 +35,17 @@ export default function Home() {
             </div>
           </div>
 
-
           <div className="flex justify-center w-full p-5 px-10 mt-3 my-5">
             <div className="flex flex-col w-full max-w-[1040px]">
               {/* <h1>Upcoming Events</h1>
               <br /> */}
               <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
                 <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
-                  <Image src="/cover_03.png" alt="thumb" className="object-cover w-full h-full transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+
+                  {/* <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-[5000] ease-in-out group-hover:hidden" fill></Image> */}
+
+                  <HoverVideo />
+                  <Image src="/cover_03.png" alt="thumb" className="object-cover w-full h-full transition-all duration-[5000] delay-[.0s] ease-in-out group-hover:hidden" fill></Image>
                 </div>
                 <div className="col-span-3 font-light p-5 text-md">
                   <span className="font-bold text-lg">
@@ -80,169 +85,76 @@ export default function Home() {
               <br />
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-                <Link href="/dances/apsara">
-                  <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                      APSARA
-                      <div className="text-2xl font-light">(អប្សរា)</div>
-                    </div>
-                    <div className="">
-
-                      <Image src="/thumbs/apsara_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
-                        width={500}
-                        height={500}
-                      ></Image>
-                      <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
-
-                    </div>
-                  </div>
-                </Link>
-
-                <Link href="/dances/coconut">
-                  <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-[.1] transition-all duration-500 flex text-xl justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                      COCONUT
-                      <div className="text-2xl font-light">(របាំគោះត្រឡោក)</div>
-                    </div>
-                    <div className="">
-
-                      <Image src="/thumbs/coconut_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
-                        width={500}
-                        height={500}
-                      ></Image>
-                      <Image src="/thumbs/coconut.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
-
-                      {/* <Image src="/thumbs/coconut.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image> */}
-                    </div>
-                  </div>
-                </Link>
+                <HoverVideoThumbnail
+                  title="APSARA"
+                  subtitle="(អប្សរា)"
+                  link="/dances/apsara"
+                  videoSrc="/video/apsara.mp4"
+                  imageSrc="/thumbs/apsara.png"
+                />
 
 
-                <Link href="/dances/love-moon">
-                  <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-[.25] group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                      LOVE MOON
-                      <div className="text-2xl font-light">(របាំដួងច័ន្ទ្រា)</div>
-                    </div>
-                    <div className="">
+                <HoverVideoThumbnail
+                  title="COCONUT"
+                  subtitle="(របាំគោះត្រឡោក)"
+                  link="/dances/coconut"
+                  videoSrc="/video/coconut.mp4"
+                  imageSrc="/thumbs/coconut.png"
+                />
 
-                      <Image src="/thumbs/lovemoon_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
-                        width={500}
-                        height={500}
-                      ></Image>
-                      <Image src="/thumbs/lovemoon.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
-                    </div>
-                  </div>
-                </Link>
+                <HoverVideoThumbnail
+                  title="LOVE MOON"
+                  subtitle="(របាំដួងច័ន្ទ្រា)"
+                  link="/dances/love-moon"
+                  videoSrc="/video/dancer.mp4"
+                  imageSrc="/thumbs/lovemoon.png"
+                />
+
+                <HoverVideoThumbnail
+                  title="KANE"
+                  subtitle="(របាំគែន)"
+                  link="/dances/kane"
+                  imageSrc="/thumbs/kane.png"
+                />
+
+                <HoverVideoThumbnail
+                  title="FLOWER"
+                  subtitle="(របាំបុប្ផាលោកីយ៏)"
+                  link="/dances/flower"
+                  imageSrc="/thumbs/flower.png"
+                />
+
+                <HoverVideoThumbnail
+                  title="BLESSING"
+                  subtitle="(ជូនពរ)"
+                  link="/dances/blessing"
+                  imageSrc="/thumbs/blessing.png"
+                  fallbackImageSrc="/thumbs/blessing_02.png"
+                />
+
+                <HoverVideoThumbnail
+                  title="STICK"
+                  subtitle="(របាំឱផ្ទៃស្រុកខ្មែរ ឬរបាំគោះអង្រែ)"
+                  link="/dances/stick"
+                  imageSrc="/thumbs/stick.png"
+                  fallbackImageSrc="/thumbs/stick_02.png"
+                />
+
+                <HoverVideoThumbnail
+                  title="PLET"
+                  subtitle="(ភ្លែត)"
+                  link="/dances/plet"
+                  imageSrc="/thumbs/plet.png"
+                />
+
+                <HoverVideoThumbnail
+                  title="PHLOY SUOY"
+                  subtitle="(ផ្លយ ស៊ូយ)"
+                  link="/dances/phloy-suoy"
+                  imageSrc="/thumbs/phloy.png"
+                />
 
 
-                <Link href="/dances/kane">
-                  <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                      KANE
-                      <div className="text-2xl font-light">(របាំគែន)</div>
-                    </div>
-                    <div className="">
-                      <Image src="/thumbs/kane.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
-                    </div>
-                  </div>
-                </Link>
-
-
-                <Link href="/dances/flower">
-                  <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                      FLOWER
-                      <div className="text-2xl font-light">(របាំបុប្ផាលោកីយ៏)</div>
-                    </div>
-                    <div className="">
-
-                      <Image src="/thumbs/flower_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
-                        width={500}
-                        height={500}
-                      ></Image>
-                      <Image src="/thumbs/flower.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
-
-
-                    </div>
-                  </div>
-                </Link>
-
-
-                <Link href="/dances/blessing">
-                  <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                      BLESSING
-                      <div className="text-2xl font-light">(ជូនពរ)</div>
-                    </div>
-                    <div className="">
-                      <Image src="/thumbs/blessing_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
-                        width={500}
-                        height={500}
-                      ></Image>
-                      <Image src="/thumbs/blessing.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link href="/dances/stick">
-                  <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                      STICK
-                      <div className="text-2xl font-light">(របាំឱផ្ទៃស្រុកខ្មែរ​ ឬរបាំគោះអង្រែ)</div>
-                    </div>
-                    <div className="">
-
-                      <Image src="/thumbs/stick_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
-                        width={500}
-                        height={500}
-                      ></Image>
-                      <Image src="/thumbs/stick.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link href="/dances/plet">
-                  <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                      PLET
-                      <div className="text-2xl font-light">(ភ្លែត)</div>
-                    </div>
-                    <div className="">
-                      <Image src="/thumbs/plet.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
-                    </div>
-                  </div>
-                </Link>
-
-                <Link href="/dances/phloy-suoy">
-                  <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
-                    <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
-                    </div>
-                    <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                      PHLOY SUOY
-                      <div className="text-2xl font-light">(ផ្លយ ស៊ូយ)</div>
-                    </div>
-                    <div className="">
-                      <Image src="/thumbs/phloy.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
-                    </div>
-                  </div>
-                </Link>
 
               </div>
             </div>
