@@ -19,11 +19,17 @@ export default function Header() {
               <Link href="/" className="flex  flex-row gap-3 pr-3 items-center">
                 <Image src="/logo.svg" className="" alt="Top Logo" width={50} height={40}></Image>
               </Link>
+
             </div>
             <div className="hidden lg:flex flex-row gap-6 mt-2 mb-2 items-center text-lg">
-              <Link href="/" className="flex flex-row gap-3 pr-3 items-center">
-                <Image src="/logo.svg" className="transition-all duration-500 ease-in-out hover:scale-[1.10]" alt="Top Logo" width={50} height={40}></Image>
-              </Link>
+              <div className="rounded-full transition-transform duration-300 group">
+                <div className="w-full h-full group-hover:animate-pulse-in-out">
+                  <Link href="/" className="flex flex-row gap-3 pr-3 items-center">
+                    <Image src="/logo.svg" className="transition-all duration-500 ease-in-out hover:scale-[1.10]" alt="Top Logo" width={50} height={40}></Image>
+                  </Link>
+                </div>
+              </div>
+
               <div>
                 <Link href="/about" className={pathname.split('/')[1] == 'about' ? 'text-[#F28904]' : ''}>About</Link>
               </div>
