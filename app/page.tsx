@@ -144,7 +144,7 @@ export default function Home() {
 
                 <HoverVideoThumbnail
                   title="PLET"
-                  subtitle="(ភ្លែត)"
+                  subtitle="(ផ្លិត)"
                   link="/dances/plet"
                   imageSrc="/thumbs/plet.png"
                 />
