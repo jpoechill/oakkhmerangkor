@@ -89,7 +89,7 @@ export default function Home() {
                   title="APSARA"
                   subtitle="(អប្សរា)"
                   link="/dances/apsara"
-                  videoSrc="/video/apsara.mp4"
+                  // videoSrc="/video/apsara.mp4"
                   imageSrc="/thumbs/apsara.png"
                 />
 
@@ -98,7 +98,7 @@ export default function Home() {
                   title="COCONUT"
                   subtitle="(របាំគោះត្រឡោក)"
                   link="/dances/coconut"
-                  videoSrc="/video/coconut.mp4"
+                  // videoSrc="/video/coconut.mp4"
                   imageSrc="/thumbs/coconut.png"
                 />
 
@@ -106,7 +106,7 @@ export default function Home() {
                   title="LOVE MOON"
                   subtitle="(របាំដួងច័ន្ទ្រា)"
                   link="/dances/love-moon"
-                  videoSrc="/video/dancer.mp4"
+                  // videoSrc="/video/dancer.mp4"
                   imageSrc="/thumbs/lovemoon.png"
                 />
 
@@ -114,7 +114,7 @@ export default function Home() {
                   title="KANE"
                   subtitle="(របាំគែន)"
                   link="/dances/kane"
-                  videoSrc="/video/kane.mp4"
+                  // videoSrc="/video/kane.mp4"
                   imageSrc="/thumbs/kane.png"
                 />
 
@@ -122,7 +122,7 @@ export default function Home() {
                   title="FLOWER"
                   subtitle="(របាំបុប្ផាលោកីយ៏)"
                   link="/dances/flower"
-                  videoSrc="/video/flower.mp4"
+                  // videoSrc="/video/flower.mp4"
                   imageSrc="/thumbs/flower.png"
                 />
 
@@ -131,7 +131,7 @@ export default function Home() {
                   subtitle="(ជូនពរ)"
                   link="/dances/blessing"
                   imageSrc="/thumbs/blessing.png"
-                  fallbackImageSrc="/thumbs/blessing_02.png"
+                // fallbackImageSrc="/thumbs/blessing_02.png"
                 />
 
                 <HoverVideoThumbnail
@@ -139,7 +139,7 @@ export default function Home() {
                   subtitle="(របាំឱផ្ទៃស្រុកខ្មែរ ឬរបាំគោះអង្រែ)"
                   link="/dances/stick"
                   imageSrc="/thumbs/stick.png"
-                  fallbackImageSrc="/thumbs/stick_02.png"
+                // fallbackImageSrc="/thumbs/stick_02.png"
                 />
 
                 <HoverVideoThumbnail
@@ -288,8 +288,13 @@ export default function Home() {
             </div>
             <div className="flex flex-row justify-center items-center gap-8 lg:gap-[90px]">
               <div className="">
+                {/* <Link href="https://chucks-donuts.com/" target="_blank"> */}
+                <Image src="/sponsors/monynop.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300}></Image>
+                {/* </Link> */}
+              </div>
+              <div className="">
                 <Link href="https://chucks-donuts.com/" target="_blank">
-                  <Image src="/sponsors/chucks.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300}></Image>
+                  <Image src="/sponsors/chucks.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={140} height={300}></Image>
                 </Link>
               </div>
               <div className="">
@@ -300,11 +305,6 @@ export default function Home() {
               <div className="">
                 <Link href="https://www.akhmerbuddhistfoundation.org/" target="_blank">
                   <Image src="/sponsors/khmerbuddhist_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300}></Image>
-                </Link>
-              </div>
-              <div className="">
-                <Link href="https://www.churchofjesuschrist.org/" target="_blank">
-                  <Image src="/sponsors/lds_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={200} height={200}></Image>
                 </Link>
               </div>
             </div>
