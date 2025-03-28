@@ -288,6 +288,11 @@ export default function Home() {
             </div>
             <div className="flex flex-row justify-center items-center gap-8 lg:gap-[90px]">
               <div className="">
+                <Link href="https://chucks-donuts.com/" target="_blank">
+                  <Image src="/sponsors/chucks.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300}></Image>
+                </Link>
+              </div>
+              <div className="">
                 <Link href="https://stocksandblondessalon.com/" target="_blank">
                   <Image src="/sponsors/stocksnblondes.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300}></Image>
                 </Link>
