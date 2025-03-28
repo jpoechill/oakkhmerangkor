@@ -31,7 +31,32 @@ export default function Home() {
                 <br />
 
                 <div className="text-left w-full max-w-[900px]">
-                  <div className="border-b-2 border-[#F28904] pt-3 py-[50px]">
+                  <div className="border-b-2 border-[#F28904] py-[50px]">
+                    <div id="question6" className="pb-6 font-serif text-2xl font-bold">
+                      When is your next practice date?</div>
+                    <div id="answer6" className="font-light text-md">
+                      Our upcoming, first practice night will be Friday, January 2nd, 2026.
+                    </div>
+                  </div>
+
+                  <div className="border-b-2 border-[#F28904] py-[50px]">
+                    <div id="question6" className="pb-6 font-serif text-2xl font-bold">
+                      How can I enroll my youth?
+                    </div>
+                    <div id="answer6" className="font-light text-md">
+                      Send us an email through  <Link href="mailto:oakkhmerangkor@gmail.com">oakkhmerangkor@gmail.com</Link>, fill out the form here: <Link href="/contact">link</Link>.
+                    </div>
+                  </div>
+
+                  <div className="border-b-2 border-[#F28904] py-[50px]">
+                    <div id="question6" className="pb-6 font-serif text-2xl font-bold">
+                      When is the next event?</div>
+                    <div id="answer6" className="font-light text-md">
+                      Our next New Year&apos;s event will be Saturday, March 28th, 2026
+                    </div>
+                  </div>
+
+                  <div className="border-b-2 border-[#F28904] py-[50px]">
                     <div id="question1" className="pb-6 font-serif text-2xl font-bold">
                       What is Cambodian traditional dance?
                     </div>
