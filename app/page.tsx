@@ -286,7 +286,12 @@ export default function Home() {
             <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
               Our Sponsors
             </div>
-            <div className="flex flex-row justify-center items-center  gap-8 lg:gap-[90px]">
+            <div className="flex flex-row justify-center items-center gap-8 lg:gap-[90px]">
+              <div className="">
+                <Link href="https://stocksandblondessalon.com/" target="_blank">
+                  <Image src="/sponsors/stocksnblondes.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300}></Image>
+                </Link>
+              </div>
               <div className="">
                 <Link href="https://www.akhmerbuddhistfoundation.org/" target="_blank">
                   <Image src="/sponsors/khmerbuddhist_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300}></Image>
@@ -294,7 +299,7 @@ export default function Home() {
               </div>
               <div className="">
                 <Link href="https://www.churchofjesuschrist.org/" target="_blank">
-                  <Image src="/sponsors/lds_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={260} height={300}></Image>
+                  <Image src="/sponsors/lds_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={200} height={200}></Image>
                 </Link>
               </div>
             </div>
