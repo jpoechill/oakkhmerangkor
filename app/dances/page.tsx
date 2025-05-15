@@ -32,11 +32,11 @@ export default function Home() {
                   </div>
                   <div className="">
 
-                    <Image src="/thumbs/apsara_02.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
+                    <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]"
                       width={500}
                       height={500}
                     ></Image>
-                    <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
+                    <Image src="/thumbs/apsara.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:hidden" fill></Image>
 
                   </div>
                 </div>

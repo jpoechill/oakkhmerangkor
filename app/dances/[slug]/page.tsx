@@ -34,7 +34,7 @@ class BlogPostRepository {
       contentFirst: "Apsara is a classical Cambodian dance that draws inspiration from the celestial dancers, or 'Apsaras,' in Hindu mythology, who are believed to be divine and graceful beings. The dance is characterized by slow, fluid movements that emphasize elegance and beauty. Dancers wear intricate costumes, including headdresses and jewelry, and perform to music from the traditional Pinpeat orchestra. The dance embodies divine grace and is often performed to honor the gods or during important cultural ceremonies and celebrations.",
       contentSecond: "The Apsara dance has deep spiritual and cultural significance in Cambodia, often seen as a connection between the human and divine realms. The dancers convey complex emotions and stories through intricate hand gestures and delicate poses, bringing to life the celestial beings they represent. The Apsara dance is considered a symbol of grace and beauty, often performed during royal events, national celebrations, and religious ceremonies. It has become an iconic part of Cambodian culture and heritage, showcasing the country's rich artistic history.",
       thumbnail: "/thumbs/apsara.png",
-      thumbnails: ["apsara.jpg"],
+      thumbnails: ["apsara/Rhythmix-API-2025-3018.jpg", "apsara/Rhythmix-API-2025-3052.jpg", "apsara/Rhythmix-API-2025-3055.jpg", "apsara/Rhythmix-API-2025-3084.jpg", "apsara/apsara.jpg"],
       labels: ["elegance", "heritage", "mythology", "spirituality"]
     },
     {
@@ -54,7 +54,7 @@ class BlogPostRepository {
       contentFirst: "The Love Moon dance reflects themes of romance, longing, and beauty, inspired by the moon's mystical and romantic associations in Cambodian culture. The dance is performed with soft, graceful movements that express the emotions of love, passion, and desire, often symbolized by the moon’s glow. The dancers' fluid motions evoke the mysterious allure of the moon, with costumes and choreography designed to reflect the tranquility and beauty of a romantic evening under the moonlight.",
       contentSecond: "In Cambodian culture, the moon has long been associated with beauty and the ideals of love and longing. The Love Moon dance expresses these feelings through carefully crafted choreography, where the dancers embody the mood of a romantic evening. The performance creates a sense of dreaminess and elegance, using the moon as a metaphor for love’s subtle, enduring power. This dance is often performed during celebrations or events focused on love, romance, and the beauty of nature.",
       thumbnail: "/thumbs/lovemoon.png",
-      thumbnails: ["lovemoon.jpg"],
+      thumbnails: ["lovemoon.jpg", "lovemoon/Rhythmix-API-2025-2812.jpg", "lovemoon/Rhythmix-API-2025-2825.jpg"],
       labels: ["romance", "elegance", "expression", "tradition"]
     },
     {
@@ -299,7 +299,7 @@ export default function BlogPostPage({
                     <div className="text-2xl font-light">(អប្សរា)</div>
                   </div>
                   <div className="">
-                    <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                    <Image src="/thumbs/apsara.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                   </div>
                 </div>
               </Link>

@@ -90,7 +90,7 @@ export default function Home() {
                   subtitle="(អប្សរា)"
                   link="/dances/apsara"
                   // videoSrc="/video/apsara.mp4"
-                  imageSrc="/thumbs/apsara.png"
+                  imageSrc="/thumbs/apsara.jpg"
                 />
 
 
