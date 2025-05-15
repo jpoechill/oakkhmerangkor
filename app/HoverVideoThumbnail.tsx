@@ -58,7 +58,7 @@ const HoverVideoThumbnail: React.FC<HoverVideoThumbnailProps> = ({
         onMouseLeave={handleMouseLeave}
       >
         <div className="absolute h-full w-full z-10 tracking-widest bg-black opacity-10 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center"></div>
-        <div className="absolute h-full w-full text-center z-10 tracking-widest text-white flex flex-col justify-center items-center">
+        <div className="absolute h-full w-full text-center z-10 tracking-widest text-white flex flex-col justify-center items-center font-bold">
           {title}
           <div className="text-2xl font-light">{subtitle}</div>
         </div>
