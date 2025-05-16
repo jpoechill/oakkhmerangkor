@@ -93,6 +93,11 @@ export default function Header() {
                 Dances
               </div>
             </Link>
+            <Link href="/blog">
+              <div className="border-b-2 pb-4 border-[#F28904]">
+                Blog
+              </div>
+            </Link>
             <Link href="/events">
               <div className="border-b-2 pb-4 border-[#F28904]">
                 Events
