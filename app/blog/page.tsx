@@ -21,7 +21,9 @@ export default function Home() {
       <Header></Header>
 
       <div className="bg-white">
-        <div className="flex justify-center w-full p-5 pt-0 mb-10 pb-10 px-5 lg:px-10 animate-[fade-me-in_.5s_ease-in-out] bg-white">
+        <div className="flex flex-col items-center justify-center w-full p-5 pt-0 mb-10 pb-10 px-5 lg:px-10 animate-[fade-me-in_.5s_ease-in-out] bg-white">
+
+
           <div className="flex flex-col w-full max-w-[1040px] mt-[130px]">
             <div className="text-center">
               <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">Blog</div>
@@ -29,32 +31,31 @@ export default function Home() {
                 Stories That Dance With Us
               </div>
             </div>
+          </div>
 
-            <div className="flex flex-col justify-center w-full p-0 px-0 my-3">
+          <div className="flex w-full mt-10">
+            <div className="relative w-full h-[500px]">
+              <Image
+                src="/blog/051425/Rhythmix-API-2025-3120.jpg" // Make sure this is in your /public/images/ folder
+                alt="Oakland Khmer Angkor Dance Troupe performing"
+                layout="fill"
+                objectFit="cover"
+                className=""
+                priority
+              />
             </div>
+          </div>
 
-
-
-
+          <div className="flex flex-col w-full max-w-[1040px] mt-4">
             <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
               <div className="lg:w-full">
-                <div className="relative w-full h-[400px] mb-6">
-                  <Image
-                    src="/blog/051425/Rhythmix-API-2025-3120.jpg" // Make sure this is in your /public/images/ folder
-                    alt="Oakland Khmer Angkor Dance Troupe performing"
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded"
-                    priority
-                  />
-                </div>
                 <div id="title" className="pb-6 font-serif text-2xl font-bold">
                   Celebrating Culture at the Rhythmix API Festival 🌸
                 </div>
                 <div id="answer1" className="font-light text-md">
                   On Saturday, April 26, 2025, the we had the honor of performing at the Rhythmix Asian & Pacific Islander Arts & Culture Festival at Bohol Circle Immigrant Park in Alameda. This vibrant event, hosted by <Link href="https://www.rhythmix.org/" className="text-[#F28904] hover:text-[#5E489A]" target="_new">Rhythmix Cultural Works</Link> in partnership with the City of Alameda Recreation and Park Department, brought together communities from across the Bay Area to celebrate the rich diversity of Asian and Pacific Islander cultures through music, dance, food, and art .
                   <br /><br />
-                  We were thrilled to share the beauty of Cambodian classical dance alongside incredible performances by <a href="https://www.halaumakana.com/" className="body-link" target="_blank" rel="noopener noreferrer">Hālau Makana</a>, <a href="https://thesampaguitas.com/" className="body-link" target="_blank" rel="noopener noreferrer">The Sampaguitas</a>, <a href="https://dholrhythms.com/" className="body-link" target="_blank" rel="noopener noreferrer">Dholrhythms Dance Company</a>, <a href="http://urisawe.org/" className="body-link" target="_blank" rel="noopener noreferrer">Urisawe</a>, <a href="https://www.samoansolutions.org/" className="body-link" target="_blank" rel="noopener noreferrer">Samoan Solutions</a>, <a href="https://www.facebook.com/VietStepsCA/" className="body-link" target="_blank" rel="noopener noreferrer">Viet Steps</a>, <a href="https://www.liondanceme.com/" className="body-link" target="_blank" rel="noopener noreferrer">Lion Dance ME</a>, and many more. The festival also featured hands-on art activities, delicious Asian and Pacific-inspired foods, and a variety of community vendors, creating a joyful gathering that brought the community together in appreciation of shared traditions and creativity.
+                  We were thrilled to share the beauty of Cambodian classical dance alongside incredible performances by <a href="https://www.halaumakana.com/" className="body-link" target="_blank" rel="noopener noreferrer">Hālau Makana</a>, <a href="https://thesampaguitas.com/" className="body-link" target="_blank" rel="noopener noreferrer">The Sampaguitas</a>, <a href="https://dholrhythms.com/" className="body-link" target="_blank" rel="noopener noreferrer">Dholrhythms Dance Company</a>, <a href="https://urisawe.org/" className="body-link" target="_blank" rel="noopener noreferrer">Urisawe</a>, <a href="https://www.samoansolutions.org/" className="body-link" target="_blank" rel="noopener noreferrer">Samoan Solutions</a>, <a href="https://www.facebook.com/VietStepsCA/" className="body-link" target="_blank" rel="noopener noreferrer">Viet Steps</a>, <a href="https://www.liondanceme.com/" className="body-link" target="_blank" rel="noopener noreferrer">Lion Dance ME</a>, and many more. The festival also featured hands-on art activities, delicious Asian and Pacific-inspired foods, and a variety of community vendors, creating a joyful gathering that brought the community together in appreciation of shared traditions and creativity.
                   <br /><br />
                   Thank you to <Link href="https://www.rhythmix.org/" className="text-[#F28904] hover:text-[#5E489A]" target="_new">Rhythmix Cultural Works</Link> for creating space to honor cultural traditions and creativity. And thank you to everyone who came out to support, dance, and celebrate with us!
                   <br /><br />
@@ -111,8 +112,6 @@ export default function Home() {
                   className="rounded"
                 />
               </div>
-
-
 
               {/* Image 6 */}
               <div className="col-span-2 relative w-full h-[400px]">

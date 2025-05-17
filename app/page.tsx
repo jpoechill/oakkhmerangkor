@@ -44,8 +44,51 @@ export default function Home() {
 
                   {/* <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-[5000] ease-in-out group-hover:hidden" fill></Image> */}
 
+                  {/* <HoverVideo /> */}
+                  <Link href="/blog">
+                    <Image src="/blog/051425/Rhythmix-API-2025-2993.jpg" alt="thumb" className="object-cover w-full h-full transition-all duration-[5000] delay-[.0s] ease-in-out" fill></Image>
+                  </Link>
+                </div>
+                <div className="col-span-3 font-light p-5 text-md">
+                  <span className="font-bold text-lg">
+
+                    {/* <Link href="/blog" className="text-[#F28904] hover:text-[#5E489A]" > */}
+
+                    Rhythmix API Festival 🌸
+                    {/* </Link> */}
+                  </span>
+                  <br /><br />
+                  On April 26, 2025, we proudly shared Cambodian classical dance at the <Link href="https://www.rhythmix.org/events/api-festival-2025/" className="text-[#F28904] hover:text-[#5E489A]" target="_new">Rhythmix API Festival</Link> in Alameda. The event celebrated Asian and Pacific Islander cultures with music, dance, food, and art.
+                  <br /><br />
+                  Thank you to <Link href="https://www.rhythmix.org/" className="text-[#F28904] hover:text-[#5E489A]" target="_new">Rhythmix Cultural Works</Link> and everyone who came to support and celebrate with us!
+                  <br /><br />
+
+                  <Link href="/blog" className="text-[#F28904] hover:text-[#5E489A]" >
+                    More details...
+                  </Link>
+                </div>
+                {/* <div className="col-span-3 font-light p-5 text-md">
+                  <span className="font-bold text-lg">
+                    Cambodian New Year 2025
+                  </span>
+                  <br /><br />
+                  Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance.
+                  <br /><br />
+                  📍 4770 Lincoln Ave Oakland, CA 94602
+                  <br /><br />
+                  March 29th, 2025 <br />
+                  4pm - 9:00pm
+                  <br /><br />
+                </div> */}
+              </div>
+
+              {/* <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 mt-8 lg:grid-cols-8 shadow-xl">
+                <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
+
+                  <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-[5000] ease-in-out group-hover:hidden" fill></Image>
+
                   <HoverVideo />
-                  <Image src="/cover_03.png" alt="thumb" className="object-cover w-full h-full transition-all duration-[5000] delay-[.0s] ease-in-out group-hover:hidden" fill></Image>
+                  <Image src="/cover_03.png" alt="thumb" className="object-cover w-full h-full transition-all duration-[5000] delay-[.0s] ease-in-out" fill></Image>
                 </div>
                 <div className="col-span-3 font-light p-5 text-md">
                   <span className="font-bold text-lg">
@@ -54,27 +97,22 @@ export default function Home() {
                   <br /><br />
                   Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance.
                   <br /><br />
-                  {/* Tickets: Coming Soon... <br /><br /> */}
                   📍 4770 Lincoln Ave Oakland, CA 94602
-                  {/* Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance. */}
                   <br /><br />
-
                   March 29th, 2025 <br />
                   4pm - 9:00pm
-                  {/* Let the rhythms of our heritage inspire and uplift your spirit! */}
-
                   <br /><br />
-                  {/* Learn more... */}
                 </div>
-              </div>
+              </div> */}
 
-              <div className="text-center mt-5">
+
+              {/* <div className="text-center mt-5">
                 <Link target="_blank" href="https://templehill.org/event/29th-annual-cambodian-new-year-celebration/">
                   <div className="bg-[#F28904] hover:bg-[#FFC67F] shadow-xl text-lg rounded-full text-white py-2 px-6 ml-1">
                     Reserve Your Free Ticket
                   </div>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
 

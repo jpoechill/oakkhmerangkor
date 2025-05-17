@@ -31,22 +31,16 @@ export default function Home() {
                 </div>
                 <div className="col-span-3 p-5 font-light text-md">
                   <span className="font-bold text-lg">
-                    Cambodian New Year 2025
+                    Cambodian New Year 2026
                   </span>
                   <br /><br />
                   Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance.
                   <br /><br />
-                  {/* Tickets: Coming Soon... <br /><br /> */}
                   📍 4770 Lincoln Ave Oakland, CA 94602
-                  {/* Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance. */}
                   <br /><br />
-
-                  March 29th, 2025 <br />
+                  Last Saturday of March, 2025 <br />
                   4pm - 9:00pm
-                  {/* Let the rhythms of our heritage inspire and uplift your spirit! */}
-
                   <br /><br />
-                  {/* Learn more... */}
                 </div>
               </div>
             </div>
