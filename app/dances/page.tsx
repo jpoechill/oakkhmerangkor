@@ -158,7 +158,7 @@ export default function Home() {
                 </div>
               </Link>
 
-              <Link href="/dances/plet">
+              <Link href="/dances/sovann">
                 <div className="group hover:cursor-pointer relative h-0 w-[100%] pb-[100%] overflow-hidden rounded-2xl">
                   <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
                   </div>
@@ -167,7 +167,7 @@ export default function Home() {
                     <div className="text-2xl font-light">(ភ្លែត)</div>
                   </div>
                   <div className="">
-                    <Image src="/thumbs/plet.png" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
+                    <Image src="/thumbs/sovann.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
                   </div>
                 </div>
               </Link>
