@@ -51,13 +51,13 @@ class BlogPostRepository {
 // Create repository instance
 const blogPostRepository = new BlogPostRepository()
 
-export const metadata: Metadata = {
-  title: "Oakland Khmer Angkor Dance Troupe | Meet Our Students",
-  description: "Discover the bright young talents of the Oakland Khmer Angkor Dance Troupe. Learn more about each student\u2019s background, passions, and cultural journey.",
-  openGraph: {
-    images: 'https://www.oakkhmerangkor.com/profiles/sora.jpeg',
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Oakland Khmer Angkor Dance Troupe | Meet Our Students",
+//   description: "Discover the bright young talents of the Oakland Khmer Angkor Dance Troupe. Learn more about each student\u2019s background, passions, and cultural journey.",
+//   openGraph: {
+//     images: 'https://www.oakkhmerangkor.com/profiles/sora.jpeg',
+//   },
+// };
 
 // Type-safe metadata generation
 export async function generateMetadata({
@@ -75,8 +75,11 @@ export async function generateMetadata({
   }
 
   return {
-    title: post.title,
-    // description: `Blog post by ${post.author.name}`,
+    title: 'Oakland Khmer Angkor Dance Troupe | Meet Our Students',
+    description: "Discover the bright young talents of the Oakland Khmer Angkor Dance Troupe. Learn more about each student\u2019s background, passions, and cultural journey.",
+    openGraph: {
+      images: 'https://www.oakkhmerangkor.com/profiles/sora.jpeg',
+    }
     // authors: [{ name: post.author.name }],
     // keywords: post.tags
   }
