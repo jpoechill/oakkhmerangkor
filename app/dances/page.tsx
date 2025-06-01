@@ -164,7 +164,7 @@ export default function Home() {
                   </div>
                   <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
                     PLET
-                    <div className="text-2xl font-light">(ភ្លែត)</div>
+                    <div className="text-2xl font-light">(សុវណ្ណមច្ឆា)</div>
                   </div>
                   <div className="">
                     <Image src="/thumbs/sovann.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>

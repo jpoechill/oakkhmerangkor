@@ -182,7 +182,7 @@ export default function Home() {
 
                 <HoverVideoThumbnail
                   title="SOVANN MACHA"
-                  subtitle="(ផ្លិត)"
+                  subtitle="(សុវណ្ណមច្ឆា)"
                   link="/dances/sovann"
                   imageSrc="/thumbs/sovann.jpg"
                 />
