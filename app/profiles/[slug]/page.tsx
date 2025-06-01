@@ -51,10 +51,9 @@ class BlogPostRepository {
 // Create repository instance
 const blogPostRepository = new BlogPostRepository()
 
-
 export const metadata: Metadata = {
   title: "Oakland Khmer Angkor Dance Troupe | Meet Our Students",
-  description: "Discover the bright young talents of the Oakland Khmer Angkor Dance Troupe. Learn more about each student’s background, passions, and cultural journey.",
+  description: "Discover the bright young talents of the Oakland Khmer Angkor Dance Troupe. Learn more about each student\u2019s background, passions, and cultural journey.",
   openGraph: {
     images: 'https://www.oakkhmerangkor.com/profiles/sora.jpeg',
   },

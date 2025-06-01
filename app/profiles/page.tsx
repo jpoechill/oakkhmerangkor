@@ -33,7 +33,7 @@ export default function Home() {
           <div className="flex flex-col w-full max-w-[1040px] mt-[130px]">
             <div className="text-center mb-10">
               <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">Student Profiles</div>
-              <div className="text-3xl font-bold tracking-wide">Meet Our Dancer</div>
+              <div className="text-3xl font-bold tracking-wide">Meet Our Dancers</div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
