@@ -163,7 +163,7 @@ export default function Home() {
                   <div className="absolute h-full font-bold w-full z-10 tracking-widest bg-black opacity-25 group-hover:opacity-0 transition-all duration-500 flex text-xl justify-center items-center">
                   </div>
                   <div className="flex-col absolute h-full font-bold w-full text-center z-10 tracking-widest text-white flex text-xl justify-center items-center">
-                    PLET
+                    SOVANN MACHA
                     <div className="text-2xl font-light">(សុវណ្ណមច្ឆា)</div>
                   </div>
                   <div className="">
