@@ -5,8 +5,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Oakland Khmer Angkor Dance Troupe",
-  description: "Discover the Oakland Khmer Angkor Dance Troupe, a vibrant Cambodian youth traditional dance group in Oakland, CA. Celebrating over 25 years of cultural heritage and artistic excellence. Join us in preserving and promoting the beauty of Khmer dance.",
+  title: "Oakland Khmer Angkor Dance Troupe at the 2025 Rhythmix API Festival",
+  description: "Celebrating Cambodian dance at the 2025 Rhythmix API Festival in Alameda! A vibrant day of music, art, and culture honoring Asian & Pacific Islander communities across the Bay Area.",
   openGraph: {
     images: 'https://www.oakkhmerangkor.com/blog/051425/Rhythmix-API-2025-3120.jpg',
   },
