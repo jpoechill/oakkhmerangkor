@@ -24,8 +24,8 @@ export default function Home() {
         <div className="flex justify-center w-full p-5 pt-0 px-5 lg:px-10 animate-[fade-me-in_.5s_ease-in-out] bg-white">
           <div className="flex flex-col w-full max-w-[1040px] mt-[130px]">
             <div className="text-center mb-10">
-              <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">Meet Our Students</div>
-              <div className="text-3xl font-bold tracking-wide">Student Profiles</div>
+              <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">Student Profiles</div>
+              <div className="text-3xl font-bold tracking-wide">Meet Our Dancer</div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
