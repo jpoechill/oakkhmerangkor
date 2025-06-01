@@ -1,5 +1,3 @@
-'use client';
-
 import Image from "next/image";
 import Header from "../Header";
 import Footer from "../Footer";
