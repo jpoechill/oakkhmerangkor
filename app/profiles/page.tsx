@@ -3,11 +3,9 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Link from "next/link"
 
-export default function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+
+
+export default function Home() {
   const students = [
     {
       name: "Sokha Chan",
