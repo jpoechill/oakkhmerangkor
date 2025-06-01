@@ -4,15 +4,7 @@ import { notFound } from 'next/navigation'
 import Image from "next/image";
 import Header from "../../Header"
 import Footer from "../../Footer"
-import Link from "next/link"
 
-export const metadata: Metadata = {
-  title: "Oakland Khmer Angkor Dance Troupe | Meet Our Students",
-  description: "Discover the bright young talents of the Oakland Khmer Angkor Dance Troupe. Learn more about each student’s background, passions, and cultural journey.",
-  openGraph: {
-    images: 'https://www.oakkhmerangkor.com/profiles/sora.jpeg',
-  },
-};
 interface Section {
   id: number;
   name: string;
@@ -59,6 +51,14 @@ class BlogPostRepository {
 // Create repository instance
 const blogPostRepository = new BlogPostRepository()
 
+
+export const metadata: Metadata = {
+  title: "Oakland Khmer Angkor Dance Troupe | Meet Our Students",
+  description: "Discover the bright young talents of the Oakland Khmer Angkor Dance Troupe. Learn more about each student’s background, passions, and cultural journey.",
+  openGraph: {
+    images: 'https://www.oakkhmerangkor.com/profiles/sora.jpeg',
+  },
+};
 
 // Type-safe metadata generation
 export async function generateMetadata({
