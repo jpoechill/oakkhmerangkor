@@ -2,6 +2,15 @@ import Image from "next/image";
 import Header from "../Header"
 import Footer from "../Footer"
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Oakland Khmer Angkor Dance Troupe",
+  description: "Discover the Oakland Khmer Angkor Dance Troupe, a vibrant Cambodian youth traditional dance group in Oakland, CA. Celebrating over 25 years of cultural heritage and artistic excellence. Join us in preserving and promoting the beauty of Khmer dance.",
+  openGraph: {
+    images: '/blog/051425/Rhythmix-API-2025-3120.jpg',
+  },
+};
 
 export default function Home() {
   const imageFilenames = [
