@@ -119,13 +119,13 @@ class BlogPostRepository {
     },
     {
       id: "10",
-      slug: "plet",
-      title: "Plet",
-      contentFirst: "Plet is a traditional Cambodian dance performed as an offering of respect and devotion during religious ceremonies or important life events. The dance's movements are intended to honor deities or ancestors, creating an atmosphere of reverence and spirituality. The dancers' slow and deliberate gestures convey respect and humility, and the dance is often accompanied by prayers or hymns. The choreography is designed to reflect the solemnity and sanctity of the occasion, reinforcing the connection between the human and divine realms.",
-      contentSecond: "Plet is often performed at religious festivals or ceremonies where respect and gratitude are expressed toward the gods or ancestors. The dance creates a peaceful, meditative ambiance, inviting viewers to reflect on their spiritual lives and the importance of honoring their heritage. Through its graceful movements and symbolic gestures, Plet underscores the values of devotion, respect, and community connection, making it a meaningful part of Cambodian cultural and spiritual life.",
-      thumbnail: "/thumbs/plet.png",
-      thumbnails: ["phlet.jpg"],
-      labels: ["devotion", "respect", "spirituality", "heritage"]
+      slug: "sovann",
+      title: "Sovann Macha",
+      contentFirst: "The Cambodian Savann Macha dance is a classical performance that tells the love story of Hanuman, the white monkey general, and Savann Macha, the golden mermaid princess. As Hanuman builds a stone bridge to rescue Sita, Savann Macha and her mermaids remove the stones. When they meet, they fall in love, and she helps him complete the bridge. The dance symbolizes harmony between land and sea through graceful movements and expressions.",
+      contentSecond: "In performance, the Savann Macha dance combines delicate, fluid motions with stylized gestures of Khmer classical ballet. Dancers wear ornate costumes—Hanuman in a white monkey mask and bodysuit, and Savann Macha in golden attire with a mermaid-like tail. The choreography highlights grace and emotion, capturing their conflict and romance. Accompanied by a traditional pinpeat orchestra, the dance entertains while preserving Cambodian mythology and artistic heritage.",
+      thumbnail: "/thumbs/sovann.jpg",
+      thumbnails: ["sovannmacha/sovann.jpg", "sovannmacha/sovann_01.jpg", "sovannmacha/sovann_02.jpg", "sovannmacha/sovann_04.jpg", "sovannmacha/sovann_03.jpg"],
+      labels: ["grace", "mythical", "romantic", "elegance"]
     },
     {
       id: "11",

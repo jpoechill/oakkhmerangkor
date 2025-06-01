@@ -21,6 +21,9 @@ export default function Footer() {
             <Link href="/dances">
               <div>Dances</div>
             </Link>
+            <Link href="/profiles">
+              <div>Profiles</div>
+            </Link>
             <Link href="/blog">
               <div>Blog</div>
             </Link>

@@ -37,6 +37,9 @@ export default function Header() {
                 <Link href="/dances" className={pathname.split('/')[1] == 'dances' ? 'text-[#F28904]' : ''}>Dances</Link>
               </div>
               <div>
+                <Link href="/profiles" className={pathname.split('/')[1] == 'profiles' ? 'text-[#F28904]' : ''}>Profiles</Link>
+              </div>
+              <div>
                 <Link href="/blog" className={pathname.split('/')[1] == 'blog' ? 'text-[#F28904]' : ''}>Blog</Link>
               </div>
               <div>
@@ -91,6 +94,11 @@ export default function Header() {
             <Link href="/dances">
               <div className="border-b-2 pb-4 border-[#F28904]">
                 Dances
+              </div>
+            </Link>
+            <Link href="/profiles">
+              <div className="border-b-2 pb-4 border-[#F28904]">
+                Profiles
               </div>
             </Link>
             <Link href="/blog">

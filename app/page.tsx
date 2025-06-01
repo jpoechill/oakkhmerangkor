@@ -181,10 +181,10 @@ export default function Home() {
                 />
 
                 <HoverVideoThumbnail
-                  title="PLET"
+                  title="SOVANN MACHA"
                   subtitle="(ផ្លិត)"
-                  link="/dances/plet"
-                  imageSrc="/thumbs/plet.png"
+                  link="/dances/sovann"
+                  imageSrc="/thumbs/sovann.jpg"
                 />
 
                 <HoverVideoThumbnail
