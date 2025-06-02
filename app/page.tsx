@@ -63,9 +63,9 @@ export default function Home() {
                   Thank you to <Link href="https://www.rhythmix.org/" className="text-[#F28904] hover:text-[#5E489A]" target="_new">Rhythmix Cultural Works</Link> and everyone who came to support and celebrate with us!
                   <br /><br />
 
-                  <Link href="/blog" className="text-[#F28904] hover:text-[#5E489A]" >
+                  {/* <Link href="/blog" className="text-[#F28904] hover:text-[#5E489A]" >
                     More details...
-                  </Link>
+                  </Link> */}
                 </div>
                 {/* <div className="col-span-3 font-light p-5 text-md">
                   <span className="font-bold text-lg">
@@ -168,7 +168,7 @@ export default function Home() {
                   title="BLESSING"
                   subtitle="(ជូនពរ)"
                   link="/dances/blessing"
-                  imageSrc="/thumbs/blessing.png"
+                  imageSrc="/thumbs/blessing_03.jpg"
                 // fallbackImageSrc="/thumbs/blessing_02.png"
                 />
 

@@ -84,7 +84,7 @@ class BlogPostRepository {
       contentFirst: "The Blessing dance is a ceremonial performance performed at religious rituals or significant events like weddings. The dancers’ movements invoke blessings of good fortune, health, and prosperity, often accompanied by offerings of flowers, incense, or symbolic gestures. Slow, deliberate movements create a spiritual atmosphere, emphasizing the cultural belief in the power of positive energy, prayer, and community support to bring blessings and protection.",
       contentSecond: "Performed with grace and solemnity, the Blessing dance offers thanks, seeks guidance, and invokes divine favor. An integral part of Cambodian spiritual and cultural traditions, it connects with ancestors and deities. The choreography creates a peaceful ambiance, encouraging reflection on life's blessings. Often performed at significant events, it reinforces values of community, respect, and gratitude.",
       thumbnail: "/thumbs/blessing.png",
-      thumbnails: ["blessing.jpg"],
+      thumbnails: ["blessing/blessing_03.jpg", "blessing/blessing_04.jpg", "blessing/blessing_05.jpg", "blessing/blessing.jpg"],
       labels: ["spirituality", "gratitude", "blessings", "community"]
     },
     {

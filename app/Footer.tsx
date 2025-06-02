@@ -10,38 +10,42 @@ export default function Footer() {
         </Link>
       </div>
       <div className="flex flex-col lg:flex-row justify-between w-full max-w-[1040px]">
-        <div className="flex flex-row gap-10">
-          <Link href="/" className="hidden lg:block">
-            <Image src="/logo.svg" alt="Logo Basic" width={50} height={300}></Image>
-          </Link>
-          <div className="pl-0 grid grid-cols-3 lg:grid-cols-2 text-lg gap-x-10 h-min gap-y-10">
-            <Link href="/about">
-              <div>About</div>
+        <div className="flex flex-col">
+          <div className="flex flex-row gap-10">
+            <Link href="/" className="hidden lg:block">
+              <Image src="/logo.svg" alt="Logo Basic" width={50} height={300}></Image>
             </Link>
-            <Link href="/dances">
-              <div>Dances</div>
-            </Link>
-            <Link href="/profiles">
-              <div>Profiles</div>
-            </Link>
-            <Link href="/blog">
-              <div>Blog</div>
-            </Link>
-            <Link href="/events">
-              <div>Events</div>
-            </Link>
-            <Link href="/funding">
-              <div>Funding</div>
-            </Link>
-            <Link href="/faqs">
-              <div>FAQs</div>
-            </Link>
-            <Link href="/contact">
-              <div>Contact</div>
-            </Link>
+            <div className="pl-0 grid grid-cols-3 lg:grid-cols-2 text-lg gap-x-10 h-min gap-y-10">
+              <Link href="/about">
+                <div>About</div>
+              </Link>
+              <Link href="/dances">
+                <div>Dances</div>
+              </Link>
+              <Link href="/profiles">
+                <div>Profiles</div>
+              </Link>
+              <Link href="/blog">
+                <div>Blog</div>
+              </Link>
+              <Link href="/events">
+                <div>Events</div>
+              </Link>
+              <Link href="/funding">
+                <div>Funding</div>
+              </Link>
+              <Link href="/faqs">
+                <div>FAQs</div>
+              </Link>
+              <Link href="/contact">
+                <div>Contact</div>
+              </Link>
+
+            </div>
 
           </div>
         </div>
+
         <div className="pt-5 lg:pt-0 lg:text-right">
           <div className="flex flex-row pt-10 lg:pt-0 lg:flex-col w-full items-end gap-5 justify-start lg:justify-end">
             <Link href="/donate">
@@ -66,19 +70,28 @@ export default function Footer() {
             <Image src="/social-instagram.svg" className="inline" alt="Instagram Logo" width={40} height={30}></Image>
           </Link>
           <br /><br />
-          <div className="hidden lg:block">
-            <div className="flex justify-end w-[400px] gap-5 text-right">
+          <div className="hidden lg:block text-right">
+            <div className="flex justify-end w-full gap-5 text-right">
               <Image src="/flags/krom.png" width={40} height={50} alt="Khmer Krom"></Image>
               <Image src="/flags/cam.png" width={40} height={50} alt="Khmer Krom"></Image>
               <Image src="/flags/usa.png" width={40} height={50} alt="Khmer Krom"></Image>
             </div>
             <br />
-            Oakland Khmer Angkor Dance Troupe © 2025</div>
-        </div>
 
+
+            <div className="text-sm text-gray-400 pt-0 pb-2">
+              Media Credits: Alvaro Batista, Sek Meas, Samphan Rith, Chett Bullock
+            </div>
+            Oakland Khmer Angkor Dance Troupe © 2025
+          </div>
+        </div>
       </div>
       {/* <br /><br /> */}
-      <div className="pt-0 lg:hidden text-sm">Oakland Khmer Angkor Dance Troupe © 2025</div>
+
+      <div className="text-sm text-gray-400 pt-0 pb-2 lg:hidden">
+        Media Credits: Alvaro Batista, Sek Meas, Samphan Rith, Chett Bullock
+      </div>
+      <div className="pt-0 lg:hidden">Oakland Khmer Angkor Dance Troupe © 2025</div>
 
     </div>
   );
