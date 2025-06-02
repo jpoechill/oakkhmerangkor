@@ -51,9 +51,9 @@ export default function Header() {
               <div>
                 <Link href="/faqs" className={pathname.split('/')[1] == 'faqs' ? 'text-[#F28904]' : ''}>FAQs</Link>
               </div>
-              <div>
+              {/* <div>
                 <Link href="/contact" className={pathname.split('/')[1] == 'contact' ? 'text-[#F28904]' : ''}>Contact</Link>
-              </div>
+              </div> */}
             </div>
             <div className="hidden lg:flex flex-row lg:items-center gap-2 text-lg">
               <Link href="/donate">
@@ -116,11 +116,11 @@ export default function Header() {
                 FAQs
               </div>
             </Link>
-            <Link href="/contact">
+            {/* <Link href="/contact">
               <div className="">
                 Contact
               </div>
-            </Link>
+            </Link> */}
           </div>
           <div>
             <Link href="/donate" className="flex mt-5">
