@@ -45,12 +45,12 @@ export default function DashboardLayout({
                     </div>
                     oakkhmerangkor@gmail.com <br /><br />
                   </div>
-                  <div>
+                  {/* <div>
                     <div className="font-bold mb-2">
                       Phone
                     </div>
                     510-555-1234  <br /><br />
-                  </div>
+                  </div> */}
                   <div>
 
                     <div className="font-bold mb-4">
