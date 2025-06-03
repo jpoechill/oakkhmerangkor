@@ -2,142 +2,165 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useRef } from 'react';
-import { usePathname } from 'next/navigation'
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
-  const pathname = usePathname()
+  const pathname = usePathname();
   const [showMenu, setShowMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setShowMenu(false);
+  }, [pathname]);
+
+  const navLinks = [
+    { href: "/about", label: "About" },
+    { href: "/dances", label: "Dances" },
+    { href: "/profiles", label: "Profiles" },
+    { href: "/blog", label: "Blog" },
+    { href: "/events", label: "Events" },
+    { href: "/funding", label: "Funding" },
+    { href: "/faqs", label: "FAQs" },
+    { href: "/contact", label: "Contact" }
+  ];
+
+  const isActiveLink = (href) => {
+    return pathname.split('/')[1] === href.split('/')[1];
+  };
 
   return (
-    <div>
-      <div className="fixed pattern-bg  bg-[#200073] text-white flex justify-center w-full z-[99] top-0 py-3 lg:pt-4 lg:p-3 px-10 ">
-        <div className="flex flex-row justify-between w-full max-w-[1040px]">
-          <div className="flex  flex-row w-full justify-between lg:items-center">
+    <>
+      <header className={`fixed top-0 w-full z-50 pattern-bg transition-all duration-300 ${isScrolled
+        ? 'bg-gradient-to-br from-[#200073]/95 via-[#2d0a7a]/95 to-[#1a0056]/95 backdrop-blur-md shadow-lg'
+        : 'bg-gradient-to-br from-[#200073] via-[#2d0a7a] to-[#1a0056]'
+        }`}>
+        <div className="max-w-7xl mx-auto px-4 lg:px-6">
+          <div className="flex items-center justify-between h-20 lg:h-24">
 
-            <div className="flex lg:hidden flex-row gap-4 mt-2 mb-2">
-              <Link href="/" className="flex  flex-row gap-3 pr-3 items-center">
-                <Image src="/logo.svg" className="" alt="Top Logo" width={50} height={40}></Image>
+            {/* Left side: Logo + Nav */}
+            <div className="flex items-center space-x-10">
+              <Link href="/" className="flex items-center group">
+                <Image
+                  src="/logo.svg"
+                  alt="Oakland Khmer Angkor Dance Troupe"
+                  width={50}
+                  height={50}
+                  className="transition-all duration-300 group-hover:scale-110"
+                />
               </Link>
 
-            </div>
-            <div className="hidden lg:flex flex-row gap-6 mt-2 mb-2 items-center text-lg">
-              <div className="rounded-full transition-transform duration-300 group">
-                <div className="w-full h-full group-hover:animate-pulse-in-out">
-                  <Link href="/" className="flex flex-row gap-3 pr-3 items-center">
-                    <Image src="/logo.svg" className="transition-all duration-500 ease-in-out hover:scale-[1.10]" alt="Top Logo" width={50} height={40}></Image>
+              {/* Desktop Navigation */}
+              <nav className="hidden lg:flex items-center space-x-8">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`relative text-white text-[1.05rem] hover:text-[#F28904] transition-colors duration-200 font-medium
+                      ${isActiveLink(link.href) ? 'text-[#F28904]' : ''}
+                    `}
+                  >
+                    {link.label}
+                    {isActiveLink(link.href) && (
+                      <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#F28904] rounded-full"></div>
+                    )}
                   </Link>
-                </div>
-              </div>
-
-              <div>
-                <Link href="/about" className={pathname.split('/')[1] == 'about' ? 'text-[#F28904]' : ''}>About</Link>
-              </div>
-              <div>
-                <Link href="/dances" className={pathname.split('/')[1] == 'dances' ? 'text-[#F28904]' : ''}>Dances</Link>
-              </div>
-              <div>
-                <Link href="/profiles" className={pathname.split('/')[1] == 'profiles' ? 'text-[#F28904]' : ''}>Profiles</Link>
-              </div>
-              <div>
-                <Link href="/blog" className={pathname.split('/')[1] == 'blog' ? 'text-[#F28904]' : ''}>Blog</Link>
-              </div>
-              <div>
-                <Link href="/events" className={pathname.split('/')[1] == 'events' ? 'text-[#F28904]' : ''}>Events</Link>
-              </div>
-              <div>
-                <Link href="/funding" className={pathname.split('/')[1] == 'funding' ? 'text-[#F28904]' : ''}>Funding</Link>
-              </div>
-              <div>
-                <Link href="/faqs" className={pathname.split('/')[1] == 'faqs' ? 'text-[#F28904]' : ''}>FAQs</Link>
-              </div>
-              <div>
-                <Link href="/contact" className={pathname.split('/')[1] == 'contact' ? 'text-[#F28904]' : ''}>Contact</Link>
-              </div>
+                ))}
+              </nav>
             </div>
-            <div className="hidden lg:flex flex-row lg:items-center gap-2 text-lg">
+
+            {/* Right side: CTA Buttons */}
+            <div className="hidden lg:flex items-center gap-3">
               <Link href="/donate">
-                <div className="bg-[#5E489A] hover:bg-[#9E91C2] shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
+                <div className="min-w-[160px] text-center bg-gradient-to-r from-[#5E489A] to-[#7B5FB8] hover:from-[#7B5FB8] hover:to-[#9E91C2] 
+                  text-white font-medium px-6 py-3 rounded-full transition-all duration-300 
+                  hover:shadow-lg hover:scale-105 transform">
                   Donate
                 </div>
               </Link>
               <Link href="/getinvolved">
-                <div className="bg-[#F28904] hover:bg-[#FFC67F] shadow-xl text-lg rounded-full text-white py-1 px-6 ml-1">
+                <div className="min-w-[160px] text-center bg-gradient-to-r from-[#F28904] to-[#FF9F1A] hover:from-[#FF9F1A] hover:to-[#FFC67F] 
+                  text-white font-medium px-6 py-3 rounded-full transition-all duration-300 
+                  hover:shadow-lg hover:scale-105 transform">
                   Get Involved
                 </div>
               </Link>
             </div>
-            <div className="cursor-pointer lg:hidden pt-6 pr-0" onClick={() => { setShowMenu(!showMenu) }}>
-              {
-                showMenu ?
-                  <Image src="/cross_icon.svg" alt="Cross" className="fill-[#FFFFFF]" width={23} height={23}></Image>
-                  :
-                  <Image src="/hamburger_icon.svg" className="fill-[#FFFFFF]" alt="Hamburger Icon" width={30} height={30}></Image>
-              }
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setShowMenu(!showMenu)}
+              className="lg:hidden p-2 rounded-md hover:bg-white/10 transition-colors duration-200"
+              aria-label="Toggle menu"
+            >
+              <div className="w-6 h-6 relative">
+                <span className={`absolute block w-6 h-0.5 bg-white transform transition-all duration-300 ${showMenu ? 'rotate-45 top-3' : 'top-1'}`}></span>
+                <span className={`absolute block w-6 h-0.5 bg-white transition-all duration-300 ${showMenu ? 'opacity-0' : 'top-3'}`}></span>
+                <span className={`absolute block w-6 h-0.5 bg-white transform transition-all duration-300 ${showMenu ? '-rotate-45 top-3' : 'top-5'}`}></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* Mobile Menu */}
+      <div className={`fixed inset-0 z-40 lg:hidden transition-all duration-300 ${showMenu ? 'visible opacity-100' : 'invisible opacity-0'}`}>
+        <div
+          className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+          onClick={() => setShowMenu(false)}
+        ></div>
+
+        <div className={`absolute top-0 right-0 w-80 max-w-[90vw] h-full bg-gradient-to-br from-[#200073] via-[#2d0a7a] to-[#1a0056] 
+          pattern-bg shadow-2xl transform transition-transform duration-300 ${showMenu ? 'translate-x-0' : 'translate-x-full'}`}>
+          <div className="p-6 pt-24">
+
+            {/* Mobile Navigation Links */}
+            <nav className="space-y-6 mb-8">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`block text-[1.25rem] font-medium transition-colors duration-200 
+                    ${isActiveLink(link.href)
+                      ? 'text-[#F28904] border-l-4 border-[#F28904] pl-4'
+                      : 'text-white hover:text-[#F28904] hover:translate-x-2 pl-4'
+                    }
+                  `}
+                  onClick={() => setShowMenu(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+
+            {/* Mobile CTA Buttons */}
+            <div className="space-y-4">
+              <Link href="/donate" onClick={() => setShowMenu(false)}>
+                <div className="min-w-full text-center bg-gradient-to-r from-[#5E489A] to-[#7B5FB8] hover:from-[#7B5FB8] hover:to-[#9E91C2] 
+                  text-white font-medium py-3 px-6 rounded-full transition-all duration-300 
+                  hover:shadow-lg">
+                  Donate
+                </div>
+              </Link>
+              <Link href="/getinvolved" onClick={() => setShowMenu(false)}>
+                <div className="min-w-full text-center bg-gradient-to-r from-[#F28904] to-[#FF9F1A] hover:from-[#FF9F1A] hover:to-[#FFC67F] 
+                  text-white font-medium py-3 px-6 rounded-full transition-all duration-300 
+                  hover:shadow-lg">
+                  Get Involved
+                </div>
+              </Link>
             </div>
-
           </div>
-
-
         </div>
-
       </div>
-      {
-        showMenu &&
-        <div className="pattern-bg fixed lg:hidden pt-[100px] z-[50] w-full px-10 pb-5 shadow-xl bg-white">
-          <div className="flex flex-col text-white w-full gap-5 text-left text-lg">
-            <Link href="/about/mission">
-              <div className="border-b-2 pb-4 border-[#F28904]">
-                About
-              </div>
-            </Link>
-            <Link href="/dances">
-              <div className="border-b-2 pb-4 border-[#F28904]">
-                Dances
-              </div>
-            </Link>
-            <Link href="/profiles">
-              <div className="border-b-2 pb-4 border-[#F28904]">
-                Profiles
-              </div>
-            </Link>
-            <Link href="/blog">
-              <div className="border-b-2 pb-4 border-[#F28904]">
-                Blog
-              </div>
-            </Link>
-            <Link href="/events">
-              <div className="border-b-2 pb-4 border-[#F28904]">
-                Events
-              </div>
-            </Link>
-            <Link href="/faqs">
-              <div className="border-b-2 pb-4 border-[#F28904]">
-                FAQs
-              </div>
-            </Link>
-            <Link href="/contact">
-              <div className="">
-                Contact
-              </div>
-            </Link>
-          </div>
-          <div>
-            <Link href="/donate" className="flex mt-5">
-              <div className="bg-[#5E489A] hover:bg-[#9E91C2] shadow-xl text-lg rounded-2xl w-full text-center text-white py-2 px-8 ml-1">
-                Donate
-              </div>
-            </Link>
-            <Link href="/getinvolved" className="flex mt-3">
-              <div className="bg-[#F28904] hover:bg-[#FFC67F] shadow-xl text-lg rounded-2xl w-full text-center text-white py-2 px-8 ml-1">
-                Get Involved
-              </div>
-            </Link>
-          </div>
-        </div>
-      }
-    </div>
-
-
+    </>
   );
 }

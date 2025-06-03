@@ -94,6 +94,81 @@ export default function DashboardLayout({
                 </div>
               </div>
             </div>
+            {/* 
+            <div className="border-[#F28904] py-8 lg:py-12 flex flex-col lg:flex-row items-start">
+              <div className="w-full max-w-4xl mx-auto px-4">
+                <div
+                  id="question1"
+                  className="text-center border-b-2 mb-10 border-[#F28904] pb-8 font-serif text-3xl lg:text-4xl font-bold text-gray-800"
+                >
+                  Our History
+                </div>
+
+
+                <div id="answer1" className="font-light text-lg leading-relaxed text-gray-700 space-y-6">
+
+                  <div className="bg-gradient-to-r from-orange-50 to-amber-50 p-6 rounded-lg border-l-4 border-[#F28904]">
+                    <p className="text-lg font-medium text-gray-800">
+                      <strong className="text-[#F28904]">Established in 1996</strong>, the Oakland Khmer Angkor Dance Troupe
+                      preserves Cambodian culture through the art of dance, building unity and strengthening the Khmer
+                      community in the Greater Bay Area.
+                    </p>
+                  </div>
+
+
+                  <p>
+                    Our troupe celebrates cultural dances, traditional food, clothing, and music. Our performances have
+                    captivated local audiences, sharing the beauty and elegance of our heritage and ensuring that every
+                    member, especially the younger generation, has a chance to succeed in all facets of life.
+                  </p>
+
+
+                  <div className="grid md:grid-cols-2 gap-6 my-8">
+                    <div className="text-center p-6 bg-white rounded-lg shadow-sm border border-gray-200">
+                      <div className="text-3xl font-bold text-[#F28904]">60+</div>
+                      <div className="text-sm font-medium text-gray-600 mt-1">Annual Participants</div>
+                      <div className="text-xs text-gray-500">Ages 6 to 72</div>
+                    </div>
+                    <div className="text-center p-6 bg-white rounded-lg shadow-sm border border-gray-200">
+                      <div className="text-3xl font-bold text-[#F28904]">1,200+</div>
+                      <div className="text-sm font-medium text-gray-600 mt-1">Annual Event Attendees</div>
+                      <div className="text-xs text-gray-500">Cambodian New Year</div>
+                    </div>
+                  </div>
+
+
+                  <p>
+                    Originally organized by a dedicated group of volunteers, with strong support from members of the
+                    Church of Jesus Christ of Latter-Day Saints' Oakland 10th Cambodian Branch, our program teaches
+                    a range of Cambodian folkloric and classical dances. Participants are provided with authentic
+                    costumes and accessories.
+                  </p>
+
+
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="font-semibold text-lg text-gray-800 mb-3">Our Program</h3>
+                    <p className="mb-4">
+                      <strong>Weekly practices</strong> run from January to March, focusing on skill-building and
+                      community development. Refreshments are provided to keep our participants energized throughout
+                      their learning journey.
+                    </p>
+
+                    <p>
+                      Each March, in partnership with other Khmer dance communities, we host a vibrant
+                      <strong className="text-[#F28904]"> Cambodian New Year celebration</strong> in Oakland,
+                      drawing attendees from throughout California.
+                    </p>
+                  </div>
+
+
+                  <p className="text-lg font-medium text-gray-800 italic border-l-4 border-[#F28904] pl-6">
+                    This event is a vibrant showcase of cultural performances, games, and social dancing, creating
+                    a memorable experience that brings together people from all walks of life to celebrate and
+                    preserve our rich cultural heritage.
+                  </p>
+                </div>
+              </div>
+            </div> */}
 
             <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
               <div className="w-full">
