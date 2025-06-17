@@ -23,7 +23,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-center w-full pt-0 p-5 px-5 lg:px-10 my-5">
+          {/* <div className="flex justify-center w-full pt-0 p-5 px-5 lg:px-10 my-5">
             <div className="flex flex-col w-full max-w-[1040px]">
               <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
                 <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
@@ -44,65 +44,20 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
 
           <div className="flex justify-center w-full pt-0 p-5 px-5 lg:px-10 my-5">
             <div className="flex flex-col w-full max-w-[1040px]">
-              <div className="text-center pb-4">
+              {/* <div className="text-center pb-4">
                 Other Events
               </div>
               <hr />
-              <br />
+              <br /> */}
 
-              <div className="grid gap-3 grid-cols-2 w-full">
+              <div className="grid gap-3 grid-cols-1 w-full">
                 <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3622.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_1925.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_2641.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_2806.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_2945.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3088.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3090.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3091.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3092.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3093.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3096.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3590.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3593.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3616.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3619.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
-                </div>
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2025/IMG_3620.JPG" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                  <Image src="/events/sabaideefest_25.jpg" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
                 </div>
 
                 {/* <div className="w-full h-full rounded-2xl overflow-hidden">
