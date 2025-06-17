@@ -33,7 +33,7 @@ export default function Header() {
     { href: "/contact", label: "Contact" }
   ];
 
-  const isActiveLink = (href) => {
+  const isActiveLink = (href: string) => {
     return pathname.split('/')[1] === href.split('/')[1];
   };
 
