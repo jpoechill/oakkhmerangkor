@@ -57,7 +57,7 @@ export default function Home() {
 
               <div className="grid gap-3 grid-cols-1 w-full">
                 <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/sabaideefest_25.jpg" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                  <Image src="/events/2026_flier_save-the-date.jpg" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
                 </div>
 
                 {/* <div className="w-full h-full rounded-2xl overflow-hidden">
