@@ -137,7 +137,7 @@ export default function Home() {
 
                 <div className="col-span-3 font-light p-5 text-md">
                   <span className="font-bold text-lg">
-                    A Beautiful Start to Practice This Year ✨
+                    A Beautiful Start... ✨
                   </span>
                   <br /><br />
                   We welcomed 75+ students on the first day of practice. This season features classical dances and youth performances led by our dedicated instructors, many of whom are former students.

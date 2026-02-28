@@ -61,7 +61,7 @@ export default function Home() {
               <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
                 <div className="lg:w-full">
                   <div id="title" className="pb-6 font-serif text-2xl font-bold">
-                    A Beautiful Start ✨
+                    A Beautiful Start to Practice This Year ✨
                   </div>
                   <div id="answer1" className="font-light text-md">
                     This year, we were thrilled to welcome over 75 students on the very first day of practice. Seeing so many young dancers come together to learn and celebrate Khmer culture has been truly inspiring.
