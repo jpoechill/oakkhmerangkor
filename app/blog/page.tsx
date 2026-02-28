@@ -3,6 +3,7 @@ import Header from "../Header"
 import Footer from "../Footer"
 import Link from "next/link";
 import type { Metadata } from "next";
+import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Oakland Khmer Angkor Dance Troupe at the 2025 Rhythmix API Festival",
@@ -30,10 +31,9 @@ export default function Home() {
       <Header></Header>
 
       <div className="bg-white">
-        <div className="flex flex-col items-center justify-center w-full p-5 pt-0 mb-10 pb-10 px-5 lg:px-10 animate-[fade-me-in_.5s_ease-in-out] bg-white">
-
-
-          <div className="flex flex-col w-full max-w-[1040px] mt-[130px]">
+        <div className="flex flex-col items-center justify-center w-full p-5 pt-0 mb-10 pb-10 px-5 lg:px-10 bg-white">
+          {/* Slow initial load: hero fades in over 1.2s */}
+          <div className="flex flex-col w-full max-w-[1040px] mt-[130px] animate-[fade-me-in_1.2s_ease-out]">
             <div className="text-center">
               <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">Blog</div>
               <div className="text-3xl font-bold tracking-wide">
@@ -41,7 +41,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
 
           <div className="flex w-full mt-10">
             <div className="relative w-full h-[500px]">
@@ -52,10 +51,12 @@ export default function Home() {
                 objectFit="cover"
                 className=""
                 priority
+                sizes="(min-width: 1040px) 1040px, 100vw"
               />
             </div>
           </div>
 
+          <ScrollReveal delay={100}>
           <div className="flex flex-col w-full max-w-[1040px] mt-4">
             <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
               <div className="lg:w-full">
@@ -111,6 +112,7 @@ export default function Home() {
               </div>
             </div> */}
           </div>
+          </ScrollReveal>
 
           <div className="flex w-full mt-10">
             <div className="relative w-full h-[500px]">
@@ -120,13 +122,12 @@ export default function Home() {
                 layout="fill"
                 objectFit="cover"
                 className=""
-                priority
+                sizes="(min-width: 1040px) 1040px, 100vw"
               />
             </div>
           </div>
 
-
-
+          <ScrollReveal delay={100}>
           <div className="flex flex-col w-full max-w-[1040px] mt-4">
             <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
               <div className="lg:w-full">
@@ -147,6 +148,7 @@ export default function Home() {
               </div>
             </div>
 
+            <ScrollReveal delay={150}>
             <div className="grid grid-cols-3 gap-4">
 
               {/* Image 4 */}
@@ -157,6 +159,7 @@ export default function Home() {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded"
+                  sizes="(min-width: 1024px) 66vw, 100vw"
                 />
               </div>
 
@@ -168,7 +171,7 @@ export default function Home() {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded"
-                  priority
+                  sizes="(min-width: 1024px) 33vw, 100vw"
                 />
               </div>
 
@@ -181,6 +184,7 @@ export default function Home() {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
                 />
               </div>
               {/* Image 3 */}
@@ -191,6 +195,7 @@ export default function Home() {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded"
+                  sizes="(min-width: 1024px) 66vw, 100vw"
                 />
               </div>
 
@@ -202,6 +207,7 @@ export default function Home() {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded"
+                  sizes="(min-width: 1024px) 66vw, 100vw"
                 />
               </div>
 
@@ -213,6 +219,7 @@ export default function Home() {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
                 />
               </div>
               {/* Image 7 */}
@@ -223,6 +230,7 @@ export default function Home() {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
                 />
               </div>
 
@@ -233,6 +241,7 @@ export default function Home() {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded"
+                  sizes="(min-width: 1024px) 66vw, 100vw"
                 />
               </div>
 
@@ -243,6 +252,7 @@ export default function Home() {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded"
+                  sizes="(min-width: 1024px) 100vw, 100vw"
                 />
               </div>
               <div className="relative w-full h-[400px]">
@@ -252,6 +262,7 @@ export default function Home() {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
                 />
               </div>
               <div className="col-span-2 relative w-full h-[400px]">
@@ -261,9 +272,11 @@ export default function Home() {
                   fill
                   style={{ objectFit: 'cover' }}
                   className="rounded"
+                  sizes="(min-width: 1024px) 66vw, 100vw"
                 />
               </div>
             </div>
+            </ScrollReveal>
 
             {/* 
             <div className="text-center mt-[30px]">
@@ -271,6 +284,7 @@ export default function Home() {
             </div> */}
             <br />
           </div>
+          </ScrollReveal>
 
         </div>
 
