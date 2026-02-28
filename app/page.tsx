@@ -140,9 +140,9 @@ export default function Home() {
                     A Beautiful Start to Practice This Year ✨
                   </span>
                   <br /><br />
-                  We welcomed over 75 students on the first day of practice. This season features classical dances and youth performances led by our dedicated instructors, many of whom are former students.
+                  We welcomed 75+ students on the first day of practice. This season features classical dances and youth performances led by our dedicated instructors, many of whom are former students.
                   <br /><br />
-                  We meet Friday evenings and look forward to our upcoming performance. Thank you to all the parents for their continued support!
+                  We meet Friday evenings and are excited for our upcoming performance. Thank you, parents, for your continued support!
                   <br /><br />
                 </div>
               </div>
