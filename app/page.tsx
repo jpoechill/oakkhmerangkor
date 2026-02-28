@@ -63,7 +63,7 @@ export default function Home() {
                   <br /><br />
                   March 21st, 2026. 3pm - 9:00pm.
                   <br /><br />
-                  👉 <Link href="https://templehill.org/event/30th-annual-cambodian-new-year-celebration-at-temple-hill/" className="text-[#F28904] hover:text-[#5E489A]" target="_new">Reserve Your Free Ticket</Link>
+                  👉 <Link href="https://templehill.org/event/30th-annual-cambodian-new-year-celebration-at-temple-hill/" target="_blank" className="text-[#F28904] hover:text-[#5E489A]" >Reserve Your Free Ticket</Link>
                   <br />
                   {/* <Link href="/blog" className="text-[#F28904] hover:text-[#5E489A]" >
                     More details...
@@ -118,9 +118,42 @@ export default function Home() {
             </div>
           </div>
 
-
-          {/* <div className="flex justify-center w-full p-5 px-10 mt-3 my-5">
+          <div className="flex justify-center w-full p-5 px-10 mt-3 mb-0 pb-0 my-5">
             <div className="flex flex-col w-full max-w-[1040px]">
+              <h1 className="text-md text-center font-bold">Recent Events</h1>
+              <hr className="my-4" />
+              <br />
+              <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
+                <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
+                  <Link href="/blog">
+                    <Image
+                      src="/blog/022826/practice_022826.jpg"
+                      alt="Khmer dance practice thumbnail"
+                      className="object-cover w-full h-full transition-all duration-[5000] delay-[.0s] ease-in-out"
+                      fill
+                    />
+                  </Link>
+                </div>
+
+                <div className="col-span-3 font-light p-5 text-md">
+                  <span className="font-bold text-lg">
+                    A Beautiful Start to Practice This Year ✨
+                  </span>
+                  <br /><br />
+                  We welcomed over 75 students on the first day of practice. This season features classical dances and youth performances led by our dedicated instructors, many of whom are former students.
+                  <br /><br />
+                  We meet Friday evenings and look forward to our upcoming performance. Thank you to all the parents for their continued support!
+                  <br /><br />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="flex justify-center w-full p-5 px-10 mt-3 my-5">
+            <div className="flex flex-col w-full max-w-[1040px] mt-3">
+              {/* <h1 className="text-md text-center font-bold">Recent Events</h1>
+              <hr className="mt-4" /> */}
               <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
                 <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
                   <Link href="/blog">
@@ -139,11 +172,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
 
           <div className="flex justify-center w-full pt-0 p-5 px-10 pb-10 mb-10">
             <div className="flex flex-col w-full text-center max-w-[1040px]">
-              <h1>Our Dances</h1>
+              <h1 className="text-md text-center font-bold">Our Dances</h1>
               <hr className="mt-4" />
               <br />
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
