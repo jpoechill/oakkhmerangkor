@@ -64,7 +64,7 @@ export default function Home() {
                     A Beautiful Start to Practice This Year ✨
                   </div>
                   <div id="answer1" className="font-light text-md">
-                    This year, we were thrilled to welcome over 75 kids on the very first day of practice. Seeing so many young dancers come together to learn and celebrate Khmer culture has been truly inspiring.
+                    This year, we were thrilled to welcome over 75 students on the very first day of practice. Seeing so many young dancers come together to learn and celebrate Khmer culture has been truly inspiring.
                     <br /><br />
 
                     Our dances this season include:
