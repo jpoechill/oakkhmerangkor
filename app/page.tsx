@@ -35,34 +35,36 @@ export default function Home() {
             </div>
           </div>
 
+
           <div className="flex justify-center w-full p-5 px-10 mt-3 my-5">
             <div className="flex flex-col w-full max-w-[1040px]">
-              {/* <h1>Upcoming Events</h1>
-              <br /> */}
+              {/* <h1>Upcoming Events</h1> <br /> */}
               <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
                 <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
 
                   {/* <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-[5000] ease-in-out group-hover:hidden" fill></Image> */}
 
                   {/* <HoverVideo /> */}
-                  <Link href="/blog">
-                    <Image src="/blog/051425/Rhythmix-API-2025-2993.jpg" alt="thumb" className="object-cover w-full h-full transition-all duration-[5000] delay-[.0s] ease-in-out" fill></Image>
-                  </Link>
+                  {/* <Link href="/blog"> */}
+                  <Image src="/events/okadt_social_rect_01_021826.jpg" alt="thumb" className="object-cover w-full h-full transition-all duration-[5000] delay-[.0s] ease-in-out" fill></Image>
+                  {/* </Link> */}
                 </div>
                 <div className="col-span-3 font-light p-5 text-md">
                   <span className="font-bold text-lg">
 
                     {/* <Link href="/blog" className="text-[#F28904] hover:text-[#5E489A]" > */}
-
-                    Rhythmix API Festival 🌸
+                    2026 Cambodian New Year Celebration
                     {/* </Link> */}
                   </span>
                   <br /><br />
-                  On April 26, 2025, we proudly shared Cambodian classical dance at the <Link href="https://www.rhythmix.org/events/api-festival-2025/" className="text-[#F28904] hover:text-[#5E489A]" target="_new">Rhythmix API Festival</Link> in Alameda. The event celebrated Asian and Pacific Islander cultures with music, dance, food, and art.
+                  Join us on a journey of discovery and celebration as we continue to illuminate stages with the beauty of Cambodian Khmer dance.
                   <br /><br />
-                  Thank you to <Link href="https://www.rhythmix.org/" className="text-[#F28904] hover:text-[#5E489A]" target="_new">Rhythmix Cultural Works</Link> and everyone who came to support and celebrate with us!
+                  📍 4770 Lincoln Ave Oakland, CA 94602
                   <br /><br />
-
+                  March 21st, 2026. 3pm - 9:00pm.
+                  <br /><br />
+                  👉 <Link href="https://templehill.org/event/30th-annual-cambodian-new-year-celebration-at-temple-hill/" className="text-[#F28904] hover:text-[#5E489A]" target="_new">Reserve Your Free Ticket</Link>
+                  <br />
                   {/* <Link href="/blog" className="text-[#F28904] hover:text-[#5E489A]" >
                     More details...
                   </Link> */}
@@ -115,6 +117,29 @@ export default function Home() {
               </div> */}
             </div>
           </div>
+
+
+          {/* <div className="flex justify-center w-full p-5 px-10 mt-3 my-5">
+            <div className="flex flex-col w-full max-w-[1040px]">
+              <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
+                <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
+                  <Link href="/blog">
+                    <Image src="/blog/051425/Rhythmix-API-2025-2993.jpg" alt="thumb" className="object-cover w-full h-full transition-all duration-[5000] delay-[.0s] ease-in-out" fill></Image>
+                  </Link>
+                </div>
+                <div className="col-span-3 font-light p-5 text-md">
+                  <span className="font-bold text-lg">
+                    Rhythmix API Festival 🌸
+                  </span>
+                  <br /><br />
+                  On April 26, 2025, we proudly shared Cambodian classical dance at the <Link href="https://www.rhythmix.org/events/api-festival-2025/" className="text-[#F28904] hover:text-[#5E489A]" target="_new">Rhythmix API Festival</Link> in Alameda. The event celebrated Asian and Pacific Islander cultures with music, dance, food, and art.
+                  <br /><br />
+                  Thank you to <Link href="https://www.rhythmix.org/" className="text-[#F28904] hover:text-[#5E489A]" target="_new">Rhythmix Cultural Works</Link> and everyone who came to support and celebrate with us!
+                  <br /><br />
+                </div>
+              </div>
+            </div>
+          </div> */}
 
           <div className="flex justify-center w-full pt-0 p-5 px-10 pb-10 mb-10">
             <div className="flex flex-col w-full text-center max-w-[1040px]">

@@ -30,9 +30,11 @@ export default function Home() {
                   Why Support Matters
                 </div>
                 <div id="answer1" className="font-light text-md">
-                  Our Cambodian cultural dance troupe is dedicated to preserving and celebrating the rich heritage of Cambodia through traditional dance. These dances are more than performances—they are a vital link to our history, telling stories of resilience, love, and community. However, preserving these traditions in a modern world requires resources, and that’s where your support can make a profound difference.
+                  Our Cambodian cultural dance troupe preserves and celebrates Cambodia’s heritage through traditional dance. These dances are more than performances. They share stories of resilience, love, and community that connect generations.
+                  {/* Our Cambodian cultural dance troupe is dedicated to preserving and celebrating the rich heritage of Cambodia through traditional dance. These dances are more than performances—they are a vital link to our history, telling stories of resilience, love, and community. However, preserving these traditions in a modern world requires resources, and that’s where your support can make a profound difference. */}
                   <br /><br />
-                  Obtaining financial support is essential to sustain our work, allowing us to host performances, run workshops, and engage with the community. Each dollar contributes to our mission of cultural preservation, inspiring audiences of all backgrounds and passing on the beauty of Cambodian dance to the next generation. Together, we can ensure this art form thrives for years to come.
+                  Your support makes this work possible. Funding allows us to host performances, offer workshops, and engage with the community. Every contribution helps preserve Cambodian dance and pass it on to future generations.
+                  {/* Obtaining financial support is essential to sustain our work, allowing us to host performances, run workshops, and engage with the community. Each dollar contributes to our mission of cultural preservation, inspiring audiences of all backgrounds and passing on the beauty of Cambodian dance to the next generation. Together, we can ensure this art form thrives for years to come. */}
                 </div>
               </div>
               <div className="lg:w-1/2 lg:pl-8 mt-6 lg:mt-0">
@@ -65,9 +67,11 @@ export default function Home() {
                     Specific Funding Needs
                   </div>
                   <div id="answer3" className="font-light text-md">
-                    Our funding needs cover key areas essential to sustaining our work. Food for practice nights keeps our dancers energized during rehearsals, while maintaining and acquiring props and decorations ensures our performances stay authentic. We also seek funding to compensate youth dance teachers, purchase and maintain costumes, and cover clean-up costs after events, ensuring the upkeep of our costumes and equipment.
+                    Our funding supports the essential needs of our troupe. This includes food for practice nights, props and decorations for authentic performances, compensation for youth dance teachers, costume purchase and care, and clean-up costs after events.
+                    {/* Our funding needs cover key areas essential to sustaining our work. Food for practice nights keeps our dancers energized during rehearsals, while maintaining and acquiring props and decorations ensures our performances stay authentic. We also seek funding to compensate youth dance teachers, purchase and maintain costumes, and cover clean-up costs after events, ensuring the upkeep of our costumes and equipment. */}
                     <br /><br />
-                    Beyond performances, your support would help expand our workshops and outreach programs, bringing Cambodian dance to schools, community centers, and underserved populations. These initiatives foster a deeper connection to Cambodian culture and offer valuable learning opportunities for young dancers. Expanding our outreach ensures the continued preservation of this important art form for future generations.
+                    Support also helps expand workshops and outreach programs that bring Cambodian dance to schools, community centers, and underserved communities. These efforts strengthen cultural connection and provide meaningful learning opportunities for young dancers.
+                    {/* Beyond performances, your support would help expand our workshops and outreach programs, bringing Cambodian dance to schools, community centers, and underserved populations. These initiatives foster a deeper connection to Cambodian culture and offer valuable learning opportunities for young dancers. Expanding our outreach ensures the continued preservation of this important art form for future generations. */}
                   </div>
                 </div>
 
@@ -85,11 +89,15 @@ export default function Home() {
                   Impact Stories
                 </div>
                 <div id="answer5" className="font-light text-md">
-                  Our traditional dance performances rely on intricate, hand-sewn costumes that are both beautiful and deeply symbolic, representing centuries-old designs passed down through generations. These costumes are crucial for bringing our cultural stories to life, helping audiences connect with the heritage we share.
+                  Our performances rely on intricate, hand-sewn costumes that reflect centuries-old Cambodian designs. These garments are essential to telling cultural stories and helping audiences connect with our heritage.
+                  {/* Our traditional dance performances rely on intricate, hand-sewn costumes that are both beautiful and deeply symbolic, representing centuries-old designs passed down through generations. These costumes are crucial for bringing our cultural stories to life, helping audiences connect with the heritage we share. */}
                   <br /><br />
-                  Neary, one of our dedicated members, has been essential in maintaining our cultural wardrobe for years. She imports clothing, materials, and sacred artifacts from Cambodia, ensuring our costumes’ authenticity. Her commitment, though unasked for, is deeply appreciated by the troupe.
+                  Neary, a dedicated member of our troupe, has cared for our cultural wardrobe for many years. She sources clothing, materials, and sacred items from Cambodia to maintain authenticity. Her ongoing commitment has been vital to our work.
+                  {/* Neary, one of our dedicated members, has been essential in maintaining our cultural wardrobe for years. She imports clothing, materials, and sacred artifacts from Cambodia, ensuring our costumes’ authenticity. Her commitment, though unasked for, is deeply appreciated by the troupe. */}
                   <br /><br />
-                  With funding, we could create new costumes from skilled artisans and improve storage and care, supporting Neary’s efforts and ensuring future dancers perform in attire that honors our cultural heritage.</div>
+                  With funding, we can commission new costumes from skilled artisans and improve storage and care. This support strengthens Neary’s efforts and ensures future dancers perform in attire that honors our cultural heritage.
+                  {/* With funding, we could create new costumes from skilled artisans and improve storage and care, supporting Neary’s efforts and ensuring future dancers perform in attire that honors our cultural heritage. */}
+                </div>
               </div>
               <div className="lg:w-1/3 mt-6 lg:mt-0">
                 <Image src="/funding/neary.jpg" alt="Grantors and dancers at a partnership event" className="w-full rounded-lg shadow-md" width="300" height="300" />

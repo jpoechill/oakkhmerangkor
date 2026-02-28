@@ -56,9 +56,21 @@ export default function Home() {
               <br /> */}
 
               <div className="grid gap-3 grid-cols-1 w-full">
-                <div className="w-full h-full rounded-2xl overflow-hidden">
-                  <Image src="/events/2026_flier_save-the-date.jpg" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                <div className="grid gap-3 grid-cols-2 w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/okadt_social_sq_01_021826.jpg" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+                  <Image src="/events/okadt_social_sq_03_021826.jpg" alt="thumb" className="w-full h-full" width={400} height={400}></Image>
+
                 </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2026_cover_01.jpg" alt="thumb" className="w-full h-full" width={1000} height={1000}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2026_cover_02.jpg" alt="thumb" className="w-full h-full" width={1000} height={1000}></Image>
+                </div>
+                <div className="w-full h-full rounded-2xl overflow-hidden">
+                  <Image src="/events/2026_flier_save-the-date.jpg" alt="thumb" className="w-full h-full" width={1000} height={1000}></Image>
+                </div>
+
 
                 {/* <div className="w-full h-full rounded-2xl overflow-hidden">
                   <Image src="/events/2025/IMG_3627.JPG" alt="thumb" className="w-full h-full" width={500} height={500}></Image>
