@@ -14,18 +14,25 @@ function pickRandomHeroVideo(): string {
   return HERO_VIDEOS[Math.floor(Math.random() * HERO_VIDEOS.length)];
 }
 
+export type HeroVideoBackgroundProps = {
+  /** When set, this clip plays only (no env URL, no random rotation). */
+  src?: string;
+};
+
 /**
  * Full-bleed hero video (muted + loop for autoplay). Paused when prefers-reduced-motion.
- * Picks randomly between two stage clips on each visit unless NEXT_PUBLIC_HERO_VIDEO_URL is set.
+ * With no `src` prop: random clip each visit unless NEXT_PUBLIC_HERO_VIDEO_URL is set.
  */
-export default function HeroVideoBackground() {
+export default function HeroVideoBackground({ src: forcedSrc }: HeroVideoBackgroundProps = {}) {
+  const trimmedForced = forcedSrc?.trim();
   const ref = useRef<HTMLVideoElement>(null);
-  const [src, setSrc] = useState(() => envHeroSrc || HERO_VIDEOS[0]);
+  const [src, setSrc] = useState(() => trimmedForced || envHeroSrc || HERO_VIDEOS[0]);
 
   useEffect(() => {
+    if (trimmedForced) return;
     if (envHeroSrc) return;
     setSrc(pickRandomHeroVideo());
-  }, []);
+  }, [trimmedForced]);
 
   useEffect(() => {
     const el = ref.current;

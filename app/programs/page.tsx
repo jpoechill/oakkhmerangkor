@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import Image from "next/image";
 import Header from "../Header";
 import Footer from "../Footer";
+import HeroVideoBackground from "../components/HeroVideoBackground";
+import HeroTextReveal from "../components/HeroTextReveal";
 import {
   prefersReducedScroll,
   smoothScrollToId,
@@ -34,53 +36,39 @@ export default function ProgramsPage() {
     <main>
       <Header />
 
-      <div className="bg-white">
-        <div className="flex justify-center w-full p-5 pt-0 px-5 pb-16 animate-[fade-me-in_.5s_ease-in-out] lg:px-10">
-          <div className="flex w-full max-w-[1040px] flex-col mt-[130px]">
-            {/* Intro / hero */}
-            <header id="programs-intro" className="text-center scroll-mt-28">
-              <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">
-                Programs
-              </div>
-              <div className="text-3xl font-bold tracking-wide">Train, Perform, Grow</div>
-            </header>
+      <section
+        id="programs-intro"
+        aria-label="Programs hero"
+        className="relative isolate box-border h-[90vh] min-h-[29rem] w-full max-w-none scroll-mt-28 overflow-hidden bg-[#0c0b1a]"
+      >
+        <HeroVideoBackground src="/hero/stage_2026.mp4" />
+        <HeroTextReveal
+          alwaysVisible
+          className="absolute inset-0 z-[1] px-4 pb-12 pt-24 sm:px-6 lg:pb-16 lg:pt-28"
+        >
+          <div className="relative z-[1] mx-auto inline-flex w-fit max-w-[min(100%,36rem)] flex-col items-center rounded-lg bg-black/40 px-5 py-5 text-center sm:max-w-[min(100%,44rem)] sm:px-7 sm:py-6 lg:max-w-[min(100%,48rem)]">
+            <p className="text-sm font-bold uppercase tracking-widest text-[#F28904]">Programs</p>
+            <h1 className="mt-3 text-balance text-3xl font-bold tracking-wide text-white sm:text-4xl lg:text-5xl">
+              Train, Perform, Grow
+            </h1>
+            <p className="mt-5 max-w-2xl text-pretty text-base font-light leading-relaxed text-white/85 sm:mt-6 sm:text-lg">
+              Our programs teach Khmer dance through regular practice, performance, and community events. Dancers
+              build skills, confidence, and a strong connection to culture.
+            </p>
+          </div>
+        </HeroTextReveal>
+      </section>
 
+      <div className="bg-white">
+        <div className="flex justify-center w-full p-5 px-5 pb-16 pt-6 animate-[fade-me-in_.5s_ease-in-out] lg:px-10 lg:pt-8">
+          <div className="flex w-full max-w-[1040px] flex-col">
             {/* Annual Performance Program */}
             <section
               id="annual-performance-program"
               aria-labelledby="annual-heading"
-              className="scroll-mt-28 pt-12"
+              className="scroll-mt-28"
             >
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-5 lg:gap-6">
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl ring-1 ring-inset ring-slate-300/60">
-                  <Image
-                    src="/programs/annual-performance-practice.png"
-                    alt="Youth and children seated on a gymnasium floor during a troupe gathering or rehearsal"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, 33vw"
-                  />
-                </div>
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl ring-1 ring-inset ring-slate-300/60">
-                  <Image
-                    src="/programs/annual-performance-youth.png"
-                    alt="Young dancers and adults in traditional Cambodian costumes posing together at a community hall celebration"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, 33vw"
-                  />
-                </div>
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl ring-1 ring-inset ring-slate-300/60">
-                  <Image
-                    src="/programs/annual-performance-workshop.png"
-                    alt="Women learning to wrap traditional Cambodian silk sampot skirts together in a community workshop"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, 33vw"
-                  />
-                </div>
-              </div>
-              <h2 id="annual-heading" className="mt-8 pb-6 font-serif text-2xl font-bold">
+              <h2 id="annual-heading" className="pb-6 font-serif text-2xl font-bold">
                 Annual Performance Program
               </h2>
               <div className="space-y-6 font-light text-md leading-relaxed text-gray-800">

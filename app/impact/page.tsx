@@ -25,38 +25,7 @@ export default function Home() {
               </div>
             </div>
 
-            <section
-              className="mt-10 w-full pb-12 pt-2"
-              aria-label="Key impact figures"
-            >
-              <div className="mx-auto grid max-w-3xl grid-cols-2 gap-6 sm:gap-8">
-                {KEY_IMPACT_STATS.map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="flex flex-col items-center justify-start rounded-xl border border-[#e8e4f2]/90 bg-gradient-to-b from-white to-[#faf9fc] px-3 py-6 text-center shadow-sm transition duration-200 ease-out hover:scale-[1.02] hover:border-[#F28904]/25 hover:shadow-md sm:px-4"
-                  >
-                    <p className="text-[1.65rem] font-bold leading-none tracking-tight text-[#200073] sm:text-4xl lg:text-[1.85rem] xl:text-4xl">
-                      {stat.value}
-                    </p>
-                    <p className="mt-3 max-w-[11rem] text-xs font-medium leading-snug text-gray-600 sm:text-sm">
-                      {stat.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
-              <p className="mt-6 text-center text-xs font-medium text-gray-500 sm:text-sm">
-                Figures as of 2026.
-              </p>
-              <hr className="mt-8 border-t-2 border-[#F28904]" aria-hidden />
-            </section>
-
-            <div className="flex flex-col justify-center w-full p-0 px-0 my-5">
-            </div>
-
-
-
-
-            <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
+            <div className="mt-5 border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
               <div className="lg:w-1/2">
                 <div id="question1" className="pb-6 font-serif text-2xl font-bold">
                   Why Support Matters
@@ -114,6 +83,30 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <section
+              className="mx-auto mt-12 w-full max-w-3xl border-b-2 border-[#F28904] pt-2 pb-5 mb-10"
+              aria-label="Key impact figures"
+            >
+              <div className="grid grid-cols-2 gap-6 sm:gap-8">
+                {KEY_IMPACT_STATS.map((stat) => (
+                  <div
+                    key={stat.label}
+                    className="flex flex-col items-center justify-start rounded-xl border border-[#e8e4f2]/90 bg-gradient-to-b from-white to-[#faf9fc] px-3 py-6 text-center shadow-sm transition duration-200 ease-out hover:scale-[1.02] hover:border-[#F28904]/25 hover:shadow-md sm:px-4"
+                  >
+                    <p className="text-[1.65rem] font-bold leading-none tracking-tight text-[#200073] sm:text-4xl lg:text-[1.85rem] xl:text-4xl">
+                      {stat.value}
+                    </p>
+                    <p className="mt-3 max-w-[11rem] text-xs font-medium leading-snug text-gray-600 sm:text-sm">
+                      {stat.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-6 text-center text-xs font-medium text-gray-500 sm:text-sm">
+                Figures as of 2026.
+              </p>
+            </section>
 
             <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
               <div className="lg:w-2/3 pr-8">

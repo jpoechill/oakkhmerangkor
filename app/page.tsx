@@ -2,13 +2,13 @@ import Image from "next/image";
 import Header from "./Header"
 import Footer from "./Footer"
 import Link from "next/link"
-import HoverVideo from "./HoverVideo";
-import HoverVideoThumbnail from "./HoverVideoThumbnail"
 import ScrollReveal from "./components/ScrollReveal";
+import RepertoireDanceGrid from "./components/RepertoireDanceGrid";
 import BlogPostPreview from "./components/BlogPostPreview";
 import HeroVideoBackground from "./components/HeroVideoBackground";
 import HeroTextReveal from "./components/HeroTextReveal";
 import { getRecentPosts } from "@/lib/blog-data";
+import { CLASSICAL_DANCES, FOLK_DANCES } from "@/lib/dances-repertoire";
 
 export default function Home() {
   return (
@@ -57,7 +57,7 @@ export default function Home() {
       </section>
 
       <div className="bg-white">
-        <div className="animate-[fade-me-in_.5s_ease-in-out] bg-white">
+        <div className="animate-[fade-me-in_.5s_ease-in-out] bg-white pt-6 lg:pt-10">
           {/* <div className="flex justify-center w-full pt- pt-0 px-10">
             <div className="flex flex-col w-full max-w-[1040px] overflow-hidden mt-[130px]">
               <div className="text-sm uppercase w-full text-center font-bold mb-4 text-[#333333] tracking-wider">
@@ -69,10 +69,11 @@ export default function Home() {
             </div>
           </div> */}
 
-          <ScrollReveal className="flex justify-center w-full p-5 px-10 pt-12 lg:pt-16 mb-5">
-            <div className="flex flex-col w-full max-w-[1040px]">
-              {/* <h1>Upcoming Events</h1> <br /> */}
-              <article className="group/card w-full grid grid-cols-1 overflow-hidden rounded-2xl shadow-xl lg:grid-cols-8">
+          <ScrollReveal className="mb-5 flex w-full justify-center px-10 pb-5 pt-1">
+            <div className="flex w-full max-w-[1040px] flex-col">
+              <h2 className="text-md text-center font-bold">Recent Events</h2>
+              <hr className="mb-3 mt-2" />
+              <article className="group/card grid w-full grid-cols-1 overflow-hidden rounded-2xl shadow-xl lg:grid-cols-8">
                 <div className="relative col-span-5 h-full min-h-[250px] w-full overflow-hidden">
                   <a
                     href="https://templehill.org/event/30th-annual-cambodian-new-year-celebration-at-temple-hill/"
@@ -113,130 +114,30 @@ export default function Home() {
                   </p>
                 </div>
               </article>
-
-              {/* <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 mt-8 lg:grid-cols-8 shadow-xl">
-                <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
-
-                  <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-[5000] ease-in-out group-hover:hidden" fill></Image>
-
-                  <HoverVideo />
-                  <Image src="/cover_03.png" alt="thumb" className="object-cover w-full h-full transition-all duration-[5000] delay-[.0s] ease-in-out" fill></Image>
-                </div>
-                <div className="col-span-3 font-light p-5 text-md">
-                  <span className="font-bold text-lg">
-                    Cambodian New Year 2025
-                  </span>
-                  <br /><br />
-                  Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance.
-                  <br /><br />
-                  📍 4770 Lincoln Ave Oakland, CA 94602
-                  <br /><br />
-                  March 29th, 2025 <br />
-                  4pm - 9:00pm
-                  <br /><br />
-                </div>
-              </div> */}
-
-
-              {/* <div className="text-center mt-5">
-                <Link target="_blank" href="https://templehill.org/event/29th-annual-cambodian-new-year-celebration/">
-                  <div className="bg-[#F28904] hover:bg-[#FFC67F] shadow-xl text-lg rounded-full text-white py-2 px-6 ml-1">
-                    Reserve Your Free Ticket
-                  </div>
-                </Link>
-              </div> */}
             </div>
           </ScrollReveal>
 
-          {getRecentPosts(2).map((post, index) => (
-            <BlogPostPreview
-              key={post.slug}
-              post={post}
-              showSectionHeading={index === 0}
-              stackBelow={index > 0}
-            />
+          {getRecentPosts(2).map((post) => (
+            <BlogPostPreview key={post.slug} post={post} showSectionHeading={false} stackBelow />
           ))}
 
-          <ScrollReveal className="flex justify-center w-full pt-0 p-5 px-10 pb-10 mb-10">
-            <div className="flex flex-col w-full text-center max-w-[1040px]">
-              <h1 className="text-md text-center font-bold">Our Performances</h1>
+          <ScrollReveal className="mb-10 flex w-full justify-center p-5 px-10 pb-10 pt-0">
+            <div className="flex w-full max-w-[1040px] flex-col">
+              <h2 className="text-center text-md font-bold">Our Performances</h2>
               <hr className="mt-4" />
-              <br />
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-
-                <HoverVideoThumbnail
-                  title="APSARA"
-                  subtitle="(អប្សរា)"
-                  link="/dances/apsara"
-                  // videoSrc="/video/apsara.mp4"
-                  imageSrc="/thumbs/apsara.jpg"
-                />
-
-
-                <HoverVideoThumbnail
-                  title="COCONUT"
-                  subtitle="(របាំគោះត្រឡោក)"
-                  link="/dances/coconut"
-                  // videoSrc="/video/coconut.mp4"
-                  imageSrc="/thumbs/coconut.png"
-                />
-
-                <HoverVideoThumbnail
-                  title="LOVE MOON"
-                  subtitle="(របាំដួងច័ន្ទ្រា)"
-                  link="/dances/love-moon"
-                  // videoSrc="/video/dancer.mp4"
-                  imageSrc="/thumbs/lovemoon.png"
-                />
-
-                <HoverVideoThumbnail
-                  title="KANE"
-                  subtitle="(របាំគែន)"
-                  link="/dances/kane"
-                  // videoSrc="/video/kane.mp4"
-                  imageSrc="/thumbs/kane.png"
-                />
-
-                <HoverVideoThumbnail
-                  title="FLOWER"
-                  subtitle="(របាំបុប្ផាលោកីយ៏)"
-                  link="/dances/flower"
-                  // videoSrc="/video/flower.mp4"
-                  imageSrc="/thumbs/flower.png"
-                />
-
-                <HoverVideoThumbnail
-                  title="BLESSING"
-                  subtitle="(ជូនពរ)"
-                  link="/dances/blessing"
-                  imageSrc="/thumbs/blessing_03.jpg"
-                // fallbackImageSrc="/thumbs/blessing_02.png"
-                />
-
-                <HoverVideoThumbnail
-                  title="STICK"
-                  subtitle="(របាំឱផ្ទៃស្រុកខ្មែរ ឬរបាំគោះអង្រែ)"
-                  link="/dances/stick"
-                  imageSrc="/thumbs/stick.png"
-                // fallbackImageSrc="/thumbs/stick_02.png"
-                />
-
-                <HoverVideoThumbnail
-                  title="SOVANN MACHA"
-                  subtitle="(សុវណ្ណមច្ឆា)"
-                  link="/dances/sovann"
-                  imageSrc="/thumbs/sovann.jpg"
-                />
-
-                <HoverVideoThumbnail
-                  title="PHLOY SUOY"
-                  subtitle="(ផ្លយ ស៊ូយ)"
-                  link="/dances/phloy-suoy"
-                  imageSrc="/thumbs/phloy.png"
-                />
-
-
-
+              <div className="mt-8 w-full space-y-10">
+                <div>
+                  <h3 className="border-b-2 border-[#F28904] pb-2 text-left font-serif text-xl font-bold text-[#1a1a1a]">
+                    Classical Dance
+                  </h3>
+                  <RepertoireDanceGrid dances={CLASSICAL_DANCES} className="mt-4" ariaLabel="Classical dances" />
+                </div>
+                <div>
+                  <h3 className="border-b-2 border-[#F28904] pb-2 text-left font-serif text-xl font-bold text-[#1a1a1a]">
+                    Folk Dance
+                  </h3>
+                  <RepertoireDanceGrid dances={FOLK_DANCES} className="mt-4" ariaLabel="Folk dances" />
+                </div>
               </div>
             </div>
           </ScrollReveal>
