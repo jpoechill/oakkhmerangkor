@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "../Header"
 import Footer from "../Footer"
@@ -9,6 +10,12 @@ const KEY_IMPACT_STATS = [
   { value: "3-month", label: "intensive training season" },
   { value: "1,500+", label: "ticket reservations for annual performance" },
 ] as const;
+
+export const metadata: Metadata = {
+  title: "Impact | Oakland Khmer Angkor Dance Troupe",
+  description:
+    "Our impact: youth and adults trained, weekly instruction, annual Cambodian New Year performance, and how Oakland Khmer Angkor Dance Troupe grows Khmer culture in the Bay Area.",
+};
 
 export default function Home() {
   return (
@@ -40,7 +47,15 @@ export default function Home() {
               </div>
               <div className="lg:w-1/2 lg:pl-8 mt-6 lg:mt-0">
                 <br /><br />
-                <Image src="/impact/youth_group_01.jpg" alt="Grantors and dancers at a partnership event" className="w-full rounded-lg shadow-md" width={300} height={300} />
+                <Image
+                  src="/impact/youth_group_01.jpg"
+                  alt="Youth dancers and supporters together at a community event"
+                  className="h-auto w-full rounded-lg shadow-md"
+                  width={800}
+                  height={534}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  loading="lazy"
+                />
               </div>
             </div>
 
@@ -60,7 +75,15 @@ export default function Home() {
             <div className="border-[#F28904] py-[20px]">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 <div className="hidden md:block">
-                  <Image src="/impact/umbrella_02.jpg" alt="Handcrafted Cambodian dance costumes" className="w-full rounded-lg shadow-md mb-4" width="300" height="300" />
+                  <Image
+                    src="/impact/umbrella_02.jpg"
+                    alt="Handcrafted Cambodian dance costumes and umbrella props"
+                    className="mb-4 h-auto w-full rounded-lg shadow-md"
+                    width={600}
+                    height={600}
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    loading="lazy"
+                  />
                   {/* <img src="/image-placeholder-4.jpg" alt="A vibrant performance on stage" className="w-full rounded-lg shadow-md" /> */}
                 </div>
                 <div className="col-span-2">
@@ -78,7 +101,15 @@ export default function Home() {
 
                 <div className="col-span-2 md:hidden w-full">
                   <div className="w-full ">
-                    <Image src="/impact/umbrella_02.jpg" alt="Handcrafted Cambodian dance costumes" className="w-full h-full rounded-lg shadow-md mb-4 object-contain" width="300" height="300" />
+                    <Image
+                      src="/impact/umbrella_02.jpg"
+                      alt="Handcrafted Cambodian dance costumes and umbrella props"
+                      className="mb-4 h-full w-full rounded-lg object-contain shadow-md"
+                      width={600}
+                      height={600}
+                      sizes="100vw"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -104,7 +135,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="mt-6 text-center text-xs font-medium text-gray-500 sm:text-sm">
-                Figures as of 2026.
+                Figures for the year 2026.
               </p>
             </section>
 
@@ -125,7 +156,15 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:w-1/3 mt-6 lg:mt-0">
-                <Image src="/impact/neary.jpg" alt="Grantors and dancers at a partnership event" className="w-full rounded-lg shadow-md" width="300" height="300" />
+                <Image
+                  src="/impact/neary.jpg"
+                  alt="Neary, troupe member who cares for cultural costumes"
+                  className="h-auto w-full rounded-lg shadow-md"
+                  width={600}
+                  height={600}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  loading="lazy"
+                />
               </div>
             </div>
 
@@ -138,7 +177,7 @@ export default function Home() {
                 {/* <div id="question5" className="pb-6 font-serif text-2xl font-bold">
                   Opportunities for Collaboration
                 </div> */}
-                <div id="answer5" className="font-light text-md">
+                <div id="impact-support-contact" className="font-light text-md">
 
                   {/* Our Cambodian cultural dance troupe has been a pillar of our community for over 20 years. Throughout this time, our leaders, families, and local organizations have been the backbone of our funding, often contributing out of pocket to ensure the group could thrive. This remarkable dedication has allowed us to carry forward our traditions and bring the joy of Cambodian dance to thousands, even in the face of financial constraints.
                   <br /><br />
@@ -154,7 +193,13 @@ export default function Home() {
                     <div className="grid grid-cols-2 w-full lg:grid-cols-7 justify-end items-end gap-10">
                       <div className="col-start-3 m-auto r-10 text-sm text-center">
                         <div className="bg-slate-200 m-auto rounded-full h-[100px] w-[100px] overflow-hidden">
-                          <Image src="/avatars/sinath_02.png" alt="Placeholder Image" width={125} height={125}></Image>
+                          <Image
+                            src="/avatars/sinath_02.png"
+                            alt="Sinath, Treasurer"
+                            width={125}
+                            height={125}
+                            loading="lazy"
+                          />
                         </div>
                         <br />
                         <span className="font-bold">Sinath (Treasurer)</span>
@@ -163,7 +208,13 @@ export default function Home() {
                       </div>
                       <div className="col-start-5 m-auto text-sm text-center">
                         <div className="bg-slate-200 mx-auto rounded-full h-[100px] w-[100px] overflow-hidden">
-                          <Image src="/avatars/macy.png" alt="Placeholder Image" width={125} height={125}></Image>
+                          <Image
+                            src="/avatars/macy.png"
+                            alt="Macy, Fundraising"
+                            width={125}
+                            height={125}
+                            loading="lazy"
+                          />
                         </div>
                         <br />
                         <span className="font-bold">Macy (Fundraising)</span>

@@ -1,11 +1,17 @@
-
-import { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Image from "next/image";
-import Header from "../../Header"
-import Footer from "../../Footer"
-import Link from "next/link"
-import ClientModalWithScroll from './ClientModalWithScroll';
+import Header from "../../Header";
+import Footer from "../../Footer";
+import Link from "next/link";
+import ClientModalWithScroll from "./ClientModalWithScroll";
+import { absoluteUrl } from "@/lib/site";
+
+function metaDescription(text: string, max = 155): string {
+  const t = text.replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  return `${t.slice(0, max - 1).trimEnd()}…`;
+}
 
 interface Section {
   id: number;
@@ -179,12 +185,23 @@ export async function generateMetadata({
     }
   }
 
+  const description = metaDescription(post.contentFirst);
+
   return {
-    title: post.title,
-    // description: `Blog post by ${post.author.name}`,
-    // authors: [{ name: post.author.name }],
-    // keywords: post.tags
-  }
+    title: `${post.title} | Oakland Khmer Angkor Dance Troupe`,
+    description,
+    openGraph: {
+      title: post.title,
+      description,
+      images: [{ url: absoluteUrl(post.thumbnail), alt: `${post.title} — Khmer dance` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description,
+      images: [absoluteUrl(post.thumbnail)],
+    },
+  };
 }
 
 // Generate static params for pre-rendering

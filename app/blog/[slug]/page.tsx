@@ -7,8 +7,7 @@ import ScrollReveal from "../../components/ScrollReveal";
 import Link from "next/link";
 import { getBlogPostBody } from "../post-registry";
 import { blogPosts, getPostBySlug } from "@/lib/blog-data";
-
-const siteUrl = "https://www.oakkhmerangkor.com";
+import { absoluteUrl } from "@/lib/site";
 
 type Props = { params: { slug: string } };
 
@@ -29,7 +28,9 @@ export function generateMetadata({ params }: Props): Metadata {
     openGraph: {
       title: post.title,
       description: post.description,
-      images: [{ url: `${siteUrl}${ogPath}` }],
+      type: "article",
+      publishedTime: post.date,
+      images: [{ url: absoluteUrl(ogPath) }],
     },
   };
 }

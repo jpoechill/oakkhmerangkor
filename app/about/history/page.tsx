@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "History | Oakland Khmer Angkor Dance Troupe",
+  description:
+    "Founded in 1996, Oakland Khmer Angkor Dance Troupe brings Cambodian classical and folk dance to the Bay Area — from weekly practices to annual Cambodian New Year in Oakland.",
+};
 
 export default function Home() {
   return (

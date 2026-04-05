@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "../Header"
 import Footer from "../Footer"
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "FAQs | Oakland Khmer Angkor Dance Troupe",
+  description:
+    "Answers about joining Oakland Khmer Angkor Dance Troupe, practice schedule, performances, costumes, and programs for youth and families.",
+};
 
 export default function Home() {
   return (

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "../Header";
 import Footer from "../Footer";
 import HeroVideoBackground from "../components/HeroVideoBackground";
@@ -8,6 +9,12 @@ import {
   FOLK_DANCES,
   type RepertoireDance,
 } from "@/lib/dances-repertoire";
+
+export const metadata: Metadata = {
+  title: "Performances | Oakland Khmer Angkor Dance Troupe",
+  description:
+    "Classical and folk Khmer dances we perform in the Bay Area — Apsara, Blessing, Coconut, Kane, Sovann Macha, and more. Explore Oakland Khmer Angkor Dance Troupe repertoire.",
+};
 
 function RepertoireSection({
   id,

@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "../Header"
 import Footer from "../Footer"
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Events | Oakland Khmer Angkor Dance Troupe",
+  description:
+    "Upcoming Oakland Khmer Angkor Dance Troupe events and celebrations, including Cambodian New Year in Oakland — dates, venue, and how to attend.",
+};
 
 export default function Home() {
   return (

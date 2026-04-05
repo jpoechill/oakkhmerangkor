@@ -1,9 +1,15 @@
-
-import { Metadata } from 'next'
-import { notFound } from 'next/navigation'
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
 import Image from "next/image";
-import Header from "../../Header"
-import Footer from "../../Footer"
+import Header from "../../Header";
+import Footer from "../../Footer";
+import { absoluteUrl } from "@/lib/site";
+
+function metaDescription(text: string, max = 155): string {
+  const t = text.replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  return `${t.slice(0, max - 1).trimEnd()}…`;
+}
 
 interface Section {
   id: number;
@@ -74,15 +80,23 @@ export async function generateMetadata({
     }
   }
 
+  const description = metaDescription(post.contentFirst);
+
   return {
-    title: 'Oakland Khmer Angkor Dance Troupe | Meet Our Students',
-    description: "Discover the bright young talents of the Oakland Khmer Angkor Dance Troupe. Learn more about each student\u2019s background, passions, and cultural journey.",
+    title: `${post.title} | Student Profile | Oakland Khmer Angkor Dance Troupe`,
+    description,
     openGraph: {
-      images: 'https://www.oakkhmerangkor.com/profiles/sora.jpeg',
-    }
-    // authors: [{ name: post.author.name }],
-    // keywords: post.tags
-  }
+      title: `${post.title} — Oakland Khmer Angkor Dance Troupe`,
+      description,
+      images: [{ url: absoluteUrl(post.thumbnail), alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description,
+      images: [absoluteUrl(post.thumbnail)],
+    },
+  };
 }
 
 // Generate static params for pre-rendering

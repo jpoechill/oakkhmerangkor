@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "../Header";
 import Footer from "../Footer";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Support Us | Oakland Khmer Angkor Dance Troupe",
+  description:
+    "Donate and support Khmer dance education, costumes, and performances in Oakland. Help Oakland Khmer Angkor Dance Troupe preserve Cambodian culture for the next generation.",
+};
 
 export default function SupportPage() {
   return (

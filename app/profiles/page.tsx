@@ -3,12 +3,14 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Link from "next/link"
 import type { Metadata } from "next";
+import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Oakland Khmer Angkor Dance Troupe | Meet Our Students",
-  description: "Discover the bright young talents of the Oakland Khmer Angkor Dance Troupe. Learn more about each student’s background, passions, and cultural journey.",
+  description:
+    "Discover the bright young talents of the Oakland Khmer Angkor Dance Troupe. Learn more about each student’s background, passions, and cultural journey.",
   openGraph: {
-    images: 'https://www.oakkhmerangkor.com/profiles/sora.jpeg',
+    images: [{ url: absoluteUrl("/profiles/sora.jpeg"), alt: "Oakland Khmer Angkor Dance Troupe student" }],
   },
 };
 

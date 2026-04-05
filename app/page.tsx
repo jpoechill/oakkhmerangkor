@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "./Header"
 import Footer from "./Footer"
@@ -9,6 +10,11 @@ import HeroVideoBackground from "./components/HeroVideoBackground";
 import HeroTextReveal from "./components/HeroTextReveal";
 import { getRecentPosts } from "@/lib/blog-data";
 import { CLASSICAL_DANCES, FOLK_DANCES } from "@/lib/dances-repertoire";
+import { SITE_URL } from "@/lib/site";
+
+export const metadata: Metadata = {
+  openGraph: { url: SITE_URL, type: "website" },
+};
 
 export default function Home() {
   return (

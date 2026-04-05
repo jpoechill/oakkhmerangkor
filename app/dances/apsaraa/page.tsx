@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
-import Header from "../../Header"
+import Header from "../../Header";
 import Footer from "../../Footer"
-import Link from "next/link"
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Apsara Dance | Oakland Khmer Angkor Dance Troupe",
+  description:
+    "Apsara — classical Cambodian dance inspired by celestial dancers. Learn how Oakland Khmer Angkor Dance Troupe performs this iconic Khmer form.",
+};
 
 export default function Home() {
   return (

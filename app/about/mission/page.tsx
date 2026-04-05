@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Mission | Oakland Khmer Angkor Dance Troupe",
+  description:
+    "Our mission: preserve and promote Khmer dance in Oakland through education, performance, and community — nurturing the next generation of dancers for 25+ years.",
+};
 
 export default function Home() {
   return (

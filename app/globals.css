@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Keyboard / screen-reader: skip past header and nav */
+.skip-to-main {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #200073;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+  border-radius: 0.25rem;
+}
+.skip-to-main:focus {
+  left: 0.75rem;
+  top: 0.75rem;
+  outline: 2px solid #f28904;
+  outline-offset: 2px;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
