@@ -44,7 +44,9 @@ export default function Home() {
                       How can I enroll my youth?
                     </div>
                     <div id="answer6" className="font-light text-md">
-                      Send us an email through  <Link href="mailto:oakkhmerangkor@gmail.com">oakkhmerangkor@gmail.com</Link>, fill out the form here: <Link href="/contact">link</Link>.
+                      Send us an email through <Link href="mailto:oakkhmerangkor@gmail.com">oakkhmerangkor@gmail.com</Link>, or use the form on our{" "}
+                      <Link href="/contact" className="text-[#F28904] hover:text-[#5E489A] underline underline-offset-2">Get Involved</Link>{" "}
+                      page.
                     </div>
                   </div>
 
@@ -86,7 +88,10 @@ export default function Home() {
                       How can I get involved with the dance group?
                     </div>
                     <div id="answer5" className="font-light text-md">
-                      There are various ways to get involved with our dance group. You can join as a volunteer, participate in our workshops, attend our performances, or support us through donations. Visit our &quot;Get Involved&quot; section for more details.
+                      You can support the troupe with a donation, attend our events, volunteer, or ask about workshops. For youth enrollment and general questions, visit our{" "}
+                      <Link href="/contact" className="text-[#F28904] hover:text-[#5E489A] underline underline-offset-2">Get Involved</Link>{" "}
+                      page. To invite us to perform, visit{" "}
+                      <Link href="/getinvolved" className="text-[#F28904] hover:text-[#5E489A] underline underline-offset-2">Book a Performance</Link>.
                     </div>
                   </div>
 
@@ -94,7 +99,9 @@ export default function Home() {
                     <div id="question6" className="pb-6 font-serif text-2xl font-bold">
                       What age groups can participate?</div>
                     <div id="answer6" className="font-light text-md">
-                      There are various ways to get involved with our dance group. You can join as a volunteer, participate in our workshops, attend our performances, or support us through donations. Visit our &quot;Get Involved&quot; section for more details.
+                      Our program welcomes a wide range of ages. For current enrollment options and practice details, email us or reach out through our{" "}
+                      <Link href="/contact" className="text-[#F28904] hover:text-[#5E489A] underline underline-offset-2">Get Involved</Link>{" "}
+                      page—we are happy to walk you through next steps for youth dancers and families.
                     </div>
                   </div>
 
@@ -103,7 +110,9 @@ export default function Home() {
                       Can I book the dance group for private events?
                     </div>
                     <div id="answer10" className="font-light text-md">
-                      Yes, our dance group is available for private events, including weddings, corporate functions, and cultural festivals. Please contact us for more information on booking and availability.
+                      Yes—we perform for weddings, corporate and community events, schools, and cultural festivals. Share your date, venue, and audience on our{" "}
+                      <Link href="/getinvolved" className="text-[#F28904] hover:text-[#5E489A] underline underline-offset-2">Book a Performance</Link>{" "}
+                      page and we will follow up about repertoire and availability.
                     </div>
                   </div>
                 </div>

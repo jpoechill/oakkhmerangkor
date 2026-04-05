@@ -1,6 +1,6 @@
 'use client'
 
-import Image from "next/image";
+import Link from "next/link";
 import Header from "../Header"
 import Footer from "../Footer"
 import ContactForm from "../components/ContactForm"
@@ -14,15 +14,21 @@ export default function Home() {
           <div className="flex flex-col w-full max-w-[1040px] mt-[130px] mb-5">
             <div className="text-center">
               <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">
-                Get Involved
+                Book a Performance
               </div>
               <div className="text-3xl font-bold tracking-wide">
-                Join Us in Making a Difference
+                Bring Cambodian Dance to Your Event
               </div>
             </div><br /><br />
 
             <div className="font-light text-md">
-              Whether you have questions, feedback, or would like to get involved with our group, please don&apos;t hesitate to reach out.
+              We perform at festivals, school events, weddings, and cultural programs, sharing Khmer dance with new audiences. Tell us your event details, dates, venue, and audience—we&apos;ll follow up with availability, repertoire, and logistics.
+              <br /><br />
+              For youth enrollment, volunteering, or general questions, visit our{" "}
+              <Link href="/contact" className="text-[#F28904] hover:text-[#5E489A] underline underline-offset-2">
+                Get Involved
+              </Link>{" "}
+              page.
             </div>
             <br />
 

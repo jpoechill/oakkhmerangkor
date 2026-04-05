@@ -1,11 +1,12 @@
-import Image from "next/image";
-import Header from "../Header"
-import Footer from "../Footer"
+import type { Metadata } from "next";
+import ContactForm from "../components/ContactForm";
 
-export default function Home() {
-  return (
-    <main className="text-lg">
+export const metadata: Metadata = {
+  title: "Get Involved | Oakland Khmer Angkor Dance Troupe",
+  description:
+    "Reach out about youth enrollment, volunteering, and programs—or connect by email and social media. Book performances on our Book a Performance page.",
+};
 
-    </main>
-  );
+export default function GetInvolvedPage() {
+  return <ContactForm />;
 }

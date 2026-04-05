@@ -32,7 +32,7 @@ export default function Home() {
         <div className="flex justify-center w-full p-5 pt-0 px-5 lg:px-10 animate-[fade-me-in_.5s_ease-in-out] bg-white">
           <div className="flex flex-col w-full max-w-[1040px] mt-[130px]">
             <div className="text-center mb-10">
-              <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">Student Profiles</div>
+              <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">Dancers</div>
               <div className="text-3xl font-bold tracking-wide">Meet Our Dancers</div>
             </div>
 

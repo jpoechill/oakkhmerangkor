@@ -13,7 +13,7 @@ export default function Home() {
           <div className="flex flex-col w-full max-w-[1040px] mt-[130px] mb-5">
             <div className="text-center">
               <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">
-                Dances
+                Performances
               </div>
               <div className="text-3xl font-bold tracking-wide">
                 Dance Forms We Celebrate

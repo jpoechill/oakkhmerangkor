@@ -6,7 +6,8 @@ import Footer from "../Footer"
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
+import { prefersReducedScroll, smoothScrollToId, smoothScrollToTop } from "@/lib/smooth-scroll";
 
 export default function DashboardLayout({
   children, // will be a page or nested layout
@@ -15,9 +16,43 @@ export default function DashboardLayout({
 }) {
   const pathname = usePathname()
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useLayoutEffect(() => {
+    let rafOuter = 0;
+    const timeouts: number[] = [];
+
+    const clearPendingScroll = () => {
+      cancelAnimationFrame(rafOuter);
+      while (timeouts.length) clearTimeout(timeouts.pop()!);
+    };
+
+    const applyHashScroll = () => {
+      clearPendingScroll();
+      const id = window.location.hash.replace(/^#/, "").trim();
+      if (!id) {
+        if (prefersReducedScroll()) {
+          window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        } else {
+          smoothScrollToTop();
+        }
+        return;
+      }
+
+      const go = () => smoothScrollToId(id);
+      go();
+      rafOuter = requestAnimationFrame(() => {
+        go();
+        requestAnimationFrame(go);
+      });
+      timeouts.push(window.setTimeout(go, 120), window.setTimeout(go, 400));
+    };
+
+    applyHashScroll();
+    window.addEventListener("hashchange", applyHashScroll);
+    return () => {
+      window.removeEventListener("hashchange", applyHashScroll);
+      clearPendingScroll();
+    };
+  }, [pathname]);
 
   return (
     <main>
@@ -52,12 +87,15 @@ export default function DashboardLayout({
 
 
 
-            <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
-              <div className="">
-                <div id="question1" className="text-center border-b-2 mb-8 border-[#F28904] pb-6 font-serif text-2xl font-bold">
+            <div
+              id="mission"
+              className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start scroll-mt-28"
+            >
+              <div className="w-full">
+                <div className="text-center border-b-2 mb-8 border-[#F28904] pb-6 font-serif text-2xl font-bold">
                   Our Mission
                 </div>
-                <div id="answer1" className="font-light text-md">
+                <div className="font-light text-md">
                   The Oakland Khmer Angkor Dance Troupe is dedicated to preserving and promoting the rich cultural heritage of Cambodian traditional dance. Through education, performance, and community engagement, we aim to inspire and empower youth, foster cross-cultural understanding, and celebrate the beauty of Khmer arts. For over 25 years, we have been committed to nurturing the next generation of dancers and enriching the cultural tapestry of Oakland, CA.
                   <br /><br />
                   We support the artistic growth of our members by providing opportunities for creative expression and collaboration. Through our programs, dancers can explore their artistic potential, develop new choreography, and participate in innovative projects that blend traditional and contemporary elements.
@@ -80,12 +118,15 @@ export default function DashboardLayout({
             </div>
 
 
-            <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
-              <div className="">
-                <div id="question1" className="text-center border-b-2 mb-8 border-[#F28904] pb-6 font-serif text-2xl font-bold">
+            <div
+              id="history"
+              className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start scroll-mt-28"
+            >
+              <div className="w-full">
+                <div className="text-center border-b-2 mb-8 border-[#F28904] pb-6 font-serif text-2xl font-bold">
                   Our History
                 </div>
-                <div id="answer1" className="font-light text-md">
+                <div className="font-light text-md">
                   The Oakland Khmer Angkor Dance Troupe was established in 1996 with the mission of preserving Cambodian culture through the art of dance. Building unity and strengthening the Khmer community in the Greater Bay Area, our troupe celebrates cultural dances, traditional food, clothing, and music. Our performances have captivated local audiences, sharing the beauty and elegance of our heritage and ensuring that every member, especially the younger generation, has a chance to succeed in all facets of life.
                   <br /><br />
                   Originally organized by a dedicated group of volunteers, with strong support from members of the Church of Jesus Christ of Latter-Day Saints&apos; Oakland 10th Cambodian Branch, our program serves more than 60 participants annually, ages 6 to 72. These dancers are taught a range of Cambodian folkloric and classical dances and are provided with costumes and accessories. Our weekly practices, running from January to March, focus on skill-building and community, with refreshments offered to keep our participants energized. Each March, in partnership with other Khmer dance communities, we host a vibrant Cambodian New Year celebration in Oakland, drawing over 1,200 attendees from throughout California.<br /><br />
@@ -170,9 +211,12 @@ export default function DashboardLayout({
               </div>
             </div> */}
 
-            <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start">
+            <div
+              id="leadership"
+              className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start scroll-mt-28"
+            >
               <div className="w-full">
-                <div id="question1" className="text-center border-b-2 mb-8 border-[#F28904] pb-6 font-serif text-2xl font-bold">
+                <div className="text-center border-b-2 mb-8 border-[#F28904] pb-6 font-serif text-2xl font-bold">
                   Our Leadership
                 </div>
                 <div className="grid grid-cols-2 w-full lg:grid-cols-6 justify-end items-end gap-10">

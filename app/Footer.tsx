@@ -32,13 +32,15 @@ export default function Footer() {
             <div className="grid grid-cols-2 gap-x-8 gap-y-4">
               {[
                 { href: "/about", label: "About" },
-                { href: "/dances", label: "Dances" },
-                { href: "/profiles", label: "Profiles" },
-                { href: "/blog", label: "Blog" },
-                { href: "/events", label: "Events" },
+                { href: "/programs", label: "Programs" },
+                { href: "/dances", label: "Performances" },
                 { href: "/impact", label: "Impact" },
+                { href: "/community", label: "Community" },
+                { href: "/profiles", label: "Dancers & Teachers" },
+                { href: "/events", label: "Events" },
+                { href: "/blog", label: "Blog" },
                 { href: "/faqs", label: "FAQs" },
-                { href: "/contact", label: "Contact" }
+                { href: "/contact", label: "Contact" },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -53,22 +55,19 @@ export default function Footer() {
 
           {/* CTA & Social */}
           <div className="lg:col-span-3">
-            <h3 className="text-xl font-semibold mb-6 text-white">Get Involved</h3>
-
-            {/* Action Buttons */}
             <div className="space-y-4 mb-8">
-              <Link href="/donate" className="block">
+              <Link href="/support" className="block">
                 <div className="bg-gradient-to-r from-[#5E489A] to-[#7B5FB8] hover:from-[#7B5FB8] hover:to-[#9E91C2] 
                                text-center rounded-full py-3 px-6 font-medium transition-all duration-300 
                                hover:shadow-lg hover:scale-105 transform text-white hover:text-gray-100">
-                  Donate
+                  Support Us
                 </div>
               </Link>
               <Link href="/getinvolved" className="block">
                 <div className="bg-gradient-to-r from-[#F28904] to-[#FF9F1A] hover:from-[#FF9F1A] hover:to-[#FFC67F] 
                                text-center rounded-full py-3 px-6 font-medium transition-all duration-300 
                                hover:shadow-lg hover:scale-105 transform text-white hover:text-gray-100">
-                  Get Involved
+                  Book a Performance
                 </div>
               </Link>
             </div>

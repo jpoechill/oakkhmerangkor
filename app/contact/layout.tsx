@@ -4,15 +4,12 @@ import Image from "next/image";
 import Header from "../Header"
 import Footer from "../Footer"
 import Link from "next/link";
-import { usePathname } from 'next/navigation'
 
 export default function DashboardLayout({
-  children, // will be a page or nested layout
+  children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  const pathname = usePathname()
-
   return (
     <main>
       <Header></Header>
@@ -21,9 +18,9 @@ export default function DashboardLayout({
         <div className="flex justify-center w-full p-5 pt-0 px-5 lg:px-10 animate-[fade-me-in_.5s_ease-in-out] bg-white">
           <div className="flex flex-col w-full max-w-[1040px] mt-[130px]">
             <div className="text-center animate-[fade-me-in_s_ease-in-out]">
-              <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">Contact</div>
+              <div className="text-sm uppercase font-bold mb-2 text-[#F28904] tracking-widest">Get Involved</div>
               <div className="text-3xl font-bold tracking-wide">
-                Get in Touch with Us
+                Connect With the Troupe
               </div>
             </div><br /><br />
 
@@ -32,9 +29,9 @@ export default function DashboardLayout({
                 <Image src="/play.jpg" alt="thumb" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" fill></Image>
               </div>
               <div className="col-span-4">
-                We&apos;re always ready to connect with you!
+                We&apos;re glad you want to take the next step—whether that&apos;s youth enrollment, volunteering, practice questions, or learning more about our programs.
                 <br /><br />
-                Whether you have questions about our dances, or want to get involved, our team is here to provide the support you need.
+                Reach out by email, on social media, or send a message.
                 <br /><br />
                 {/* We value every inquiry and strive to enhance your experience with prompt and personalized service. */}
                 {/* <br /><br /> */}
@@ -84,7 +81,7 @@ export default function DashboardLayout({
             {/* <hr /> */}
 
             <br /><br />
-            {/* {children} */}
+            {children}
 
             <div className="pb-[25px]"></div>
           </div>

@@ -3,6 +3,13 @@ import Header from "../Header"
 import Footer from "../Footer"
 import Link from "next/link";
 
+const KEY_IMPACT_STATS = [
+  { value: "110+", label: "youth & adults trained" },
+  { value: "3+ hours", label: "of weekly instruction" },
+  { value: "3-month", label: "intensive training season" },
+  { value: "1,500+", label: "ticket reservations for annual performance" },
+] as const;
+
 export default function Home() {
   return (
     <main>
@@ -17,6 +24,31 @@ export default function Home() {
                 Our Journey and Vision
               </div>
             </div>
+
+            <section
+              className="mt-10 w-full pb-12 pt-2"
+              aria-label="Key impact figures"
+            >
+              <div className="mx-auto grid max-w-3xl grid-cols-2 gap-6 sm:gap-8">
+                {KEY_IMPACT_STATS.map((stat) => (
+                  <div
+                    key={stat.label}
+                    className="flex flex-col items-center justify-start rounded-xl border border-[#e8e4f2]/90 bg-gradient-to-b from-white to-[#faf9fc] px-3 py-6 text-center shadow-sm transition duration-200 ease-out hover:scale-[1.02] hover:border-[#F28904]/25 hover:shadow-md sm:px-4"
+                  >
+                    <p className="text-[1.65rem] font-bold leading-none tracking-tight text-[#200073] sm:text-4xl lg:text-[1.85rem] xl:text-4xl">
+                      {stat.value}
+                    </p>
+                    <p className="mt-3 max-w-[11rem] text-xs font-medium leading-snug text-gray-600 sm:text-sm">
+                      {stat.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-6 text-center text-xs font-medium text-gray-500 sm:text-sm">
+                Figures as of 2026.
+              </p>
+              <hr className="mt-8 border-t-2 border-[#F28904]" aria-hidden />
+            </section>
 
             <div className="flex flex-col justify-center w-full p-0 px-0 my-5">
             </div>
@@ -124,7 +156,7 @@ export default function Home() {
                   <br />
                   <div className="text-center">
                     <hr className=" border-t-2 border-[#F28904] mb-[50px]" />
-                    Make a contribution today through our <Link href="/donate" className="underline hover:cursor-pointer">Donate</Link> page, or contact a representative directly for more information.
+                    Make a contribution today through our <Link href="/support" className="underline hover:cursor-pointer">Support Us</Link> page, or contact a representative directly for more information.
                     <br /><br />
                     <div className="grid grid-cols-2 w-full lg:grid-cols-7 justify-end items-end gap-10">
                       <div className="col-start-3 m-auto r-10 text-sm text-center">

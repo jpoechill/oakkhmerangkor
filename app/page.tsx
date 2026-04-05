@@ -7,6 +7,7 @@ import HoverVideoThumbnail from "./HoverVideoThumbnail"
 import ScrollReveal from "./components/ScrollReveal";
 import BlogPostPreview from "./components/BlogPostPreview";
 import HeroVideoBackground from "./components/HeroVideoBackground";
+import HeroTextReveal from "./components/HeroTextReveal";
 import { getRecentPosts } from "@/lib/blog-data";
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
         className="relative isolate box-border h-[90vh] min-h-[29rem] w-full max-w-none overflow-hidden bg-[#0c0b1a]"
       >
         <HeroVideoBackground />
-        <div className="absolute inset-0 z-[1] flex flex-col justify-center px-4 pb-12 pt-24 sm:px-6 lg:pb-16 lg:pt-28">
+        <HeroTextReveal className="absolute inset-0 z-[1] px-4 pb-12 pt-24 sm:px-6 lg:pb-16 lg:pt-28">
           <div className="relative z-[1] mx-auto inline-flex w-fit max-w-[min(100%,36rem)] flex-col items-center text-center rounded-lg bg-black/40 px-5 py-5 sm:max-w-[min(100%,44rem)] sm:px-7 sm:py-6 lg:max-w-[min(100%,48rem)]">
             <p className="text-sm font-bold uppercase tracking-widest text-[#F28904]">
               Oakland Khmer Angkor Dance Troupe
@@ -36,15 +37,15 @@ export default function Home() {
               A home for the next generation to learn, perform, and carry forward the beauty of Khmer dance.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Link href="/getinvolved">
-                <div className="min-w-[160px] text-center bg-gradient-to-r from-[#F28904] to-[#FF9F1A] hover:from-[#FF9F1A] hover:to-[#FFC67F]
+              <Link href="/support">
+                <div className="min-w-[160px] text-center bg-gradient-to-r from-[#5E489A] to-[#7B5FB8] hover:from-[#7B5FB8] hover:to-[#9E91C2]
                   text-white font-medium px-6 py-3 rounded-full transition-all duration-300
                   hover:shadow-lg hover:scale-105 transform">
-                  Join the Troupe
+                  Support Us
                 </div>
               </Link>
-              <Link href="/contact">
-                <div className="min-w-[160px] text-center bg-gradient-to-r from-[#5E489A] to-[#7B5FB8] hover:from-[#7B5FB8] hover:to-[#9E91C2]
+              <Link href="/getinvolved">
+                <div className="min-w-[160px] text-center bg-gradient-to-r from-[#F28904] to-[#FF9F1A] hover:from-[#FF9F1A] hover:to-[#FFC67F]
                   text-white font-medium px-6 py-3 rounded-full transition-all duration-300
                   hover:shadow-lg hover:scale-105 transform">
                   Book a Performance
@@ -52,7 +53,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
+        </HeroTextReveal>
       </section>
 
       <div className="bg-white">
@@ -71,50 +72,47 @@ export default function Home() {
           <ScrollReveal className="flex justify-center w-full p-5 px-10 pt-12 lg:pt-16 mb-5">
             <div className="flex flex-col w-full max-w-[1040px]">
               {/* <h1>Upcoming Events</h1> <br /> */}
-              <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-8 shadow-xl">
-                <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
-
-                  {/* <Image src="/thumbs/apsara.png" alt="thumb" className="transition-all duration-[5000] ease-in-out group-hover:hidden" fill></Image> */}
-
-                  {/* <HoverVideo /> */}
-                  {/* <Link href="/blog"> */}
-                  <Image src="/events/okadt_social_rect_01_021826.jpg" alt="thumb" className="object-cover w-full h-full transition-all duration-[5000] delay-[.0s] ease-in-out" fill priority></Image>
-                  {/* </Link> */}
+              <article className="group/card w-full grid grid-cols-1 overflow-hidden rounded-2xl shadow-xl lg:grid-cols-8">
+                <div className="relative col-span-5 h-full min-h-[250px] w-full overflow-hidden">
+                  <a
+                    href="https://templehill.org/event/30th-annual-cambodian-new-year-celebration-at-temple-hill/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative block h-full min-h-[250px] w-full rounded-none focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F28904] focus-visible:ring-offset-2 lg:rounded-l-2xl lg:rounded-r-none"
+                  >
+                    <Image
+                      src="/events/okadt_social_rect_01_021826.jpg"
+                      alt="Oakland Khmer Angkor Dance Troupe performers at Cambodian New Year"
+                      className="object-cover transition-transform duration-500 ease-out group-hover/card:scale-[1.02]"
+                      fill
+                      priority
+                      sizes="(max-width: 1024px) 100vw, 62.5vw"
+                    />
+                  </a>
                 </div>
-                <div className="col-span-3 font-light p-5 text-md">
-                  <span className="font-bold text-lg">
-
-                    {/* <Link href="/blog" className="text-[#F28904] hover:text-[#5E489A]" > */}
-                    2026 Cambodian New Year Celebration
-                    {/* </Link> */}
-                  </span>
-                  <br /><br />
-                  Join us on a journey of discovery and celebration as we continue to illuminate stages with the beauty of Cambodian Khmer dance.
-                  <br /><br />
-                  📍 4770 Lincoln Ave Oakland, CA 94602
-                  <br /><br />
-                  March 21st, 2026. 3pm - 9:00pm.
-                  <br /><br />
-                  👉 <Link href="https://templehill.org/event/30th-annual-cambodian-new-year-celebration-at-temple-hill/" target="_blank" className="text-[#F28904] hover:text-[#5E489A]" >Reserve Your Free Ticket</Link>
-                  <br />
-                  {/* <Link href="/blog" className="text-[#F28904] hover:text-[#5E489A]" >
-                    More details...
-                  </Link> */}
+                <div className="col-span-3 flex flex-col p-5 font-light text-md">
+                  <h3 className="text-lg font-bold">2026 Cambodian New Year Celebration</h3>
+                  <div className="mt-4 flex-1 text-[#333]">
+                    <p>
+                      Join us on a journey of discovery and celebration as we continue to illuminate stages with the
+                      beauty of Cambodian Khmer dance.
+                    </p>
+                    <p className="mt-4">4770 Lincoln Ave, Oakland, CA 94602</p>
+                    <p className="mt-4">March 21, 2026 · 3pm–9pm</p>
+                  </div>
+                  <p className="mt-4">
+                    <Link
+                      href="https://templehill.org/event/30th-annual-cambodian-new-year-celebration-at-temple-hill/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-medium text-[#F28904] transition-colors hover:text-[#5E489A]"
+                    >
+                      Reserve your free ticket
+                    </Link>
+                    <span className="text-sm text-[#333]"> (opens external site)</span>
+                  </p>
                 </div>
-                {/* <div className="col-span-3 font-light p-5 text-md">
-                  <span className="font-bold text-lg">
-                    Cambodian New Year 2025
-                  </span>
-                  <br /><br />
-                  Join us on a journey of discovery and celebration as we continue to illuminate stages with the radiant beauty of Cambodian Khmer dance.
-                  <br /><br />
-                  📍 4770 Lincoln Ave Oakland, CA 94602
-                  <br /><br />
-                  March 29th, 2025 <br />
-                  4pm - 9:00pm
-                  <br /><br />
-                </div> */}
-              </div>
+              </article>
 
               {/* <div className="w-full rounded-2xl overflow-hidden grid grid-cols-1 mt-8 lg:grid-cols-8 shadow-xl">
                 <div className="col-span-5 group relative h-full min-h-[250px] w-full hover:cursor-pointer overflow-hidden">
@@ -161,7 +159,7 @@ export default function Home() {
 
           <ScrollReveal className="flex justify-center w-full pt-0 p-5 px-10 pb-10 mb-10">
             <div className="flex flex-col w-full text-center max-w-[1040px]">
-              <h1 className="text-md text-center font-bold">Our Dances</h1>
+              <h1 className="text-md text-center font-bold">Our Performances</h1>
               <hr className="mt-4" />
               <br />
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
