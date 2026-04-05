@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* html, body {
+  background-color: #200073;
+} */
+
+html, body, .pattern-bg {
+  --s: 152px; /* control the size*/
+  --c1: #101251;
+  --c2: #0c0b4c;
+  
+  --_g: var(--c1)        6.1%,var(--c2)  6.4% 18.6%,var(--c1) 18.9% 31.1%,
+        var(--c2) 31.4% 43.6%,var(--c1) 43.9% 56.1%,var(--c2) 56.4% 68.6%,#0000 68.9%;
+  background:
+    radial-gradient(var(--s) at 100% 0   ,var(--_g)),
+    radial-gradient(var(--s) at 0    0   ,var(--_g)),
+    radial-gradient(var(--s) at 0    100%,var(--_g)),
+    radial-gradient(var(--s) at 100% 100%,var(--_g)) var(--c1);
+  background-size: var(--s) var(--s);
+}
+
+a:hover {
+  color: #F28904;
+}
+
+.body-link {
+  color: #F28904;
+}
+
+.body-link:hover {
+  color: #5E489A;
+}
+@keyframes fade-me-in {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes reveal-up {
+  0% {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.scroll-reveal.scroll-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.sticky-element {
+  position: relative; /* Default position */
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
