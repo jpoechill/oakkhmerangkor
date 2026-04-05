@@ -14,17 +14,17 @@ export default function RepertoireDanceCard({ dance }: { dance: RepertoireDance 
       <Link
         href={dance.href}
         aria-label={`${dance.title}, ${dance.khmer}`}
-        className="group flex h-full min-h-[4.5rem] items-start gap-3 rounded-xl border border-[#e8e4f2] bg-white px-2.5 py-2.5 transition-colors hover:border-[#e0d8ef] hover:bg-[#faf9fc] sm:min-h-0 sm:gap-4 sm:px-4 sm:py-4"
+        className="group flex h-full min-h-[3.5rem] items-center gap-3 overflow-visible rounded-xl border border-[#e8e4f2] bg-white px-2.5 py-2.5 transition-colors hover:border-[#e0d8ef] hover:bg-[#faf9fc] sm:min-h-0 sm:gap-4 sm:px-4 sm:py-4"
       >
-        <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-md bg-white p-2 sm:h-[4.5rem] sm:w-[4.5rem] sm:p-2.5 lg:h-16 lg:w-16 xl:h-20 xl:w-20">
+        <span className="relative z-0 flex shrink-0 items-center group-hover:z-10">
           <Image
             src={SITE_LOGO_SRC}
             alt=""
-            fill
-            className="object-contain object-center transition-transform duration-300 group-hover:scale-105"
-            sizes="(max-width: 640px) 56px, (max-width: 1024px) 72px, 80px"
+            width={50}
+            height={50}
+            className="transition-all duration-300 group-hover:scale-110"
           />
-        </div>
+        </span>
         <div className="min-w-0 flex-1 py-0.5">
           <span className="block font-serif text-base font-bold leading-tight tracking-tight text-[#1a1a1a] transition-colors group-hover:text-[#200073] sm:text-lg lg:text-xl">
             {dance.title}

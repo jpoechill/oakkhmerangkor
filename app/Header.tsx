@@ -44,6 +44,8 @@ export default function Header() {
   const [mobileCommunityOpen, setMobileCommunityOpen] = useState(false);
   const [mobileProgramsOpen, setMobileProgramsOpen] = useState(false);
   const [hash, setHash] = useState("");
+  /** 0–100: how far the page has been scrolled (for header progress bar) */
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   const syncHash = useCallback(() => {
     setHash(typeof window !== "undefined" ? window.location.hash.replace(/^#/, "") : "");
@@ -58,10 +60,19 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
+      const doc = document.documentElement;
+      const scrollable = doc.scrollHeight - doc.clientHeight;
+      const ratio = scrollable > 0 ? doc.scrollTop / scrollable : 0;
+      setScrollProgress(Math.min(100, Math.max(0, ratio * 100)));
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, [pathname]);
 
   useEffect(() => {
     setShowMenu(false);
@@ -122,10 +133,12 @@ export default function Header() {
 
   return (
     <>
-      <header className={`fixed top-0 w-full z-50 pattern-bg transition-all duration-300 ${isScrolled
-        ? 'bg-gradient-to-br from-[#200073]/95 via-[#2d0a7a]/95 to-[#1a0056]/95 backdrop-blur-md shadow-lg'
-        : 'bg-gradient-to-br from-[#200073] via-[#2d0a7a] to-[#1a0056]'
-        }`}>
+      <header
+        className={`fixed top-0 z-50 w-full pattern-bg transition-all duration-300 ${isScrolled
+          ? "bg-gradient-to-br from-[#200073]/95 via-[#2d0a7a]/95 to-[#1a0056]/95 backdrop-blur-md shadow-lg"
+          : "bg-gradient-to-br from-[#200073] via-[#2d0a7a] to-[#1a0056]"
+          }`}
+      >
         <div className="max-w-7xl mx-auto px-4 lg:px-6">
           <div className="flex items-center justify-between h-20 lg:h-24">
 
@@ -233,30 +246,6 @@ export default function Header() {
                   </div>
                 </div>
 
-                <Link
-                  href="/dances"
-                  className={`relative inline-block whitespace-nowrap text-white text-[1.05rem] hover:text-[#F28904] hover:translate-x-0.5 transition-all duration-200 ease-out font-medium
-                    ${isActiveLink("/dances") ? "text-[#F28904]" : ""}
-                  `}
-                >
-                  Performances
-                  {isActiveLink("/dances") && (
-                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#F28904] rounded-full" />
-                  )}
-                </Link>
-
-                <Link
-                  href="/impact"
-                  className={`relative inline-block whitespace-nowrap text-white text-[1.05rem] hover:text-[#F28904] hover:translate-x-0.5 transition-all duration-200 ease-out font-medium
-                    ${isActiveLink("/impact") ? "text-[#F28904]" : ""}
-                  `}
-                >
-                  Impact
-                  {isActiveLink("/impact") && (
-                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#F28904] rounded-full" />
-                  )}
-                </Link>
-
                 <div className="relative group/communitydd">
                   <Link
                     href="/community"
@@ -296,6 +285,30 @@ export default function Header() {
                     </div>
                   </div>
                 </div>
+
+                <Link
+                  href="/dances"
+                  className={`relative inline-block whitespace-nowrap text-white text-[1.05rem] hover:text-[#F28904] hover:translate-x-0.5 transition-all duration-200 ease-out font-medium
+                    ${isActiveLink("/dances") ? "text-[#F28904]" : ""}
+                  `}
+                >
+                  Performances
+                  {isActiveLink("/dances") && (
+                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#F28904] rounded-full" />
+                  )}
+                </Link>
+
+                <Link
+                  href="/impact"
+                  className={`relative inline-block whitespace-nowrap text-white text-[1.05rem] hover:text-[#F28904] hover:translate-x-0.5 transition-all duration-200 ease-out font-medium
+                    ${isActiveLink("/impact") ? "text-[#F28904]" : ""}
+                  `}
+                >
+                  Impact
+                  {isActiveLink("/impact") && (
+                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#F28904] rounded-full" />
+                  )}
+                </Link>
               </nav>
             </div>
 
@@ -328,6 +341,20 @@ export default function Header() {
               </div>
             </button>
           </div>
+        </div>
+
+        <div
+          className="pointer-events-none absolute bottom-0 left-0 right-0 h-[3px] bg-white/20"
+          role="progressbar"
+          aria-valuenow={Math.round(scrollProgress)}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label="Page scroll progress"
+        >
+          <div
+            className="h-full w-full origin-left bg-gradient-to-r from-[#F28904] to-[#FF9F1A] motion-safe:transition-transform motion-safe:duration-100 motion-safe:ease-out"
+            style={{ transform: `scaleX(${scrollProgress / 100})` }}
+          />
         </div>
       </header>
 
@@ -448,30 +475,6 @@ export default function Header() {
                 )}
               </div>
 
-              <Link
-                href="/dances"
-                onClick={() => setShowMenu(false)}
-                className={`block border-b border-white/10 py-3 pl-4 text-[1.15rem] font-medium transition-all duration-200 ease-out ${
-                  isActiveLink("/dances")
-                    ? "text-[#F28904] border-l-4 border-[#F28904]"
-                    : "text-white hover:text-[#F28904] hover:translate-x-1"
-                }`}
-              >
-                Performances
-              </Link>
-
-              <Link
-                href="/impact"
-                onClick={() => setShowMenu(false)}
-                className={`block border-b border-white/10 py-3 pl-4 text-[1.15rem] font-medium transition-all duration-200 ease-out ${
-                  isActiveLink("/impact")
-                    ? "text-[#F28904] border-l-4 border-[#F28904]"
-                    : "text-white hover:text-[#F28904] hover:translate-x-1"
-                }`}
-              >
-                Impact
-              </Link>
-
               <div className="border-b border-white/10 pb-2 mb-2">
                 <div className="flex w-full items-center gap-1 py-2 pl-4 pr-2">
                   <Link
@@ -519,6 +522,30 @@ export default function Header() {
                   </div>
                 )}
               </div>
+
+              <Link
+                href="/dances"
+                onClick={() => setShowMenu(false)}
+                className={`block border-b border-white/10 py-3 pl-4 text-[1.15rem] font-medium transition-all duration-200 ease-out ${
+                  isActiveLink("/dances")
+                    ? "text-[#F28904] border-l-4 border-[#F28904]"
+                    : "text-white hover:text-[#F28904] hover:translate-x-1"
+                }`}
+              >
+                Performances
+              </Link>
+
+              <Link
+                href="/impact"
+                onClick={() => setShowMenu(false)}
+                className={`block border-b border-white/10 py-3 pl-4 text-[1.15rem] font-medium transition-all duration-200 ease-out ${
+                  isActiveLink("/impact")
+                    ? "text-[#F28904] border-l-4 border-[#F28904]"
+                    : "text-white hover:text-[#F28904] hover:translate-x-1"
+                }`}
+              >
+                Impact
+              </Link>
             </nav>
 
             <div className="space-y-4">

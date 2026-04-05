@@ -75,10 +75,10 @@ export default function Home() {
             </div>
           </div> */}
 
-          <ScrollReveal className="mb-5 flex w-full justify-center px-10 pb-5 pt-1">
+          <ScrollReveal className="mb-5 flex w-full justify-center px-10 pb-5 sm:pt-16 lg:pt-6">
             <div className="flex w-full max-w-[1040px] flex-col">
               <h2 className="text-md text-center font-bold">Recent Events</h2>
-              <hr className="mb-3 mt-2" />
+              <hr className="mb-8 mt-2" />
               <article className="group/card grid w-full grid-cols-1 overflow-hidden rounded-2xl shadow-xl lg:grid-cols-8">
                 <div className="relative col-span-5 h-full min-h-[250px] w-full overflow-hidden">
                   <a
@@ -127,11 +127,24 @@ export default function Home() {
             <BlogPostPreview key={post.slug} post={post} showSectionHeading={false} stackBelow />
           ))}
 
-          <ScrollReveal className="mb-10 flex w-full justify-center p-5 px-10 pb-10 pt-0">
+          <ScrollReveal className="mt-12 flex w-full justify-center bg-[#f6f6f6] px-10 py-20 text-center sm:mt-16 sm:py-24 lg:mt-24 lg:py-32">
+            <div className="flex w-full max-w-[1040px] flex-col text-[#200073]">
+              <div className="font-medium text-3xl italic font-serif">
+                “Dance is the hidden language of the soul, of the body.”
+              </div>
+              <div className="font-light mt-5 text-3xl">
+                របាំគឺជាភាសាលាក់កំបាំងនៃព្រលឹង រូបកាយ។
+              </div>
+              <br />
+              – Khmer Proverb
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal className="mb-10 flex w-full justify-center px-10 pb-10 pt-12 sm:pt-16 lg:pt-20">
             <div className="flex w-full max-w-[1040px] flex-col">
-              <h2 className="text-center text-md font-bold">Our Performances</h2>
-              <hr className="mt-4" />
-              <div className="mt-8 w-full space-y-10">
+              {/* <h2 className="text-center text-md font-bold">Our Performances</h2> */}
+              {/* <hr className="mt-4" /> */}
+              <div className="mt-0 w-full space-y-10">
                 <div>
                   <h3 className="border-b-2 border-[#F28904] pb-2 text-left font-serif text-xl font-bold text-[#1a1a1a]">
                     Classical Dance
@@ -148,20 +161,7 @@ export default function Home() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal className="flex justify-center w-full py-10 px-10 text-center bg-[#f6f6f6]">
-            <div className="flex flex-col w-full max-w-[1040px] text-[#200073] my-20 py-10 bg-[#f6f6f6]">
-              <div className="font-medium text-3xl italic font-serif">
-                “Dance is the hidden language of the soul, of the body.”
-              </div>
-              <div className="font-light mt-5 text-3xl">
-                របាំគឺជាភាសាលាក់កំបាំងនៃព្រលឹង រូបកាយ។
-              </div>
-              <br />
-              – Khmer Proverb
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal className="flex justify-center w-full p-5 px-10 mt-10 py-10">
+          <ScrollReveal className="mt-10 flex w-full justify-center bg-[#f6f6f6] px-10 py-12 pb-16 sm:py-14 sm:pb-20">
             <div className="flex flex-col w-full max-w-[1040px]">
               {/* <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
                 Our Sponsors
@@ -265,39 +265,35 @@ export default function Home() {
                   SJCCD
                 </div>
               </div>
-            </div>
-          </ScrollReveal>
 
-          <ScrollReveal className="m-[60px]">
-            <div className="text-sm uppercase w-full text-center font-bold mb-8 text-[#F28904] tracking-wider">
-              Our Sponsors
-            </div>
-            <div className="flex flex-row justify-center items-center gap-8 lg:gap-[90px]">
-              <div className="">
-                {/* <Link href="https://chucks-donuts.com/" target="_blank"> */}
-                <Image src="/sponsors/monynop.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300} loading="lazy"></Image>
-                {/* </Link> */}
+              <div className="mt-14 text-sm uppercase w-full text-center font-bold text-[#F28904] tracking-wider sm:mt-16">
+                Our Sponsors
               </div>
-              <div className="">
-                <Link href="https://chucks-donuts.com/" target="_blank">
-                  <Image src="/sponsors/chucks.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={140} height={300} loading="lazy"></Image>
-                </Link>
-              </div>
-              <div className="">
-                <Link href="https://stocksandblondessalon.com/" target="_blank">
-                  <Image src="/sponsors/stocksnblondes.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300} loading="lazy"></Image>
-                </Link>
-              </div>
-              <div className="">
-                <Link href="https://www.akhmerbuddhistfoundation.org/" target="_blank">
-                  <Image src="/sponsors/khmerbuddhist_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300} loading="lazy"></Image>
-                </Link>
+              <div className="mt-8 flex flex-row flex-wrap justify-center items-center gap-8 lg:gap-[90px]">
+                <div className="">
+                  {/* <Link href="https://chucks-donuts.com/" target="_blank"> */}
+                  <Image src="/sponsors/monynop.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300} loading="lazy"></Image>
+                  {/* </Link> */}
+                </div>
+                <div className="">
+                  <Link href="https://chucks-donuts.com/" target="_blank">
+                    <Image src="/sponsors/chucks.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={140} height={300} loading="lazy"></Image>
+                  </Link>
+                </div>
+                <div className="">
+                  <Link href="https://stocksandblondessalon.com/" target="_blank">
+                    <Image src="/sponsors/stocksnblondes.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300} loading="lazy"></Image>
+                  </Link>
+                </div>
+                <div className="">
+                  <Link href="https://www.akhmerbuddhistfoundation.org/" target="_blank">
+                    <Image src="/sponsors/khmerbuddhist_logo.png" alt="A Khmer Buddhist Foundation" className="transition-all duration-500 ease-in-out group-hover:scale-[1.10]" width={190} height={300} loading="lazy"></Image>
+                  </Link>
+                </div>
               </div>
             </div>
           </ScrollReveal>
-        </div >
-
-        <br />
+        </div>
       </div>
       <Footer></Footer>
     </main >

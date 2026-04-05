@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = {
   title: "Programs | Oakland Khmer Angkor Dance Troupe",
   description:
-    "Our annual training and performance cycle, community appearances throughout the year, and how we are growing programs for Khmer dance in the Bay Area.",
+    "Annual performance program (Cambodian New Year in Oakland), year-round community performances, and developing Khmer language and cultural learning for the Bay Area.",
 };
 
 export default function ProgramsLayout({ children }: { children: ReactNode }) {

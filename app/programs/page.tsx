@@ -11,6 +11,10 @@ import {
   smoothScrollToId,
   smoothScrollToTop,
 } from "@/lib/smooth-scroll";
+import {
+  ProgramOutcomesPanel,
+  ProgramOutcomesThreeColumn,
+} from "../components/ProgramOutcomesPanel";
 
 export default function ProgramsPage() {
   useEffect(() => {
@@ -73,45 +77,61 @@ export default function ProgramsPage() {
               </h2>
               <div className="space-y-6 font-light text-md leading-relaxed text-gray-800">
                 <p>
-                  Each winter and spring, our dancers prepare for our flagship Cambodian New Year celebration in
-                  Oakland—an evening of classical and folk Khmer dance, community, and tradition.{" "}
+                  Each winter and spring, our organization delivers a structured cultural arts training program culminating
+                  in a public Cambodian New Year performance in Oakland.{" "}
                   <strong className="font-semibold text-[#200073]">
-                    Weekly practices run from January through March
+                    From January through March, youth and adult participants (starting ages 6+) engage in weekly rehearsals
+                    focused on Khmer classical and folk dance, cultural education, and community-building.
                   </strong>
-                  , focused on skill-building, discipline, and looking after one another as a group. Participants learn a
-                  range of Cambodian folkloric and classical dances, with costumes and accessories provided, in line with
-                  how we have operated for decades.
                 </p>
                 <p>
-                  That commitment matters: it carries language, gesture, and story across generations, and it keeps our
-                  heritage vivid for dancers ages six to seventy-two and for everyone who comes to watch. The March
-                  celebration is both a goal and a homecoming—often drawing well over a thousand guests from across
-                  California to share performances, music, and social dancing.
+                  Participants receive hands-on training in traditional movement, storytelling, and performance
+                  technique, while also developing discipline, confidence, and teamwork. Costumes and materials are provided
+                  to ensure accessibility for all participants, including those from low-income and immigrant backgrounds.
                 </p>
-
-                <div className="mx-auto w-full max-w-2xl rounded-xl border border-[#e8e4f2] bg-[#faf9fc] p-5 sm:p-6">
-                  <h3 className="text-center font-serif text-lg font-bold text-[#200073] sm:text-xl">
-                    Season at a glance
-                  </h3>
-                  <ol className="mt-5 space-y-4 border-l-2 border-[#e8e4f2] pl-5 sm:pl-6">
-                    <li>
-                      <span className="font-semibold text-[#200073]">January</span> — Rehearsals begin; foundations,
-                      repertoire, and community routines take shape after the new year.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-[#200073]">February</span> — Training and refinement:
-                      cleaning movement, deepening cultural context, and supporting newer dancers alongside veterans.
-                    </li>
-                    <li>
-                      <span className="font-semibold text-[#200073]">March</span> — Final preparation, dress rehearsals,
-                      and stage rehearsals, leading into the Cambodian New Year performance and celebration.
-                    </li>
-                  </ol>
+                <p>
+                  The program culminates in a large-scale public performance that regularly reaches over 1,000 audience
+                  members from across California. This event serves as both a cultural celebration and a platform for
+                  intergenerational connection, preserving Cambodian heritage while making it accessible to broader
+                  audiences.
+                </p>
+                <div className="pt-10 sm:pt-14">
+                  <ProgramOutcomesPanel
+                    eyebrow="Annual program"
+                    title="Season at a glance"
+                    titleId="annual-season-heading"
+                  >
+                    <div className="space-y-4 bg-[#faf9fc] px-4 py-5 sm:space-y-5 sm:px-5 sm:py-6">
+                      <p className="text-pretty font-light text-sm leading-relaxed text-gray-800 sm:text-base">
+                        <span className="text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-[#F28904]">
+                          January
+                        </span>
+                        <span className="text-[#200073]/35"> — </span>
+                        Rehearsals begin; foundations, repertoire, and community routines take shape after the new year.
+                      </p>
+                      <p className="text-pretty font-light text-sm leading-relaxed text-gray-800 sm:text-base">
+                        <span className="text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-[#F28904]">
+                          February
+                        </span>
+                        <span className="text-[#200073]/35"> — </span>
+                        Training and refinement: cleaning movement, deepening cultural context, and supporting newer dancers
+                        alongside veterans.
+                      </p>
+                      <p className="text-pretty font-light text-sm leading-relaxed text-gray-800 sm:text-base">
+                        <span className="text-[0.6rem] font-semibold uppercase tracking-[0.14em] text-[#F28904]">
+                          March
+                        </span>
+                        <span className="text-[#200073]/35"> — </span>
+                        Final preparation, dress rehearsals, and stage rehearsals, leading into the Cambodian New Year
+                        performance and celebration.
+                      </p>
+                    </div>
+                  </ProgramOutcomesPanel>
                 </div>
               </div>
             </section>
 
-            {/* Community Performances */}
+            {/* Community Performance Program */}
             <section
               id="community-performances"
               aria-labelledby="community-heading"
@@ -120,22 +140,25 @@ export default function ProgramsPage() {
               <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row items-start gap-0 lg:gap-10">
                 <div className="w-full lg:w-1/2 lg:min-w-0">
                   <h2 id="community-heading" className="pb-6 font-serif text-2xl font-bold">
-                    Community Performances
+                    Community Performance Program
                   </h2>
                   <div className="space-y-6 font-light text-md leading-relaxed text-gray-800">
                     <p>
-                      After the big spring celebration, our troupe does not go quiet. We continue to show up as a
-                      community-facing ensemble through the rest of the year—an intentional part of how we serve Oakland
-                      and the wider Bay Area, not an afterthought.
+                      Following the annual spring production, our troupe continues to provide cultural programming
+                      throughout the year across Oakland and the greater Bay Area.
                     </p>
                     <p>
-                      We are invited to share Khmer dance at{" "}
+                      We partner with schools, community organizations, and event hosts to present Khmer dance at
+                      festivals, assemblies, weddings, and cultural events.{" "}
                       <strong className="font-semibold text-[#200073]">
-                        festivals, school events, weddings, cultural programs, and other gatherings
+                        These performances expand access to Southeast Asian arts, particularly in communities where
+                        cultural representation is limited.
                       </strong>
-                      . Each outing is a chance to introduce our art to new audiences, honor hosts and partners, and keep
-                      our dancers stage-ready. If you are planning an event and want Cambodian dance in the room, we would
-                      love to hear from you.
+                    </p>
+                    <p>
+                      For participants, this program provides ongoing performance opportunities that strengthen skills,
+                      build confidence, and encourage continued engagement in the arts. For audiences, it offers meaningful
+                      exposure to Cambodian culture, history, and storytelling.
                     </p>
                   </div>
                 </div>
@@ -151,6 +174,23 @@ export default function ProgramsPage() {
                   </div>
                 </div>
               </div>
+              <div className="flex w-full justify-center">
+                <div className="w-full min-w-0 md:w-3/4">
+                  <ProgramOutcomesPanel
+                    eyebrow="Community program"
+                    title="Program Outcomes"
+                    titleId="community-outcomes-heading"
+                  >
+                    <ProgramOutcomesThreeColumn
+                      items={[
+                        "Year-round performances across diverse community settings",
+                        "Increased cultural visibility and representation",
+                        "Continued artistic development for youth performers",
+                      ]}
+                    />
+                  </ProgramOutcomesPanel>
+                </div>
+              </div>
             </section>
 
             {/* Khmer Language Classes */}
@@ -161,19 +201,25 @@ export default function ProgramsPage() {
             >
               <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row-reverse items-start gap-0 lg:gap-10">
                 <div className="w-full lg:w-2/3 lg:min-w-0">
-                  <h2 id="khmer-language-heading" className="pb-6 font-serif text-2xl font-bold">
+                  <h2
+                    id="khmer-language-heading"
+                    className="pb-6 font-serif text-2xl font-bold text-balance"
+                  >
                     Khmer Language Classes
                   </h2>
                   <div className="space-y-6 font-light text-md leading-relaxed text-gray-800">
                     <p>
-                      We are building Khmer language classes for youth, heritage learners, and community members who want
-                      to learn and stay connected to their culture. These classes create space to practice, build
-                      confidence, and strengthen identity through language.
+                      We are developing a Khmer language and cultural education program to address the limited access to
+                      heritage language learning for Cambodian youth and community members in the United States.
                     </p>
                     <p>
-                      Access to Khmer language education remains limited, especially for youth growing up in the United
-                      States. As we grow, we are developing structured curriculum and dedicated teachers to provide
-                      consistent, high-quality instruction and expand access for our community.
+                      This program will provide structured instruction in Khmer language, integrated with cultural learning
+                      through dance, storytelling, and community engagement. It is designed to support heritage learners in
+                      building language skills, cultural identity, and intergenerational connection.
+                    </p>
+                    <p>
+                      As the program grows, we aim to expand curriculum development, train instructors, and increase access
+                      for underserved populations in our community.
                     </p>
                   </div>
                 </div>
@@ -187,6 +233,25 @@ export default function ProgramsPage() {
                       sizes="(max-width: 1024px) 100vw, 33vw"
                     />
                   </div>
+                </div>
+              </div>
+              <div className="flex w-full justify-center">
+                <div className="w-full min-w-0 md:w-3/4">
+                  <ProgramOutcomesPanel
+                    eyebrow="Developing program"
+                    title="Projected Outcomes"
+                    titleId="khmer-outcomes-heading"
+                    variant="projected"
+                  >
+                    <ProgramOutcomesThreeColumn
+                      mode="projected"
+                      items={[
+                        "Increased access to Khmer language education",
+                        "Strengthened cultural identity among youth participants",
+                        "Expanded opportunities for intergenerational learning",
+                      ]}
+                    />
+                  </ProgramOutcomesPanel>
                 </div>
               </div>
             </section>
