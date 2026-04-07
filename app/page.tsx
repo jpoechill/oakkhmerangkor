@@ -27,7 +27,7 @@ export default function Home() {
         aria-label="Homepage hero"
         className="relative isolate box-border h-[90vh] min-h-[29rem] w-full max-w-none overflow-hidden bg-[#0c0b1a]"
       >
-        <HeroVideoBackground />
+        <HeroVideoBackground src="/hero/stage_2026_3.mp4" />
         <HeroTextReveal className="absolute inset-0 z-[1] px-4 pb-12 pt-24 sm:px-6 lg:pb-16 lg:pt-28">
           <div className="relative z-[1] mx-auto inline-flex w-fit max-w-[min(100%,36rem)] flex-col items-center text-center rounded-lg bg-black/40 px-5 py-5 sm:max-w-[min(100%,44rem)] sm:px-7 sm:py-6 lg:max-w-[min(100%,48rem)]">
             <p className="text-sm font-bold uppercase tracking-widest text-[#F28904]">
