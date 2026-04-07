@@ -60,7 +60,7 @@ export default function Footer() {
                 <div className="bg-gradient-to-r from-[#5E489A] to-[#7B5FB8] hover:from-[#7B5FB8] hover:to-[#9E91C2] 
                                text-center rounded-full py-3 px-6 font-medium transition-all duration-300 
                                hover:shadow-lg hover:scale-105 transform text-white hover:text-gray-100">
-                  Support Us
+                  Get Involved
                 </div>
               </Link>
               <Link href="/getinvolved" className="block">

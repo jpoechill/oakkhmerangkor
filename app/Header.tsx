@@ -10,6 +10,7 @@ const ABOUT_SUBLINKS = [
   { href: "/about#mission", label: "Our Mission", hash: "mission" },
   { href: "/about#history", label: "Our History", hash: "history" },
   { href: "/about#leadership", label: "Leadership", hash: "leadership" },
+  { href: "/press-media", label: "Press and Media" },
 ] as const;
 
 const COMMUNITY_SUBLINKS = [
@@ -81,7 +82,7 @@ export default function Header() {
     setMobileProgramsOpen(false);
   }, [pathname]);
 
-  const isAboutActive = pathname === '/about' || pathname.startsWith('/about/');
+  const isAboutActive = pathname === '/about' || pathname.startsWith('/about/') || pathname === "/press-media";
 
   const isProgramsActive = pathname === "/programs";
 
@@ -98,8 +99,8 @@ export default function Header() {
     return pathname.split('/')[1] === seg;
   };
 
-  const isAboutSubActive = (h: string) =>
-    pathname === '/about' && hash === h;
+  const isAboutSubActive = (item: (typeof ABOUT_SUBLINKS)[number]) =>
+    (pathname === "/about" && !!item.hash && hash === item.hash) || pathname === item.href;
 
   const isProgramsSubActive = (h: string) => pathname === "/programs" && hash === h;
 
@@ -128,6 +129,21 @@ export default function Header() {
     setHash(sectionHash);
     requestAnimationFrame(() => {
       smoothScrollToId(sectionHash);
+    });
+  };
+
+  const toggleMobileSection = (section: "about" | "programs" | "community") => {
+    setMobileAboutOpen((prevAbout) => {
+      if (section === "about") return !prevAbout;
+      return false;
+    });
+    setMobileProgramsOpen((prevPrograms) => {
+      if (section === "programs") return !prevPrograms;
+      return false;
+    });
+    setMobileCommunityOpen((prevCommunity) => {
+      if (section === "community") return !prevCommunity;
+      return false;
     });
   };
 
@@ -180,17 +196,17 @@ export default function Header() {
                     <div className="min-w-[12rem] overflow-hidden rounded-xl border border-[#e8e4f2] bg-white/95 py-2 shadow-2xl backdrop-blur-md">
                       {ABOUT_SUBLINKS.map((item) => (
                         <Link
-                          key={item.hash}
+                          key={item.href}
                           href={item.href}
                           role="menuitem"
                           onClick={(e) => {
-                            if (pathname === '/about') {
+                            if (pathname === "/about" && item.hash) {
                               e.preventDefault();
                               goAboutSection(item.hash, false);
                             }
                           }}
                           className={`block px-4 py-2.5 text-[0.95rem] font-medium transition-colors hover:bg-[#f5f2fb] hover:text-[#F28904] ${
-                            isAboutSubActive(item.hash) ? "text-[#F28904]" : "text-[#200073]"
+                            isAboutSubActive(item) ? "text-[#F28904]" : "text-[#200073]"
                           }`}
                         >
                           {item.label}
@@ -246,6 +262,30 @@ export default function Header() {
                   </div>
                 </div>
 
+                <Link
+                  href="/dances"
+                  className={`relative inline-block whitespace-nowrap text-white text-[1.05rem] hover:text-[#F28904] hover:translate-x-0.5 transition-all duration-200 ease-out font-medium
+                    ${isActiveLink("/dances") ? "text-[#F28904]" : ""}
+                  `}
+                >
+                  Performances
+                  {isActiveLink("/dances") && (
+                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#F28904] rounded-full" />
+                  )}
+                </Link>
+
+                <Link
+                  href="/impact"
+                  className={`relative inline-block whitespace-nowrap text-white text-[1.05rem] hover:text-[#F28904] hover:translate-x-0.5 transition-all duration-200 ease-out font-medium
+                    ${isActiveLink("/impact") ? "text-[#F28904]" : ""}
+                  `}
+                >
+                  Impact
+                  {isActiveLink("/impact") && (
+                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#F28904] rounded-full" />
+                  )}
+                </Link>
+
                 <div className="relative group/communitydd">
                   <Link
                     href="/community"
@@ -285,30 +325,6 @@ export default function Header() {
                     </div>
                   </div>
                 </div>
-
-                <Link
-                  href="/dances"
-                  className={`relative inline-block whitespace-nowrap text-white text-[1.05rem] hover:text-[#F28904] hover:translate-x-0.5 transition-all duration-200 ease-out font-medium
-                    ${isActiveLink("/dances") ? "text-[#F28904]" : ""}
-                  `}
-                >
-                  Performances
-                  {isActiveLink("/dances") && (
-                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#F28904] rounded-full" />
-                  )}
-                </Link>
-
-                <Link
-                  href="/impact"
-                  className={`relative inline-block whitespace-nowrap text-white text-[1.05rem] hover:text-[#F28904] hover:translate-x-0.5 transition-all duration-200 ease-out font-medium
-                    ${isActiveLink("/impact") ? "text-[#F28904]" : ""}
-                  `}
-                >
-                  Impact
-                  {isActiveLink("/impact") && (
-                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#F28904] rounded-full" />
-                  )}
-                </Link>
               </nav>
             </div>
 
@@ -317,7 +333,7 @@ export default function Header() {
                 <div className="min-w-[140px] xl:min-w-[160px] whitespace-nowrap text-center bg-gradient-to-r from-[#5E489A] to-[#7B5FB8] hover:from-[#7B5FB8] hover:to-[#9E91C2] 
                   text-white font-medium px-5 xl:px-6 py-3 rounded-full transition-all duration-300 
                   hover:shadow-lg hover:scale-105 transform">
-                  Support Us
+                  Get Involved
                 </div>
               </Link>
               <Link href="/getinvolved">
@@ -382,7 +398,7 @@ export default function Header() {
                   </Link>
                   <button
                     type="button"
-                    onClick={() => setMobileAboutOpen((o) => !o)}
+                    onClick={() => toggleMobileSection("about")}
                     className="shrink-0 rounded p-2 text-white hover:bg-white/10 hover:text-[#F28904]"
                     aria-expanded={mobileAboutOpen}
                     aria-label={mobileAboutOpen ? "Collapse About sections" : "Expand About sections"}
@@ -397,14 +413,18 @@ export default function Header() {
                     </span>
                   </button>
                 </div>
-                {mobileAboutOpen && (
-                  <div className="mt-1 space-y-1 border-l-2 border-[#F28904]/40 pl-4 ml-4">
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                    mobileAboutOpen ? "mt-1 max-h-60 opacity-100" : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <div className="ml-4 space-y-1 border-l-2 border-[#F28904]/40 pl-4">
                     {ABOUT_SUBLINKS.map((item) => (
                       <Link
-                        key={item.hash}
+                        key={item.href}
                         href={item.href}
                         onClick={(e) => {
-                          if (pathname === '/about') {
+                          if (pathname === "/about" && item.hash) {
                             e.preventDefault();
                             goAboutSection(item.hash, true);
                           } else {
@@ -412,14 +432,14 @@ export default function Header() {
                           }
                         }}
                         className={`block py-2 text-base font-medium transition-colors hover:text-[#F28904] ${
-                          isAboutSubActive(item.hash) ? "text-[#F28904]" : "text-white/90"
+                          isAboutSubActive(item) ? "text-[#F28904]" : "text-white/90"
                         }`}
                       >
                         {item.label}
                       </Link>
                     ))}
                   </div>
-                )}
+                </div>
               </div>
 
               <div className="border-b border-white/10 pb-2 mb-2">
@@ -435,7 +455,7 @@ export default function Header() {
                   </Link>
                   <button
                     type="button"
-                    onClick={() => setMobileProgramsOpen((o) => !o)}
+                    onClick={() => toggleMobileSection("programs")}
                     className="shrink-0 rounded p-2 text-white hover:bg-white/10 hover:text-[#F28904]"
                     aria-expanded={mobileProgramsOpen}
                     aria-label={mobileProgramsOpen ? "Collapse Programs sections" : "Expand Programs sections"}
@@ -450,8 +470,12 @@ export default function Header() {
                     </span>
                   </button>
                 </div>
-                {mobileProgramsOpen && (
-                  <div className="mt-1 space-y-1 border-l-2 border-[#F28904]/40 pl-4 ml-4">
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                    mobileProgramsOpen ? "mt-1 max-h-56 opacity-100" : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <div className="ml-4 space-y-1 border-l-2 border-[#F28904]/40 pl-4">
                     {PROGRAMS_SUBLINKS.map((item) => (
                       <Link
                         key={item.hash}
@@ -472,55 +496,7 @@ export default function Header() {
                       </Link>
                     ))}
                   </div>
-                )}
-              </div>
-
-              <div className="border-b border-white/10 pb-2 mb-2">
-                <div className="flex w-full items-center gap-1 py-2 pl-4 pr-2">
-                  <Link
-                    href="/community"
-                    onClick={() => setShowMenu(false)}
-                    className={`flex-1 text-left text-[1.1rem] font-medium transition-colors hover:text-[#F28904] ${
-                      isCommunityActive ? "text-[#F28904]" : "text-white"
-                    }`}
-                  >
-                    Community
-                  </Link>
-                  <button
-                    type="button"
-                    onClick={() => setMobileCommunityOpen((o) => !o)}
-                    className="shrink-0 rounded p-2 text-white hover:bg-white/10 hover:text-[#F28904]"
-                    aria-expanded={mobileCommunityOpen}
-                    aria-label={
-                      mobileCommunityOpen ? "Collapse Community links" : "Expand Community links"
-                    }
-                  >
-                    <span
-                      className={`inline-block origin-center text-xl font-semibold leading-none text-inherit drop-shadow-[0_0_1px_rgba(0,0,0,0.4)] transition-transform duration-300 ease-out ${
-                        mobileCommunityOpen ? "rotate-0" : "-rotate-90"
-                      }`}
-                      aria-hidden
-                    >
-                      ▾
-                    </span>
-                  </button>
                 </div>
-                {mobileCommunityOpen && (
-                  <div className="mt-1 space-y-1 border-l-2 border-[#F28904]/40 pl-4 ml-4">
-                    {COMMUNITY_SUBLINKS.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        onClick={() => setShowMenu(false)}
-                        className={`block py-2 text-base font-medium transition-colors hover:text-[#F28904] ${
-                          isCommunitySubActive(item.href) ? "text-[#F28904]" : "text-white/90"
-                        }`}
-                      >
-                        {item.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
               </div>
 
               <Link
@@ -546,14 +522,66 @@ export default function Header() {
               >
                 Impact
               </Link>
+
+              <div className="border-b border-white/10 pb-2 mb-2">
+                <div className="flex w-full items-center gap-1 py-2 pl-4 pr-2">
+                  <Link
+                    href="/community"
+                    onClick={() => setShowMenu(false)}
+                    className={`flex-1 text-left text-[1.1rem] font-medium transition-colors hover:text-[#F28904] ${
+                      isCommunityActive ? "text-[#F28904]" : "text-white"
+                    }`}
+                  >
+                    Community
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={() => toggleMobileSection("community")}
+                    className="shrink-0 rounded p-2 text-white hover:bg-white/10 hover:text-[#F28904]"
+                    aria-expanded={mobileCommunityOpen}
+                    aria-label={
+                      mobileCommunityOpen ? "Collapse Community links" : "Expand Community links"
+                    }
+                  >
+                    <span
+                      className={`inline-block origin-center text-xl font-semibold leading-none text-inherit drop-shadow-[0_0_1px_rgba(0,0,0,0.4)] transition-transform duration-300 ease-out ${
+                        mobileCommunityOpen ? "rotate-0" : "-rotate-90"
+                      }`}
+                      aria-hidden
+                    >
+                      ▾
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                    mobileCommunityOpen ? "mt-1 max-h-56 opacity-100" : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <div className="ml-4 space-y-1 border-l-2 border-[#F28904]/40 pl-4">
+                    {COMMUNITY_SUBLINKS.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setShowMenu(false)}
+                        className={`block py-2 text-base font-medium transition-colors hover:text-[#F28904] ${
+                          isCommunitySubActive(item.href) ? "text-[#F28904]" : "text-white/90"
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </nav>
 
-            <div className="space-y-4">
+            <div className="space-y-8 pt-2">
               <Link href="/support" onClick={() => setShowMenu(false)}>
                 <div className="min-w-full text-center bg-gradient-to-r from-[#5E489A] to-[#7B5FB8] hover:from-[#7B5FB8] hover:to-[#9E91C2] 
-                  text-white font-medium py-3 px-6 rounded-full transition-all duration-300 
+                  text-white font-medium py-3 px-6 rounded-full transition-all duration-300 mb-5
                   hover:shadow-lg">
-                  Support Us
+                  Get Involved
                 </div>
               </Link>
               <Link href="/getinvolved" onClick={() => setShowMenu(false)}>

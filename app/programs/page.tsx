@@ -75,7 +75,7 @@ export default function ProgramsPage() {
               <h2 id="annual-heading" className="pb-6 font-serif text-2xl font-bold">
                 Annual Performance Program
               </h2>
-              <div className="space-y-6 font-light text-md leading-relaxed text-gray-800">
+              <div className="space-y-6 font-light mb-4 text-md leading-relaxed text-gray-800">
                 <p>
                   Each winter and spring, our organization delivers a structured cultural arts training program culminating
                   in a public Cambodian New Year performance in Oakland.{" "}
@@ -94,8 +94,9 @@ export default function ProgramsPage() {
                   members from across California. This event serves as both a cultural celebration and a platform for
                   intergenerational connection, preserving Cambodian heritage while making it accessible to broader
                   audiences.
+                  <br /><br />
                 </p>
-                <div className="pt-10 sm:pt-14">
+                <div>
                   <ProgramOutcomesPanel
                     eyebrow="Annual program"
                     title="Season at a glance"
@@ -197,7 +198,7 @@ export default function ProgramsPage() {
             <section
               id="khmer-language-classes"
               aria-labelledby="khmer-language-heading"
-              className="scroll-mt-28 pt-16 pb-16"
+              className="scroll-mt-28 pt-16 pb-4"
             >
               <div className="border-[#F28904] py-[20px] flex flex-col lg:flex-row-reverse items-start gap-0 lg:gap-10">
                 <div className="w-full lg:w-2/3 lg:min-w-0">

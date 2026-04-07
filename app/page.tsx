@@ -47,7 +47,7 @@ export default function Home() {
                 <div className="min-w-[160px] text-center bg-gradient-to-r from-[#5E489A] to-[#7B5FB8] hover:from-[#7B5FB8] hover:to-[#9E91C2]
                   text-white font-medium px-6 py-3 rounded-full transition-all duration-300
                   hover:shadow-lg hover:scale-105 transform">
-                  Support Us
+                  Get Involved
                 </div>
               </Link>
               <Link href="/getinvolved">
