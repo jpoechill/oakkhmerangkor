@@ -13,6 +13,11 @@ const ABOUT_SUBLINKS = [
   { href: "/press-media", label: "Press and Media" },
 ] as const;
 
+type AboutSubLink = (typeof ABOUT_SUBLINKS)[number];
+
+const hasHash = (item: AboutSubLink): item is Extract<AboutSubLink, { hash: string }> =>
+  "hash" in item;
+
 const COMMUNITY_SUBLINKS = [
   { href: "/profiles", label: "Dancers & Teachers" },
   { href: "/events", label: "Upcoming Events" },
@@ -99,8 +104,8 @@ export default function Header() {
     return pathname.split('/')[1] === seg;
   };
 
-  const isAboutSubActive = (item: (typeof ABOUT_SUBLINKS)[number]) =>
-    (pathname === "/about" && !!item.hash && hash === item.hash) || pathname === item.href;
+  const isAboutSubActive = (item: AboutSubLink) =>
+    (pathname === "/about" && hasHash(item) && hash === item.hash) || pathname === item.href;
 
   const isProgramsSubActive = (h: string) => pathname === "/programs" && hash === h;
 
@@ -200,7 +205,7 @@ export default function Header() {
                           href={item.href}
                           role="menuitem"
                           onClick={(e) => {
-                            if (pathname === "/about" && item.hash) {
+                            if (pathname === "/about" && hasHash(item)) {
                               e.preventDefault();
                               goAboutSection(item.hash, false);
                             }
@@ -424,7 +429,7 @@ export default function Header() {
                         key={item.href}
                         href={item.href}
                         onClick={(e) => {
-                          if (pathname === "/about" && item.hash) {
+                          if (pathname === "/about" && hasHash(item)) {
                             e.preventDefault();
                             goAboutSection(item.hash, true);
                           } else {
